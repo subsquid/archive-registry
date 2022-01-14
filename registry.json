@@ -13,10 +13,6 @@
             "url": "https://karura.indexer.gc.subsquid.io/v4/graphql"
         },
         {
-            "network": "astar",
-            "url": "https://astar.indexer.gc.subsquid.io/v4/graphql"
-        },
-        {
             "network": "crust",
             "url": "https://crust.indexer.gc.subsquid.io/v4/graphql"
         },
