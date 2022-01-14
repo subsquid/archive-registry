@@ -1,0 +1,72 @@
+{
+    "archives": [
+        {
+            "network": "kusama",
+            "url": "https://kusama.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+            "network": "polkadot",
+            "url": "https://polkadot.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+            "network": "karura",
+            "url": "https://karura.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+            "network": "astar",
+            "url": "https://astar.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+            "network": "crust",
+            "url": "https://crust.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+            "network": "robomonomics",
+            "url": "https://robonomics.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+            "network": "chachacha",
+            "url": "https://chachacha.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+            "network": "bifrost",
+            "url": "https://bifrost.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+            "network": "subsocial",
+            "url": "https://subsocial.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+            "network": "statemine",
+            "url": "https://statemine-full.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+            "network": "khala",
+            "url": "https://khala.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+            "network": "shiden",
+            "url": "https://shiden.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+            "network": "darwinia",
+            "url": "https://darwinia.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+            "network": "kilt",
+            "url": "https://kilt.indexer.gc.subsquid.io/v4/graphql"
+        },    
+        {
+            "network": "moonriver",
+            "url": "https://moonriver.indexer.gc.subsquid.io/v4/graphql"
+        },  
+        {
+            "network": "crust",
+            "url": "https://crust.indexer.gc.subsquid.io/v4/graphql"
+        },    
+        {
+            "network": "astar",
+            "url": "https://astrar-archive.indexer.gc.subsquid.io/v4/graphql"
+        }
+    ]
+}
