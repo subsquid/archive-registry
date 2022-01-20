@@ -17,10 +17,6 @@
             "url": "https://crust.indexer.gc.subsquid.io/v4/graphql"
         },
         {
-            "network": "chachacha",
-            "url": "https://chachacha.indexer.gc.subsquid.io/v4/graphql"
-        },
-        {
             "network": "bifrost",
             "url": "https://bifrost.indexer.gc.subsquid.io/v4/graphql"
         },
