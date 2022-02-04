@@ -57,10 +57,6 @@
             "url": "https://altair.indexer.gc.subsquid.io/v4/graphql"
         },
         {
-            "network": "altair",
-            "url": "https://altair.indexer.gc.subsquid.io/v4/graphql"
-        },
-        {
             "network": "acala",
             "url": "https://acala.indexer.gc.subsquid.io/v4/graphql"
         },
