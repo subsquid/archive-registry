@@ -1,6 +1,70 @@
 {
     "archives": [
         {
+            "network": "calamari",
+            "url": "https://calamari.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+            "network": "pioneer",
+            "url": "https://pioneer.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+            "network": "statemint",
+            "url": "https://statemint.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+            "network": "parallel",
+            "url": "https://parallel.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+            "network": "moonbeam",
+            "url": "https://moonbeam.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+            "network": "clover",
+            "url": "https://clover.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+            "network": "nodle",
+            "url": "https://nodle.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+            "network": "phala",
+            "url": "https://phala.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+            "network": "quartz",
+            "url": "https://quartz.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+            "network": "genshiro",
+            "url": "https://genshiro.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+            "network": "heiko",
+            "url": "https://heiko.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+            "network": "kintsugi",
+            "url": "https://kintsugi.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+            "network": "basilisk",
+            "url": "https://basilisk.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+            "network": "altair",
+            "url": "https://altair.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+            "network": "altair",
+            "url": "https://altair.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+            "network": "acala",
+            "url": "https://acala.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
             "network": "kusama",
             "url": "https://kusama.indexer.gc.subsquid.io/v4/graphql"
         },
