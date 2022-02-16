@@ -93,10 +93,6 @@
             "url": "https://khala.indexer.gc.subsquid.io/v4/graphql"
         },
         {
-            "network": "shiden",
-            "url": "https://shiden.indexer.gc.subsquid.io/v4/graphql"
-        },
-        {
             "network": "darwinia",
             "url": "https://darwinia.indexer.gc.subsquid.io/v4/graphql"
         },
@@ -115,6 +111,10 @@
         {
             "network": "astar",
             "url": "https://astrar-archive.indexer.gc.subsquid.io/v4/graphql"
-        }
+        },
+        {
+            "network": "shiden",
+            "url": "https://shiden-evm.indexer.gc.subsquid.io/v4/graphql"
+        },
     ]
 }
