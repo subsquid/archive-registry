@@ -115,6 +115,6 @@
         {
             "network": "shiden",
             "url": "https://shiden-evm.indexer.gc.subsquid.io/v4/graphql"
-        },
+        }
     ]
 }
