@@ -99,15 +99,15 @@
         {
             "network": "kilt",
             "url": "https://kilt.indexer.gc.subsquid.io/v4/graphql"
-        },    
+        },
         {
             "network": "moonriver",
             "url": "https://moonriver.indexer.gc.subsquid.io/v4/graphql"
-        },  
+        },
         {
             "network": "crust",
             "url": "https://crust.indexer.gc.subsquid.io/v4/graphql"
-        },    
+        },
         {
             "network": "astar",
             "url": "https://astrar-archive.indexer.gc.subsquid.io/v4/graphql"
@@ -116,5 +116,137 @@
             "network": "shiden",
             "url": "https://shiden-evm.indexer.gc.subsquid.io/v4/graphql"
         },
+        {
+            "network": "acala",
+            "url": "https://acala.subsquid.fatcat.ventures/v1/graphql"
+        },
+        {
+            "network": "altair",
+            "url": "https://altair.subsquid.fatcat.ventures/v1/graphql"
+        },
+        {
+            "network": "astar",
+            "url": "https://astar.subsquid.fatcat.ventures/v1/graphql"
+        },
+        {
+            "network": "basilisk",
+            "url": "https://basilisk.subsquid.fatcat.ventures/v1/graphql"
+        },
+        {
+            "network": "bifrost",
+            "url": "https://bifrost.subsquid.fatcat.ventures/v1/graphql"
+        },
+        {
+            "network": "calamari",
+            "url": "https://calamari.subsquid.fatcat.ventures/v1/graphql"
+        },
+        {
+            "network": "chachacha",
+            "url": "https://chachacha.subsquid.fatcat.ventures/v1/graphql"
+        },
+        {
+            "network": "clover",
+            "url": "https://clover.subsquid.fatcat.ventures/v1/graphql"
+        },
+        {
+            "network": "composable",
+            "url": "https://composable.subsquid.fatcat.ventures/v1/graphql"
+        },
+        {
+            "network": "crust",
+            "url": "https://crust.subsquid.fatcat.ventures/v1/graphql"
+        },
+        {
+            "network": "darwinia",
+            "url": "https://darwinia.subsquid.fatcat.ventures/v1/graphql"
+        },
+        {
+            "network": "equilibrium",
+            "url": "https://equilibrium.subsquid.fatcat.ventures/v1/graphql"
+        },
+        {
+            "network": "genshiro",
+            "url": "https://genshiro.subsquid.fatcat.ventures/v1/graphql"
+        },
+        {
+            "network": "heiko",
+            "url": "https://heiko.subsquid.fatcat.ventures/v1/graphql"
+        },
+        {
+            "network": "joystream",
+            "url": "https://joystream.subsquid.fatcat.ventures/v1/graphql"
+        },
+        {
+            "network": "karura",
+            "url": "https://karura.subsquid.fatcat.ventures/v1/graphql"
+        },
+        {
+            "network": "khala",
+            "url": "https://khala.subsquid.fatcat.ventures/v1/graphql"
+        },
+        {
+            "network": "kilt",
+            "url": "https://kilt.subsquid.fatcat.ventures/v1/graphql"
+        },
+        {
+            "network": "kintsugi",
+            "url": "https://kintsugi.subsquid.fatcat.ventures/v1/graphql"
+        },
+        {
+            "network": "kusama",
+            "url": "https://kusama.subsquid.fatcat.ventures/v1/graphql"
+        },
+        {
+            "network": "kylin",
+            "url": "https://kylin.subsquid.fatcat.ventures/v1/graphql"
+        },
+        {
+            "network": "moonbeam",
+            "url": "https://moonbeam.subsquid.fatcat.ventures/v1/graphql"
+        },
+        {
+            "network": "moonriver",
+            "url": "https://moonriver.subsquid.fatcat.ventures/v1/graphql"
+        },
+        {
+            "network": "nodle",
+            "url": "https://nodle.subsquid.fatcat.ventures/v1/graphql"
+        },
+        {
+            "network": "parallel",
+            "url": "https://parallel.subsquid.fatcat.ventures/v1/graphql"
+        },
+        {
+            "network": "phala",
+            "url": "https://phala.subsquid.fatcat.ventures/v1/graphql"
+        },
+        {
+            "network": "pioneer",
+            "url": "https://pioneer.subsquid.fatcat.ventures/v1/graphql"
+        },
+        {
+            "network": "polkadot",
+            "url": "https://polkadot.subsquid.fatcat.ventures/v1/graphql"
+        },
+        {
+            "network": "quartz",
+            "url": "https://quartz.subsquid.fatcat.ventures/v1/graphql"
+        },
+        {
+            "network": "robonomics",
+            "url": "https://robonomics.subsquid.fatcat.ventures/v1/graphql"
+        },
+        {
+            "network": "shiden",
+            "url": "https://shiden.subsquid.fatcat.ventures/v1/graphql"
+        },
+        {
+            "network": "statemine",
+            "url": "https://statemine.subsquid.fatcat.ventures/v1/graphql"
+        },
+        {
+            "network": "statemint",
+            "url": "https://statemint.subsquid.fatcat.ventures/v1/graphql"
+        }
     ]
 }
