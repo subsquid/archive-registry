@@ -119,6 +119,6 @@
         {
             "network": "hydradx",
             "url": "https://hydradx.indexer.gc.subsquid.io/v4/graphql"
-        },
+        }
     ]
 }
