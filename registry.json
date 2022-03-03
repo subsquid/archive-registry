@@ -116,5 +116,9 @@
             "network": "shiden",
             "url": "https://shiden-evm.indexer.gc.subsquid.io/v4/graphql"
         },
+        {
+            "network": "hydradx",
+            "url": "https://hydradx.indexer.gc.subsquid.io/v4/graphql"
+        }
     ]
 }
