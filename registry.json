@@ -18,7 +18,7 @@
         },
         {
             "network": "moonbeam",
-            "url": "https://moonbeam.indexer.gc.subsquid.io/v4/graphql"
+            "url": "https://moonbeam-beta.indexer.gc.subsquid.io/v4/graphql"
         },
         {
             "network": "clover",
@@ -102,7 +102,7 @@
         },    
         {
             "network": "moonriver",
-            "url": "https://moonriver.indexer.gc.subsquid.io/v4/graphql"
+            "url": "https://moonriver-beta.indexer.gc.subsquid.io/v4/graphql"
         },  
         {
             "network": "crust",
@@ -110,11 +110,11 @@
         },    
         {
             "network": "astar",
-            "url": "https://astrar-archive.indexer.gc.subsquid.io/v4/graphql"
+            "url": "https://astar-beta.indexer.gc.subsquid.io/v4/graphql"
         },
         {
             "network": "shiden",
-            "url": "https://shiden-evm.indexer.gc.subsquid.io/v4/graphql"
+            "url": "https://shiden-beta.indexer.gc.subsquid.io/v4/graphql"
         },
         {
             "network": "hydradx",
