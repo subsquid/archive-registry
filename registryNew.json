@@ -57,7 +57,7 @@
       "providers": [
         {
           "name": "subsquid",
-          "url": "https://moonbeam.indexer.gc.subsquid.io/v4/graphql"
+          "url": "https://moonbeam-beta.indexer.gc.subsquid.io/v4/graphql"
         },
         {
           "name": "fatcat",
@@ -330,7 +330,7 @@
       "providers": [
         {
           "name": "subsquid",
-          "url": "https://moonriver.indexer.gc.subsquid.io/v4/graphql"
+          "url": "https://moonriver-beta.indexer.gc.subsquid.io/v4/graphql"
         },
         {
           "name": "fatcat",
@@ -343,7 +343,7 @@
       "providers": [
         {
           "name": "subsquid",
-          "url": "https://astrar-archive.indexer.gc.subsquid.io/v4/graphql"
+          "url": "https://astrar-beta.indexer.gc.subsquid.io/v4/graphql"
         },
         {
           "name": "fatcat",
@@ -356,7 +356,7 @@
       "providers": [
         {
           "name": "subsquid",
-          "url": "https://shiden-evm.indexer.gc.subsquid.io/v4/graphql"
+          "url": "https://shiden-beta.indexer.gc.subsquid.io/v4/graphql"
         },
         {
           "name": "fatcat",
