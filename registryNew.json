@@ -1,0 +1,431 @@
+{
+  "archives": [
+    {
+      "network": "calamari",
+      "providers": [
+        {
+          "name": "subsquid",
+          "url": "https://calamari.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+          "name": "fatcat",
+          "url": "https://calamari.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    },
+    {
+      "network": "pioneer",
+      "providers": [
+        {
+          "name": "subsquid",
+          "url": "https://pioneer.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+          "name": "fatcat",
+          "url": "https://pioneer.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    },
+    {
+      "network": "statemint",
+      "providers": [
+        {
+          "name": "subsquid",
+          "url": "https://statemint.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+          "name": "fatcat",
+          "url": "https://statemint.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    },
+    {
+      "network": "parallel",
+      "providers": [
+        {
+          "name": "subsquid",
+          "url": "https://parallel.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+          "name": "fatcat",
+          "url": "https://parallel.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    },
+    {
+      "network": "moonbeam",
+      "providers": [
+        {
+          "name": "subsquid",
+          "url": "https://moonbeam-beta.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+          "name": "fatcat",
+          "url": "https://moonbeam.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    },
+    {
+      "network": "clover",
+      "providers": [
+        {
+          "name": "subsquid",
+          "url": "https://clover.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+          "name": "fatcat",
+          "url": "https://clover.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    },
+    {
+      "network": "nodle",
+      "providers": [
+        {
+          "name": "subsquid",
+          "url": "https://nodle.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+          "name": "fatcat",
+          "url": "https://nodle.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    },
+    {
+      "network": "phala",
+      "providers": [
+        {
+          "name": "subsquid",
+          "url": "https://phala.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+          "name": "fatcat",
+          "url": "https://phala.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    },
+    {
+      "network": "quartz",
+      "providers": [
+        {
+          "name": "subsquid",
+          "url": "https://quartz.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+          "name": "fatcat",
+          "url": "https://quartz.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    },
+    {
+      "network": "genshiro",
+      "providers": [
+        {
+          "name": "subsquid",
+          "url": "https://genshiro.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+          "name": "fatcat",
+          "url": "https://genshiro.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    },
+    {
+      "network": "heiko",
+      "providers": [
+        {
+          "name": "subsquid",
+          "url": "https://heiko.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+          "name": "fatcat",
+          "url": "https://heiko.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    },
+    {
+      "network": "kintsugi",
+      "providers": [
+        {
+          "name": "subsquid",
+          "url": "https://kintsugi.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+          "name": "fatcat",
+          "url": "https://kintsugi.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    },
+    {
+      "network": "basilisk",
+      "providers": [
+        {
+          "name": "subsquid",
+          "url": "https://basilisk.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+          "name": "fatcat",
+          "url": "https://basilisk.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    },
+    {
+      "network": "altair",
+      "providers": [
+        {
+          "name": "subsquid",
+          "url": "https://altair.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+          "name": "fatcat",
+          "url": "https://altair.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    },
+    {
+      "network": "acala",
+      "providers": [
+        {
+          "name": "subsquid",
+          "url": "https://acala.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+          "name": "fatcat",
+          "url": "https://acala.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    },
+    {
+      "network": "kusama",
+      "providers": [
+        {
+          "name": "subsquid",
+          "url": "https://kusama.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+          "name": "fatcat",
+          "url": "https://kusama.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    },
+    {
+      "network": "polkadot",
+      "providers": [
+        {
+          "name": "subsquid",
+          "url": "https://polkadot.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+          "name": "fatcat",
+          "url": "https://polkadot.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    },
+    {
+      "network": "karura",
+      "providers": [
+        {
+          "name": "subsquid",
+          "url": "https://karura.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+          "name": "fatcat",
+          "url": "https://karura.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    },
+    {
+      "network": "crust",
+      "providers": [
+        {
+          "name": "subsquid",
+          "url": "https://crust.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+          "name": "subsquid",
+          "url": "https://crust.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+          "name": "fatcat",
+          "url": "https://crust.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    },
+    {
+      "network": "bifrost",
+      "providers": [
+        {
+          "name": "subsquid",
+          "url": "https://bifrost.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+          "name": "fatcat",
+          "url": "https://bifrost.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    },
+    {
+      "network": "subsocial",
+      "providers": [
+        {
+          "name": "subsquid",
+          "url": "https://subsocial.indexer.gc.subsquid.io/v4/graphql"
+        }
+      ]
+    },
+    {
+      "network": "statemine",
+      "providers": [
+        {
+          "name": "subsquid",
+          "url": "https://statemine-full.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+          "name": "fatcat",
+          "url": "https://statemine.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    },
+    {
+      "network": "khala",
+      "providers": [
+        {
+          "name": "subsquid",
+          "url": "https://khala.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+          "name": "fatcat",
+          "url": "https://khala.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    },
+    {
+      "network": "darwinia",
+      "providers": [
+        {
+          "name": "subsquid",
+          "url": "https://darwinia.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+          "name": "fatcat",
+          "url": "https://darwinia.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    },
+    {
+      "network": "kilt",
+      "providers": [
+        {
+          "name": "subsquid",
+          "url": "https://kilt.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+          "name": "fatcat",
+          "url": "https://kilt.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    },
+    {
+      "network": "moonriver",
+      "providers": [
+        {
+          "name": "subsquid",
+          "url": "https://moonriver-beta.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+          "name": "fatcat",
+          "url": "https://moonriver.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    },
+    {
+      "network": "astar",
+      "providers": [
+        {
+          "name": "subsquid",
+          "url": "https://astrar-beta.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+          "name": "fatcat",
+          "url": "https://astar.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    },
+    {
+      "network": "shiden",
+      "providers": [
+        {
+          "name": "subsquid",
+          "url": "https://shiden-beta.indexer.gc.subsquid.io/v4/graphql"
+        },
+        {
+          "name": "fatcat",
+          "url": "https://shiden.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    },
+    {
+      "network": "hydradx",
+      "providers": [
+        {
+          "name": "subsquid",
+          "url": "https://hydradx.indexer.gc.subsquid.io/v4/graphql"
+        }
+      ]
+    },
+    {
+      "network": "chachacha",
+      "providers": [
+        {
+          "name": "fatcat",
+          "url": "https://chachacha.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    },
+    {
+      "network": "composable",
+      "providers": [
+        {
+          "name": "fatcat",
+          "url": "https://composable.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    },
+    {
+      "network": "equilibrium",
+      "providers": [
+        {
+          "name": "fatcat",
+          "url": "https://equilibrium.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    },
+    {
+      "network": "joystream",
+      "providers": [
+        {
+          "name": "fatcat",
+          "url": "https://joystream.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    },
+    {
+      "network": "kylin",
+      "providers": [
+        {
+          "name": "fatcat",
+          "url": "https://kylin.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    },
+    {
+      "network": "robonomics",
+      "providers": [
+        {
+          "name": "fatcat",
+          "url": "https://robonomics.subsquid.fatcat.ventures/v1/graphql"
+        }
+      ]
+    }
+  ]
+}
