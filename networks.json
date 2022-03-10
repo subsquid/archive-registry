@@ -1,0 +1,126 @@
+{
+  "networks": [
+    {
+      "name": "polkadot",
+      "displayName": "Polkadot Relay Chain",
+      "tokens": [
+        "DOT"
+      ],
+      "website": "https://polkadot.network",
+      "description": "",
+      "relayChain": "polkadot",
+      "parachainId": "0"
+    },
+    {
+      "name": "kusama",
+      "displayName": "Kusama Relay Chain",
+      "tokens": [
+        "KSM"
+      ],
+      "website": "https://kusama.network",
+      "description": "",
+      "relayChain": "kusama",
+      "parachainId": "0"
+    },
+    {
+      "name": "statemint",
+      "displayName": "Statemint",
+      "tokens": [
+        "DOT"
+      ],
+      "website": "https://acala.network/",
+      "description": "Statemint, Parity Technologies’ generic assets parachain, will be proposed as one of the first “common good” parachains for the Polkadot network. It will provide functionality for deploying assets and entail far lower fees than other solutions.",
+      "relayChain": "polkadot",
+      "parachainId": "1000"
+    },
+    {
+      "name": "acala",
+      "displayName": "Acala",
+      "tokens": [
+        "ACA"
+      ],
+      "website": "https://www.parity.io/",
+      "description": "Acala is the all-in-one DeFi hub of Polkadot. Acala is an Ethereum-compatible platform for financial applications to use smart contracts or built-in protocols with out-of-the-box cross-chain capabilities and robust security.",
+      "relayChain": "polkadot",
+      "parachainId": "2000"
+    },
+    {
+      "name": "astar",
+      "displayName": "Astar Network",
+      "tokens": [
+        "ASTR"
+      ],
+      "website": "https://astar.network",
+      "description": "Astar is a Substrate Runtime Module Library which allows developers to add Plasma functions to their Substrate chain.",
+      "relayChain": "polkadot",
+      "parachainId": "2006"
+    },
+    {
+      "name": "parallel",
+      "displayName": "Parallel",
+      "tokens": [
+        "PARA"
+      ],
+      "website": "https://parallel.fi/",
+      "description": "Parallel is Lending Protocol and Staking Protocol Supporting both Kusama and Polkadot assets.",
+      "relayChain": "polkadot",
+      "parachainId": "2012"
+    },
+    {
+      "name": "moonbeam",
+      "displayName": "Moonbeam",
+      "tokens": [
+        "GLMR"
+      ],
+      "website": "https://moonbeam.network",
+      "description": "Moonbeam makes it easy to build decentralized applications on Polkadot — which means your DApps can integrate with other blockchains, including Bitcoin and Ethereum.",
+      "relayChain": "polkadot",
+      "parachainId": "2004"
+    },
+    {
+      "name": "clover",
+      "displayName": "Clover Finance",
+      "tokens": [
+        "CLV"
+      ],
+      "website": "https://clover.finance",
+      "description": "Clover is a substrate based smart contract platform built for Polkadot, with added support for Ethereum developers to participate in the Polkadot ecosystem.",
+      "relayChain": "polkadot",
+      "parachainId": "2002"
+    },
+    {
+      "name": "nodle",
+      "displayName": "Nodle Chain",
+      "tokens": [
+        "NODL"
+      ],
+      "website": "https://nodle.io/",
+      "description": "Nodle leverages Bluetooth Low Energy (BLE) via millions of smartphones and routers to allow enterprises and smart cities to connect IoT devices to the Internet at a low-cost while maintaining privacy and security.",
+      "relayChain": "polkadot",
+      "parachainId": "2026"
+    },
+    {
+      "name": "hydradx",
+      "displayName": "HydraDX",
+      "tokens": [
+        "HDX"
+      ],
+      "website": "https://hydradx.io",
+      "description": "HydraDX is built as a parachain – specialized blockchain in the Polkadot network. It is benefiting from shared security, speed and flexibility of the Substrate framework while remaining optimized for a single purpose: enabling fluid programmable value exchange.",
+      "relayChain": "polkadot",
+      "parachainId": "2034"
+    },
+    {
+      "name": "darwinia",
+      "displayName": "Darwinia Network",
+      "tokens": [
+        "RING",
+        "KTON"
+      ],
+      "website": "https://darwinia.network/",
+      "description": "Darwinia is a trustless multi-chain bridge hub network designed to become the foundational layer for the next generation of Web3.0 dapps and games. Darwinia Network uses a combination of ZK proofs and optimistic challenge technology to provide the most secure general bridging solution between heterogeneous chains such as Polkadot, Ethereum, Polygon, and BSC, without the need for custodial vaults or wrapping of tokens, so is also compatible with zero-liquidity assets such as NFTs.",
+      "relayChain": "polkadot",
+      "parachainId": "2003"
+    }
+  ]
+}
