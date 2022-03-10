@@ -343,7 +343,7 @@
       "providers": [
         {
           "name": "subsquid",
-          "url": "https://astrar-beta.indexer.gc.subsquid.io/v4/graphql"
+          "url": "https://astar-beta.indexer.gc.subsquid.io/v4/graphql"
         },
         {
           "name": "fatcat",
