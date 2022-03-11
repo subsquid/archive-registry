@@ -1,0 +1,344 @@
+{
+  "networks": [
+    {
+      "name": "polkadot",
+      "displayName": "Polkadot Relay Chain",
+      "tokens": [
+        "DOT"
+      ],
+      "website": "https://polkadot.network",
+      "description": "",
+      "relayChain": "polkadot",
+      "parachainId": "0",
+      "genesisHash": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3"
+    },
+    {
+      "name": "kusama",
+      "displayName": "Kusama Relay Chain",
+      "tokens": [
+        "KSM"
+      ],
+      "website": "https://kusama.network",
+      "description": "",
+      "relayChain": "kusama",
+      "parachainId": "0",
+      "genesisHash": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe"
+    },
+    {
+      "name": "statemint",
+      "displayName": "Statemint",
+      "tokens": [
+        "DOT"
+      ],
+      "website": "https://www.parity.io/",
+      "description": "Statemint, Parity Technologies’ generic assets parachain, will be proposed as one of the first “common good” parachains for the Polkadot network. It will provide functionality for deploying assets and entail far lower fees than other solutions.",
+      "relayChain": "polkadot",
+      "parachainId": "1000",
+      "genesisHash": "0x68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f"
+    },
+    {
+      "name": "acala",
+      "displayName": "Acala",
+      "tokens": [
+        "ACA"
+      ],
+      "website": "https://acala.network/",
+      "description": "Acala is the all-in-one DeFi hub of Polkadot. Acala is an Ethereum-compatible platform for financial applications to use smart contracts or built-in protocols with out-of-the-box cross-chain capabilities and robust security.",
+      "relayChain": "polkadot",
+      "parachainId": "2000",
+      "genesisHash": "0xfc41b9bd8ef8fe53d58c7ea67c794c7ec9a73daf05e6d54b14ff6342c99ba64c"
+    },
+    {
+      "name": "astar",
+      "displayName": "Astar Network",
+      "tokens": [
+        "ASTR"
+      ],
+      "website": "https://astar.network",
+      "description": "Astar is a Substrate Runtime Module Library which allows developers to add Plasma functions to their Substrate chain.",
+      "relayChain": "polkadot",
+      "parachainId": "2006",
+      "genesisHash": "0x9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6"
+    },
+    {
+      "name": "parallel",
+      "displayName": "Parallel",
+      "tokens": [
+        "PARA"
+      ],
+      "website": "https://parallel.fi/",
+      "description": "Parallel is Lending Protocol and Staking Protocol Supporting both Kusama and Polkadot assets.",
+      "relayChain": "polkadot",
+      "parachainId": "2012",
+      "genesisHash": "0xe61a41c53f5dcd0beb09df93b34402aada44cb05117b71059cce40a2723a4e97"
+    },
+    {
+      "name": "moonbeam",
+      "displayName": "Moonbeam",
+      "tokens": [
+        "GLMR"
+      ],
+      "website": "https://moonbeam.network",
+      "description": "Moonbeam makes it easy to build decentralized applications on Polkadot — which means your DApps can integrate with other blockchains, including Bitcoin and Ethereum.",
+      "relayChain": "polkadot",
+      "parachainId": "2004",
+      "genesisHash": "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d"
+    },
+    {
+      "name": "clover",
+      "displayName": "Clover Finance",
+      "tokens": [
+        "CLV"
+      ],
+      "website": "https://clover.finance",
+      "description": "Clover is a substrate based smart contract platform built for Polkadot, with added support for Ethereum developers to participate in the Polkadot ecosystem.",
+      "relayChain": "polkadot",
+      "parachainId": "2002",
+      "genesisHash": "0x5c7bd13edf349b33eb175ffae85210299e324d852916336027391536e686f267"
+    },
+    {
+      "name": "nodle",
+      "displayName": "Nodle Chain",
+      "tokens": [
+        "NODL"
+      ],
+      "website": "https://nodle.io/",
+      "description": "Nodle leverages Bluetooth Low Energy (BLE) via millions of smartphones and routers to allow enterprises and smart cities to connect IoT devices to the Internet at a low-cost while maintaining privacy and security.",
+      "relayChain": "polkadot",
+      "parachainId": "2026",
+      "genesisHash": "0xa3d114c2b8d0627c1aa9b134eafcf7d05ca561fdc19fb388bb9457f81809fb23"
+    },
+    {
+      "name": "hydradx",
+      "displayName": "HydraDX",
+      "tokens": [
+        "HDX"
+      ],
+      "website": "https://hydradx.io",
+      "description": "HydraDX is built as a parachain – specialized blockchain in the Polkadot network. It is benefiting from shared security, speed and flexibility of the Substrate framework while remaining optimized for a single purpose: enabling fluid programmable value exchange.",
+      "relayChain": "polkadot",
+      "parachainId": "2034",
+      "genesisHash": "0xd2a620c27ec5cbc5621ff9a522689895074f7cca0d08e7134a7804e1a3ba86fc"
+    },
+    {
+      "name": "darwinia",
+      "displayName": "Darwinia Network",
+      "tokens": [
+        "RING",
+        "KTON"
+      ],
+      "website": "https://darwinia.network/",
+      "description": "Darwinia is a trustless multi-chain bridge hub network designed to become the foundational layer for the next generation of Web3.0 dapps and games. Darwinia Network uses a combination of ZK proofs and optimistic challenge technology to provide the most secure general bridging solution between heterogeneous chains such as Polkadot, Ethereum, Polygon, and BSC, without the need for custodial vaults or wrapping of tokens, so is also compatible with zero-liquidity assets such as NFTs.",
+      "relayChain": "polkadot",
+      "parachainId": "2003",
+      "genesisHash": "0x729cb8f2cf428adcf81fe69610edda32c5711b2ff17de747e8604a3587021db8"
+    },
+    {
+      "name": "statemine",
+      "displayName": "Statemine",
+      "tokens": [
+        "KSM"
+      ],
+      "website": "https://www.parity.io/",
+      "description": "Statemine is the Kusama instance of Polkadot’s Statemint parachain, a common-good chain which allows the hosting of arbitrary assets, both fungible and non-fungible. It also serves as a low-cost chain for keeping and transferring the Relay Chain’s native token (KSM/DOT).",
+      "relayChain": "kusama",
+      "parachainId": "1000",
+      "genesisHash": "0x48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a"
+    },
+    {
+      "name": "pioneer",
+      "displayName": "Pioneer Network",
+      "tokens": [
+        "NEER"
+      ],
+      "website": "https://bit.country",
+      "description": "Bit.Country enables everyone to start their own metaverse for their people with the 3D world, NFTs, play-to-earn & build communities to earn, and takes community engagement to a new dimension on web3.0.",
+      "relayChain": "kusama",
+      "parachainId": "2096",
+      "genesisHash": "0xf22b7850cdd5a7657bbfd90ac86441275bbc57ace3d2698a740c7b0ec4de5ec3"
+    },
+    {
+      "name": "karura",
+      "displayName": "Karura",
+      "tokens": [
+        "KSM"
+      ],
+      "website": "https://karura.network/",
+      "description": "Karura is the all-in-one DeFi hub of Kusama. Founded by the Acala Foundation, Karura is a scalable, EVM-compatible network optimized for DeFi.",
+      "relayChain": "kusama",
+      "parachainId": "2000",
+      "genesisHash": "0xbaf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b"
+    },
+    {
+      "name": "bifrost",
+      "displayName": "Bifrost Kusama",
+      "tokens": [
+        "BNC"
+      ],
+      "website": "https://bifrost.finance/",
+      "description": "Bifrost developed a Staking Liquidity Protocol called SLP that allows you to get vTokens for operations and delivering liquidity, plus you got staking rewards for your DOT, KSM, EOS or other token that is otherwise locked by the Staking Mechanism.",
+      "relayChain": "kusama",
+      "parachainId": "2001",
+      "genesisHash": "0x9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed"
+    },
+    {
+      "name": "genshiro",
+      "displayName": "Genshiro Network",
+      "tokens": [
+        "GENS",
+        "EQD",
+        "LPT0"
+      ],
+      "website": "https://genshiro.equilibrium.io",
+      "description": "",
+      "relayChain": "kusama",
+      "parachainId": "2024",
+      "genesisHash": "0x615853d331292f8801d0171e941ba9327475e5b71de24f1a47b06300f1287e94"
+    },
+    {
+      "name": "shiden",
+      "displayName": "Shiden Network",
+      "tokens": [
+        "SDN"
+      ],
+      "website": "https://shiden.astar.network/",
+      "description": "Shiden Network is a multi-chain decentralized application layer on Kusama Network. Kusama Relaychain does not support smart contract functionality by design - Kusama Network needs a smart contract layer.",
+      "relayChain": "kusama",
+      "parachainId": "2007",
+      "genesisHash": "0xf1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108"
+    },
+    {
+      "name": "calamari",
+      "displayName": "Calamari Network",
+      "tokens": [
+        "KMA"
+      ],
+      "website": "https://www.calamari.network/",
+      "description": "Calamari Network is the plug-and-play privacy-preservation protocol built to service the entire DeFi stack on Kusama (and Manta Network on Polkadot).",
+      "relayChain": "kusama",
+      "parachainId": "2084",
+      "genesisHash": "0x4ac80c99289841dd946ef92765bf659a307d39189b3ce374a92b5f0415ee17a1"
+    },
+    {
+      "name": "heiko",
+      "displayName": "Heiko Finance",
+      "tokens": [
+        "HKO"
+      ],
+      "website": "https://parallel.fi/",
+      "description": "Heiko Finance is the sister network to Parallel Finance. Parallel Finance is a decentralized money market protocol that offers lending, staking, and borrowing in the Polkadot ecosystem.",
+      "relayChain": "kusama",
+      "parachainId": "2085",
+      "genesisHash": "0x64a1c658a48b2e70a7fb1ad4c39eea35022568c20fc44a6e2e3d0a57aee6053b"
+    },
+    {
+      "name": "moonriver",
+      "displayName": "Moonriver",
+      "tokens": [
+        "MOVR"
+      ],
+      "website": "https://moonbeam.network",
+      "description": "The network’s Kusama deployment will be called Moonriver, and have its own utility token which is called River. Supply and other token economic behaviors on Moonriver will be the same as Moonbeam, but token distribution will be different in order to support the unique goals and attributes of the network.",
+      "relayChain": "kusama",
+      "parachainId": "2023",
+      "genesisHash": "0x401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b"
+    },
+    {
+      "name": "altair",
+      "displayName": "Altair",
+      "tokens": [
+        "AIR"
+      ],
+      "website": "https://centrifuge.io/altair/",
+      "description": "Altair combines the industry-leading infrastructure built by Centrifuge to finance real-world assets (RWA) on Centrifuge Chain, with the newest experimental features — before they go live on Centrifuge Chain.",
+      "relayChain": "kusama",
+      "parachainId": "2088",
+      "genesisHash": "0xaa3876c1dc8a1afcc2e9a685a49ff7704cfd36ad8c90bf2702b9d1b00cc40011"
+    },
+    {
+      "name": "khala",
+      "displayName": "Khala Network",
+      "tokens": [
+        "PHA",
+        "K-PHA"
+      ],
+      "website": "https://www.phala.network/khala/",
+      "description": "Khala Network tackles the issue of trust in the computation cloud. This blockchain is a trustless computation platform that enables massive cloud processing without sacrificing data confidentiality.",
+      "relayChain": "kusama",
+      "parachainId": "2004",
+      "genesisHash": "0xd43540ba6d3eb4897c28a77d48cb5b729fea37603cbbfc7a86a73b72adb3be8d"
+    },
+    {
+      "name": "kintsugi",
+      "displayName": "Kintsugi",
+      "tokens": [
+        "KINT"
+      ],
+      "website": "https://kintsugi.interlay.io/",
+      "description": "Kintsugi is interBTC’s canary network, developed by Interlay under the supervision of Kintsugi Labs, a non-profit oriented organization responsible for Kintsugi’s launch and the support of the decentralized network and ecosystem.",
+      "relayChain": "kusama",
+      "parachainId": "2092",
+      "genesisHash": "0x9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b"
+    },
+    {
+      "name": "basilisk",
+      "displayName": "Basilisk",
+      "tokens": [
+        "BSX"
+      ],
+      "website": "https://bsx.fi",
+      "description": "",
+      "relayChain": "kusama",
+      "parachainId": "2090",
+      "genesisHash": "0xa85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755"
+    },
+    {
+      "name": "quartz",
+      "displayName": "Quartz",
+      "tokens": [
+        "QTZ"
+      ],
+      "website": "https://unique.network/quartz/",
+      "description": "The canary network of Unique Network, Quartz, gives you quick and easy access to the full spectrum of essential and advanced NFT Tools.",
+      "relayChain": "kusama",
+      "parachainId": "2095",
+      "genesisHash": "0xcd4d732201ebe5d6b014edda071c4203e16867305332301dc8d092044b28e554"
+    },
+    {
+      "name": "kilt",
+      "displayName": "KILT",
+      "tokens": [
+        "KILT"
+      ],
+      "website": "https://www.kilt.io/",
+      "description": "KILT is an open-source fat blockchain protocol for issuing claim-based verifiable, revocable, and anonymous credentials in the Web 3.0. It allows end users to claim arbitrary attributes about themselves, get them attested by trusted entities, and store the claims as self-sovereign credentials (certificates). ",
+      "relayChain": "kusama",
+      "parachainId": "2086",
+      "genesisHash": "0x411f057b9107718c9624d6aa4a3f23c1653898297f3d4d529d9bb6511a39dd21"
+    },
+    {
+      "name": "crust",
+      "displayName": "Crust Network",
+      "tokens": [
+        "CRU"
+      ],
+      "website": "https://crust.network",
+      "description": "Crust implements the incentive layer protocol for decentralized storage. It is adaptable to multiple storage layer protocols such as IPFS, and provides support for the application layer.",
+      "relayChain": "polkadot",
+      "parachainId": "2008",
+      "genesisHash": "0x8b404e7ed8789d813982b9cb4c8b664c05b3fbf433309f603af014ec9ce56a8c"
+    },
+    {
+      "name": "robonomics",
+      "displayName": "Robonomics",
+      "tokens": [
+        "XRT"
+      ],
+      "website": "https://robonomics.network",
+      "description": "The creation and development of a platform that provides tools for working with the robot economy network (briefly - the Robonomics platform) will allow designers of new cities and industrial zones to build trust among the autonomous robots services, provide direct user access for ordering products from autonomous factories and services of urban sensor networks.",
+      "relayChain": "kusama",
+      "parachainId": "2048",
+      "genesisHash": "0x631ccc82a078481584041656af292834e1ae6daab61d2875b4dd0c14bb9b17bc"
+    }
+  ]
+}
