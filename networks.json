@@ -9,7 +9,8 @@
       "website": "https://polkadot.network",
       "description": "",
       "relayChain": "polkadot",
-      "parachainId": "0"
+      "parachainId": "0",
+      "genesisHash": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3"
     },
     {
       "name": "kusama",
@@ -20,7 +21,8 @@
       "website": "https://kusama.network",
       "description": "",
       "relayChain": "kusama",
-      "parachainId": "0"
+      "parachainId": "0",
+      "genesisHash": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe"
     },
     {
       "name": "statemint",
@@ -28,10 +30,11 @@
       "tokens": [
         "DOT"
       ],
-      "website": "https://acala.network/",
+      "website": "https://www.parity.io//",
       "description": "Statemint, Parity Technologies’ generic assets parachain, will be proposed as one of the first “common good” parachains for the Polkadot network. It will provide functionality for deploying assets and entail far lower fees than other solutions.",
       "relayChain": "polkadot",
-      "parachainId": "1000"
+      "parachainId": "1000",
+      "genesisHash": "0x68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f"
     },
     {
       "name": "acala",
@@ -39,10 +42,11 @@
       "tokens": [
         "ACA"
       ],
-      "website": "https://www.parity.io/",
+      "website": "https://acala.network/",
       "description": "Acala is the all-in-one DeFi hub of Polkadot. Acala is an Ethereum-compatible platform for financial applications to use smart contracts or built-in protocols with out-of-the-box cross-chain capabilities and robust security.",
       "relayChain": "polkadot",
-      "parachainId": "2000"
+      "parachainId": "2000",
+      "genesisHash": "0xfc41b9bd8ef8fe53d58c7ea67c794c7ec9a73daf05e6d54b14ff6342c99ba64c"
     },
     {
       "name": "astar",
@@ -53,7 +57,8 @@
       "website": "https://astar.network",
       "description": "Astar is a Substrate Runtime Module Library which allows developers to add Plasma functions to their Substrate chain.",
       "relayChain": "polkadot",
-      "parachainId": "2006"
+      "parachainId": "2006",
+      "genesisHash": "0x9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6"
     },
     {
       "name": "parallel",
@@ -64,7 +69,8 @@
       "website": "https://parallel.fi/",
       "description": "Parallel is Lending Protocol and Staking Protocol Supporting both Kusama and Polkadot assets.",
       "relayChain": "polkadot",
-      "parachainId": "2012"
+      "parachainId": "2012",
+      "genesisHash": "0xe61a41c53f5dcd0beb09df93b34402aada44cb05117b71059cce40a2723a4e97"
     },
     {
       "name": "moonbeam",
@@ -75,7 +81,8 @@
       "website": "https://moonbeam.network",
       "description": "Moonbeam makes it easy to build decentralized applications on Polkadot — which means your DApps can integrate with other blockchains, including Bitcoin and Ethereum.",
       "relayChain": "polkadot",
-      "parachainId": "2004"
+      "parachainId": "2004",
+      "genesisHash": "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d"
     },
     {
       "name": "clover",
@@ -86,7 +93,8 @@
       "website": "https://clover.finance",
       "description": "Clover is a substrate based smart contract platform built for Polkadot, with added support for Ethereum developers to participate in the Polkadot ecosystem.",
       "relayChain": "polkadot",
-      "parachainId": "2002"
+      "parachainId": "2002",
+      "genesisHash": "0x5c7bd13edf349b33eb175ffae85210299e324d852916336027391536e686f267"
     },
     {
       "name": "nodle",
@@ -97,7 +105,8 @@
       "website": "https://nodle.io/",
       "description": "Nodle leverages Bluetooth Low Energy (BLE) via millions of smartphones and routers to allow enterprises and smart cities to connect IoT devices to the Internet at a low-cost while maintaining privacy and security.",
       "relayChain": "polkadot",
-      "parachainId": "2026"
+      "parachainId": "2026",
+      "genesisHash": "0xa3d114c2b8d0627c1aa9b134eafcf7d05ca561fdc19fb388bb9457f81809fb23"
     },
     {
       "name": "hydradx",
@@ -108,7 +117,8 @@
       "website": "https://hydradx.io",
       "description": "HydraDX is built as a parachain – specialized blockchain in the Polkadot network. It is benefiting from shared security, speed and flexibility of the Substrate framework while remaining optimized for a single purpose: enabling fluid programmable value exchange.",
       "relayChain": "polkadot",
-      "parachainId": "2034"
+      "parachainId": "2034",
+      "genesisHash": "0xd2a620c27ec5cbc5621ff9a522689895074f7cca0d08e7134a7804e1a3ba86fc"
     },
     {
       "name": "darwinia",
@@ -120,7 +130,8 @@
       "website": "https://darwinia.network/",
       "description": "Darwinia is a trustless multi-chain bridge hub network designed to become the foundational layer for the next generation of Web3.0 dapps and games. Darwinia Network uses a combination of ZK proofs and optimistic challenge technology to provide the most secure general bridging solution between heterogeneous chains such as Polkadot, Ethereum, Polygon, and BSC, without the need for custodial vaults or wrapping of tokens, so is also compatible with zero-liquidity assets such as NFTs.",
       "relayChain": "polkadot",
-      "parachainId": "2003"
+      "parachainId": "2003",
+      "genesisHash": "0x729cb8f2cf428adcf81fe69610edda32c5711b2ff17de747e8604a3587021db8"
     }
   ]
 }
