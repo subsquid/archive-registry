@@ -361,24 +361,6 @@
       ]
     },
     {
-      "network": "composable",
-      "providers": [
-        {
-          "name": "fatcat",
-          "url": "https://composable.subsquid.fatcat.ventures/v1/graphql"
-        }
-      ]
-    },
-    {
-      "network": "kylin",
-      "providers": [
-        {
-          "name": "fatcat",
-          "url": "https://kylin.subsquid.fatcat.ventures/v1/graphql"
-        }
-      ]
-    },
-    {
       "network": "robonomics",
       "providers": [
         {

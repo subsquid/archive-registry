@@ -339,6 +339,18 @@
       "relayChain": "kusama",
       "parachainId": "2048",
       "genesisHash": "0x631ccc82a078481584041656af292834e1ae6daab61d2875b4dd0c14bb9b17bc"
+    },
+    {
+      "name": "subsocial",
+      "displayName": "Subsocial",
+      "tokens": [
+        "SUB"
+      ],
+      "website": "http://subsocial.network/",
+      "description": "An open platform for decentralized social networks and marketplaces. It's censorship-resistant and has built-in monetization methods. Built with Polkadot and IPFS tech stack.",
+      "relayChain": "kusama",
+      "parachainId": "2100",
+      "genesisHash": "0x0bd72c1c305172e1275278aaeb3f161e02eccb7a819e63f62d47bd53a28189f8"
     }
   ]
 }
