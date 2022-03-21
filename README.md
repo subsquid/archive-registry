@@ -2,6 +2,21 @@
 
 A community-owned registry of [Squid archives](https://github.com/subsquid/squid/tree/master/substrate-archive) in a json format. 
 
+## Usage of `@subsquid/archive-registry`
+
+The registry is available as an npm package `@subsquid/archive-registry`. It can be used to conveniently access registry files and e.g. lookup a Squid Archive by network name:
+
+```typescript
+import { lookupArchive } from '@subsquid/archive-registry'
+
+const processor = new SubstrateProcessor("kusama_balances");
+processor.setDataSource({
+  archive: lookupArchive("kusama"), 
+  chain: "wss://kusama-rpc.polkadot.io",
+});
+
+```
+
 ## What is a Squid Archive?
 
 Squid Archive provides easy access to the historical on-chain data with little modifications. It is essential for [Squid pipelines](https://github.com/subsquid/squid-template). It can also be used on its own as a [GraphQL-based](https://graphql.org/) block explorer with powerful filtering and search capabilities over historical events and transactions.
