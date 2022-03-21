@@ -1,0 +1,20 @@
+name: bump
+on:
+  workflow_dispatch:
+
+jobs:
+  bump:
+    name: increase version numbers
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: configure git
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+      - name: npm install
+        run:  npm ci   
+      - name: bump version
+        run: npm version patch -m"bump to %s"

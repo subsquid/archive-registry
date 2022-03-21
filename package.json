@@ -1,5 +1,5 @@
 {
-  "name": "archive-registry",
+  "name": "@subsquid/archive-registry",
   "version": "0.0.1",
   "description": "A community-owned registry of Squid archives and networks",
   "main": "lib/index.js",
@@ -7,6 +7,7 @@
     "lib",
     "src",
     "README.md",
+    "LICENSE",
     "registry.json",
     "registryNew.json",
     "networks.json"
