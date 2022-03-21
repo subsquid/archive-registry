@@ -42,6 +42,12 @@ Please consider submitting a PR to subsquid/archive-registry github repo to exte
     return archive.providers[0].url
 }
 
+/**
+ * Get parachain information by its name
+ * 
+ * @param network Network name
+ * @returns Chain info incluing genesis hash, token symbols, parachainId if relevent, etc
+ */
 export function getChainInfo(network: string): Network {
     const filtered =  networkRegistry.networks.filter(n => n.name.toLowerCase() === network.toLowerCase()) 
     if (filtered.length === 0) {
