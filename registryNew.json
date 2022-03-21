@@ -92,19 +92,6 @@
       ]
     },
     {
-      "network": "phala",
-      "providers": [
-        {
-          "name": "subsquid",
-          "url": "https://phala.indexer.gc.subsquid.io/v4/graphql"
-        },
-        {
-          "name": "fatcat",
-          "url": "https://phala.subsquid.fatcat.ventures/v1/graphql"
-        }
-      ]
-    },
-    {
       "network": "quartz",
       "providers": [
         {
@@ -370,51 +357,6 @@
         {
           "name": "subsquid",
           "url": "https://hydradx.indexer.gc.subsquid.io/v4/graphql"
-        }
-      ]
-    },
-    {
-      "network": "chachacha",
-      "providers": [
-        {
-          "name": "fatcat",
-          "url": "https://chachacha.subsquid.fatcat.ventures/v1/graphql"
-        }
-      ]
-    },
-    {
-      "network": "composable",
-      "providers": [
-        {
-          "name": "fatcat",
-          "url": "https://composable.subsquid.fatcat.ventures/v1/graphql"
-        }
-      ]
-    },
-    {
-      "network": "equilibrium",
-      "providers": [
-        {
-          "name": "fatcat",
-          "url": "https://equilibrium.subsquid.fatcat.ventures/v1/graphql"
-        }
-      ]
-    },
-    {
-      "network": "joystream",
-      "providers": [
-        {
-          "name": "fatcat",
-          "url": "https://joystream.subsquid.fatcat.ventures/v1/graphql"
-        }
-      ]
-    },
-    {
-      "network": "kylin",
-      "providers": [
-        {
-          "name": "fatcat",
-          "url": "https://kylin.subsquid.fatcat.ventures/v1/graphql"
         }
       ]
     },
