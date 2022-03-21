@@ -387,6 +387,16 @@
         }
       ],
       "genesisHash": "0x631ccc82a078481584041656af292834e1ae6daab61d2875b4dd0c14bb9b17bc"
+    },
+    {
+      "network": "subsocial",
+      "genesisHash": "0x0bd72c1c305172e1275278aaeb3f161e02eccb7a819e63f62d47bd53a28189f8",
+      "providers": [
+        {
+          "name": "subsquid",
+          "url": "https://subsocial.indexer.gc.subsquid.io/v4/graphql"
+        }
+      ]
     }
   ]
 }
