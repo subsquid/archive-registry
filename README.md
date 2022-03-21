@@ -17,6 +17,16 @@ processor.setDataSource({
 
 ```
 
+There is also a convenience method to get network infomation by its name:
+```typescript
+import { getChainInfo } from '@subsquid/archive-registry'
+
+const info = getChainInfo("kusama")
+console.log(info.genesisHash) // 0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe
+```
+
+
+
 ## What is a Squid Archive?
 
 Squid Archive provides easy access to the historical on-chain data with little modifications. It is essential for [Squid pipelines](https://github.com/subsquid/squid-template). It can also be used on its own as a [GraphQL-based](https://graphql.org/) block explorer with powerful filtering and search capabilities over historical events and transactions.
