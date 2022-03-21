@@ -18,7 +18,7 @@ export function lookupArchive(
     network: string,
     genesis?: string,
     provider?: string): string {
-    //const { network, provider, genesis } = filter
+    
     let archives = archivesRegistry.archives.filter(a => a.network.toLowerCase() === network.toLowerCase())
     if (genesis) {
         archives = archives.filter(a => a.genesisHash?.toLowerCase() === genesis.toLowerCase())
