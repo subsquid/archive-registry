@@ -11,7 +11,7 @@ import { lookupArchive } from '@subsquid/archive-registry'
 
 const processor = new SubstrateProcessor("kusama_balances");
 processor.setDataSource({
-  archive: lookupArchive("kusama"), 
+  archive: lookupArchive("kusama")[0].url, 
   chain: "wss://kusama-rpc.polkadot.io",
 });
 

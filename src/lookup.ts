@@ -73,13 +73,24 @@ Please consider submitting a PR to subsquid/archive-registry github repo to exte
  * @param network Network name
  * @returns Chain info incluing genesis hash, token symbols, parachainId if relevent, etc
  */
-export function getChainInfo(network: string): Network {
-    const filtered =  networkRegistry.networks.filter(n => n.name.toLowerCase() === network.toLowerCase()) 
-    if (filtered.length === 0) {
+export function getChainInfo(network: string, genesis?: string): Network {
+    let matched =  networkRegistry.networks.filter(n => n.name.toLowerCase() === network.toLowerCase()) 
+    
+    if (genesis) {
+        matched = matched.filter(a => a.genesisHash?.toLowerCase() === genesis.toLowerCase())
+    }
+
+    if (matched.length === 0) {
         throw new Error(`Failed to get info on ${network}. \
 Please consider submitting a PR to subsquid/archive-registry github repo to extend the registry`) 
     }
-    return filtered[0]
+
+    if (matched.length > 1) {
+        throw new Error(`There are multiple networks with name ${network}. \
+Provide genesis hash option to prevent ambiguity.`)
+    }
+
+    return matched[0]
 }
 
 export async function getGenesisHash(endpoint: string): Promise<string> {
