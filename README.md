@@ -17,6 +17,8 @@ processor.setDataSource({
 
 ```
 
+`lookupArchive()` supports additional filtering by genesis hash, archive version (semver range) and docker image names (of archive and archive gateway).
+
 There is also a convenience method to get network infomation by its name:
 ```typescript
 import { getChainInfo } from '@subsquid/archive-registry'
