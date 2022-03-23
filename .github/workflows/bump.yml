@@ -18,7 +18,7 @@ jobs:
         run:  npm ci
       - name: update changelog
         run: | 
-          changelog -p
+          npx generate-changelog -p
           git add CHANGELOG.md
           git commit -m 'updated CHANGELOG.md'
       - name: bump version
