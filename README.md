@@ -58,4 +58,4 @@ To learn more how to construct the queries, consult [Hasura Docs](https://hasura
 
 ## How to contribute
 
-To contribute a new archive, make a PR updating `registry.json` specifying the network name and the url.
+To contribute a new archive, make a PR updating `archives.json` specifying the network name and the url. Further, one has to regenerate types in `src/chains.ts` by running `npm run gen-types`. This will update the list of supported chain names and makes it easier to developers to discover which lookups will succeed at compile time.
