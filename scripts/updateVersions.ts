@@ -21,7 +21,7 @@ async function updateVersions() {
         a.push(archive)
     }
     console.log(`Updating the registry...`)
-    fs.writeFileSync(`${__dirname}/../registryNew.json`, JSON.stringify({ archives: a }, null, 2))
+    fs.writeFileSync(`${__dirname}/../archives.json`, JSON.stringify({ archives: a }, null, 2))
 }
 
 updateVersions().then(() => console.log('Done!'))
