@@ -1,13 +1,10 @@
-import fs from "fs"
 import fetch from "node-fetch"
 import { AbortController } from "node-abort-controller";
 import assert from "assert"
 import { satisfies } from "semver"
-import { Network, ArchiveRegistry, NetworkRegistry, ArchiveProvider } from "."
-
-
-export const networkRegistry = JSON.parse(fs.readFileSync(`${__dirname}/../networks.json`).toString()) as NetworkRegistry
-export const archivesRegistry = JSON.parse(fs.readFileSync(`${__dirname}/../registryNew.json`).toString()) as ArchiveRegistry
+import { Network, ArchiveProvider } from "."
+import { ChainName } from "./chains";
+import { archivesRegistry, networkRegistry } from "./registry";
 
 /**
  * Lookup an archive endpoint by network name, provider (optional) and genesis hash (optional)
@@ -22,7 +19,7 @@ export const archivesRegistry = JSON.parse(fs.readFileSync(`${__dirname}/../regi
  * @throws If none matching archive is found or if there's ambiguity in choosing the network
  */
 export function lookupArchive(
-    network: string,
+    network: ChainName,
     semver?: string,
     genesis?: string,
     image?: string,

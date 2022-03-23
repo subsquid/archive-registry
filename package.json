@@ -17,6 +17,7 @@
   "scripts": {
     "update-versions": "npx ts-node scripts/updateVersions.ts",
     "verify-hashes": "npx ts-node scripts/verifyGenesisHashes.ts",
+    "gen-types": "npx ts-node scripts/generateTypes.ts",
     "build": "rm -rf lib && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

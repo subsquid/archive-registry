@@ -1,3 +1,5 @@
+import { ChainName } from "./chains";
+
 export interface DataSource {
     archive: string,
     chain: string
@@ -12,7 +14,7 @@ export interface ArchiveProvider {
 }
 
 export interface ArchiveEntry {
-    network: string,
+    network: ChainName,
     genesisHash?: string
     providers: ArchiveProvider[]
 }

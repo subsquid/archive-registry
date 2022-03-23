@@ -1,5 +1,5 @@
 import fs from "fs"
-import { archivesRegistry, getGenesisHash } from '../src/lookup'
+import { archivesRegistry, getGenesisHash } from '../src/'
 
 
 async function verifyGenesisHashes() {

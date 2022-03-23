@@ -1,5 +1,5 @@
 import fs from "fs"
-import { archivesRegistry, getVersion } from '../src/lookup'
+import { archivesRegistry, getVersion } from '../src/'
 
 
 async function updateVersions() {
