@@ -5,11 +5,13 @@
       "providers": [
         {
           "name": "subsquid",
-          "url": "https://calamari.indexer.gc.subsquid.io/v4/graphql"
+          "url": "https://calamari.indexer.gc.subsquid.io/v4/graphql",
+          "version": "5.0.0-alpha.32"
         },
         {
           "name": "fatcat",
-          "url": "https://calamari.subsquid.fatcat.ventures/v1/graphql"
+          "url": "https://calamari.subsquid.fatcat.ventures/v1/graphql",
+          "version": "5.0.0-alpha.28"
         }
       ],
       "genesisHash": "0x4ac80c99289841dd946ef92765bf659a307d39189b3ce374a92b5f0415ee17a1"
@@ -19,11 +21,13 @@
       "providers": [
         {
           "name": "subsquid",
-          "url": "https://pioneer.indexer.gc.subsquid.io/v4/graphql"
+          "url": "https://pioneer.indexer.gc.subsquid.io/v4/graphql",
+          "version": "5.0.0-alpha.32"
         },
         {
           "name": "fatcat",
-          "url": "https://pioneer.subsquid.fatcat.ventures/v1/graphql"
+          "url": "https://pioneer.subsquid.fatcat.ventures/v1/graphql",
+          "version": "5.0.0-alpha.28"
         }
       ],
       "genesisHash": "0xf22b7850cdd5a7657bbfd90ac86441275bbc57ace3d2698a740c7b0ec4de5ec3"
@@ -33,11 +37,13 @@
       "providers": [
         {
           "name": "subsquid",
-          "url": "https://statemint.indexer.gc.subsquid.io/v4/graphql"
+          "url": "https://statemint.indexer.gc.subsquid.io/v4/graphql",
+          "version": "5.0.0-alpha.32"
         },
         {
           "name": "fatcat",
-          "url": "https://statemint.subsquid.fatcat.ventures/v1/graphql"
+          "url": "https://statemint.subsquid.fatcat.ventures/v1/graphql",
+          "version": "5.0.0-alpha.28"
         }
       ],
       "genesisHash": "0x68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f"
@@ -47,11 +53,13 @@
       "providers": [
         {
           "name": "subsquid",
-          "url": "https://parallel.indexer.gc.subsquid.io/v4/graphql"
+          "url": "https://parallel.indexer.gc.subsquid.io/v4/graphql",
+          "version": "5.0.0-alpha.32"
         },
         {
           "name": "fatcat",
-          "url": "https://parallel.subsquid.fatcat.ventures/v1/graphql"
+          "url": "https://parallel.subsquid.fatcat.ventures/v1/graphql",
+          "version": "5.0.0-alpha.28"
         }
       ],
       "genesisHash": "0xe61a41c53f5dcd0beb09df93b34402aada44cb05117b71059cce40a2723a4e97"
@@ -61,7 +69,8 @@
       "providers": [
         {
           "name": "subsquid",
-          "url": "https://moonbeam-beta.indexer.gc.subsquid.io/v4/graphql"
+          "url": "https://moonbeam-beta.indexer.gc.subsquid.io/v4/graphql",
+          "version": "5.0.0-alpha.32"
         }
       ],
       "genesisHash": "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d"
@@ -71,11 +80,13 @@
       "providers": [
         {
           "name": "subsquid",
-          "url": "https://clover.indexer.gc.subsquid.io/v4/graphql"
+          "url": "https://clover.indexer.gc.subsquid.io/v4/graphql",
+          "version": "5.0.0-alpha.32"
         },
         {
           "name": "fatcat",
-          "url": "https://clover.subsquid.fatcat.ventures/v1/graphql"
+          "url": "https://clover.subsquid.fatcat.ventures/v1/graphql",
+          "version": "5.0.0-alpha.28"
         }
       ],
       "genesisHash": "0x5c7bd13edf349b33eb175ffae85210299e324d852916336027391536e686f267"
@@ -85,7 +96,8 @@
       "providers": [
         {
           "name": "fatcat",
-          "url": "https://nodle.subsquid.fatcat.ventures/v1/graphql"
+          "url": "https://nodle.subsquid.fatcat.ventures/v1/graphql",
+          "version": "5.0.0-alpha.28"
         }
       ],
       "genesisHash": "0xa3d114c2b8d0627c1aa9b134eafcf7d05ca561fdc19fb388bb9457f81809fb23"
@@ -95,11 +107,13 @@
       "providers": [
         {
           "name": "subsquid",
-          "url": "https://quartz.indexer.gc.subsquid.io/v4/graphql"
+          "url": "https://quartz.indexer.gc.subsquid.io/v4/graphql",
+          "version": "5.0.0-alpha.32"
         },
         {
           "name": "fatcat",
-          "url": "https://quartz.subsquid.fatcat.ventures/v1/graphql"
+          "url": "https://quartz.subsquid.fatcat.ventures/v1/graphql",
+          "version": "5.0.0-alpha.28"
         }
       ],
       "genesisHash": "0xcd4d732201ebe5d6b014edda071c4203e16867305332301dc8d092044b28e554"
@@ -109,11 +123,13 @@
       "providers": [
         {
           "name": "subsquid",
-          "url": "https://heiko.indexer.gc.subsquid.io/v4/graphql"
+          "url": "https://heiko.indexer.gc.subsquid.io/v4/graphql",
+          "version": "5.0.0-alpha.32"
         },
         {
           "name": "fatcat",
-          "url": "https://heiko.subsquid.fatcat.ventures/v1/graphql"
+          "url": "https://heiko.subsquid.fatcat.ventures/v1/graphql",
+          "version": "5.0.0-alpha.28"
         }
       ],
       "genesisHash": "0x64a1c658a48b2e70a7fb1ad4c39eea35022568c20fc44a6e2e3d0a57aee6053b"
@@ -123,11 +139,13 @@
       "providers": [
         {
           "name": "subsquid",
-          "url": "https://kintsugi.indexer.gc.subsquid.io/v4/graphql"
+          "url": "https://kintsugi.indexer.gc.subsquid.io/v4/graphql",
+          "version": "5.0.0-alpha.32"
         },
         {
           "name": "fatcat",
-          "url": "https://kintsugi.subsquid.fatcat.ventures/v1/graphql"
+          "url": "https://kintsugi.subsquid.fatcat.ventures/v1/graphql",
+          "version": "5.0.0-alpha.29"
         }
       ],
       "genesisHash": "0x9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b"
@@ -137,11 +155,13 @@
       "providers": [
         {
           "name": "subsquid",
-          "url": "https://basilisk.indexer.gc.subsquid.io/v4/graphql"
+          "url": "https://basilisk.indexer.gc.subsquid.io/v4/graphql",
+          "version": "5.0.0-alpha.32"
         },
         {
           "name": "fatcat",
-          "url": "https://basilisk.subsquid.fatcat.ventures/v1/graphql"
+          "url": "https://basilisk.subsquid.fatcat.ventures/v1/graphql",
+          "version": "5.0.0-alpha.28"
         }
       ],
       "genesisHash": "0xa85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755"
@@ -151,11 +171,13 @@
       "providers": [
         {
           "name": "subsquid",
-          "url": "https://altair.indexer.gc.subsquid.io/v4/graphql"
+          "url": "https://altair.indexer.gc.subsquid.io/v4/graphql",
+          "version": "5.0.0-alpha.32"
         },
         {
           "name": "fatcat",
-          "url": "https://altair.subsquid.fatcat.ventures/v1/graphql"
+          "url": "https://altair.subsquid.fatcat.ventures/v1/graphql",
+          "version": "5.0.0-alpha.28"
         }
       ],
       "genesisHash": "0xaa3876c1dc8a1afcc2e9a685a49ff7704cfd36ad8c90bf2702b9d1b00cc40011"
@@ -165,11 +187,13 @@
       "providers": [
         {
           "name": "subsquid",
-          "url": "https://acala.indexer.gc.subsquid.io/v4/graphql"
+          "url": "https://acala.indexer.gc.subsquid.io/v4/graphql",
+          "version": "5.0.0-alpha.32"
         },
         {
           "name": "fatcat",
-          "url": "https://acala.subsquid.fatcat.ventures/v1/graphql"
+          "url": "https://acala.subsquid.fatcat.ventures/v1/graphql",
+          "version": "5.0.0-alpha.28"
         }
       ],
       "genesisHash": "0xfc41b9bd8ef8fe53d58c7ea67c794c7ec9a73daf05e6d54b14ff6342c99ba64c"
@@ -179,7 +203,8 @@
       "providers": [
         {
           "name": "subsquid",
-          "url": "https://kusama.indexer.gc.subsquid.io/v4/graphql"
+          "url": "https://kusama.indexer.gc.subsquid.io/v4/graphql",
+          "version": "5.0.0-alpha.32"
         }
       ],
       "genesisHash": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe"
@@ -189,11 +214,13 @@
       "providers": [
         {
           "name": "subsquid",
-          "url": "https://polkadot.indexer.gc.subsquid.io/v4/graphql"
+          "url": "https://polkadot.indexer.gc.subsquid.io/v4/graphql",
+          "version": "5.0.0-alpha.32"
         },
         {
           "name": "fatcat",
-          "url": "https://polkadot.subsquid.fatcat.ventures/v1/graphql"
+          "url": "https://polkadot.subsquid.fatcat.ventures/v1/graphql",
+          "version": "5.0.0-alpha.31"
         }
       ],
       "genesisHash": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3"
@@ -203,7 +230,8 @@
       "providers": [
         {
           "name": "subsquid",
-          "url": "https://karura.indexer.gc.subsquid.io/v4/graphql"
+          "url": "https://karura.indexer.gc.subsquid.io/v4/graphql",
+          "version": "5.0.0-alpha.32"
         }
       ],
       "genesisHash": "0xbaf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b"
@@ -213,7 +241,8 @@
       "providers": [
         {
           "name": "subsquid",
-          "url": "https://crust.indexer.gc.subsquid.io/v4/graphql"
+          "url": "https://crust.indexer.gc.subsquid.io/v4/graphql",
+          "version": "5.0.0-alpha.32"
         }
       ],
       "genesisHash": "0x8b404e7ed8789d813982b9cb4c8b664c05b3fbf433309f603af014ec9ce56a8c"
@@ -223,11 +252,13 @@
       "providers": [
         {
           "name": "subsquid",
-          "url": "https://bifrost.indexer.gc.subsquid.io/v4/graphql"
+          "url": "https://bifrost.indexer.gc.subsquid.io/v4/graphql",
+          "version": "5.0.0-alpha.32"
         },
         {
           "name": "fatcat",
-          "url": "https://bifrost.subsquid.fatcat.ventures/v1/graphql"
+          "url": "https://bifrost.subsquid.fatcat.ventures/v1/graphql",
+          "version": "4.2.0-alpha.9"
         }
       ],
       "genesisHash": "0x9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed"
@@ -237,11 +268,13 @@
       "providers": [
         {
           "name": "subsquid",
-          "url": "https://statemine-full.indexer.gc.subsquid.io/v4/graphql"
+          "url": "https://statemine-full.indexer.gc.subsquid.io/v4/graphql",
+          "version": "5.0.0-alpha.32"
         },
         {
           "name": "fatcat",
-          "url": "https://statemine.subsquid.fatcat.ventures/v1/graphql"
+          "url": "https://statemine.subsquid.fatcat.ventures/v1/graphql",
+          "version": "5.0.0-alpha.28"
         }
       ],
       "genesisHash": "0x48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a"
@@ -251,11 +284,13 @@
       "providers": [
         {
           "name": "subsquid",
-          "url": "https://khala.indexer.gc.subsquid.io/v4/graphql"
+          "url": "https://khala.indexer.gc.subsquid.io/v4/graphql",
+          "version": "5.0.0-alpha.32"
         },
         {
           "name": "fatcat",
-          "url": "https://khala.subsquid.fatcat.ventures/v1/graphql"
+          "url": "https://khala.subsquid.fatcat.ventures/v1/graphql",
+          "version": "5.0.0-alpha.31"
         }
       ],
       "genesisHash": "0xd43540ba6d3eb4897c28a77d48cb5b729fea37603cbbfc7a86a73b72adb3be8d"
@@ -265,11 +300,8 @@
       "providers": [
         {
           "name": "subsquid",
-          "url": "https://darwinia.indexer.gc.subsquid.io/v4/graphql"
-        },
-        {
-          "name": "fatcat",
-          "url": "https://darwinia.subsquid.fatcat.ventures/v1/graphql"
+          "url": "https://darwinia.indexer.gc.subsquid.io/v4/graphql",
+          "version": "5.0.0-alpha.32"
         }
       ],
       "genesisHash": "0x729cb8f2cf428adcf81fe69610edda32c5711b2ff17de747e8604a3587021db8"
@@ -279,11 +311,13 @@
       "providers": [
         {
           "name": "subsquid",
-          "url": "https://kilt.indexer.gc.subsquid.io/v4/graphql"
+          "url": "https://kilt.indexer.gc.subsquid.io/v4/graphql",
+          "version": "5.0.0-alpha.32"
         },
         {
           "name": "fatcat",
-          "url": "https://kilt.subsquid.fatcat.ventures/v1/graphql"
+          "url": "https://kilt.subsquid.fatcat.ventures/v1/graphql",
+          "version": "5.0.0-alpha.28"
         }
       ],
       "genesisHash": "0x411f057b9107718c9624d6aa4a3f23c1653898297f3d4d529d9bb6511a39dd21"
@@ -293,7 +327,8 @@
       "providers": [
         {
           "name": "subsquid",
-          "url": "https://moonriver-beta.indexer.gc.subsquid.io/v4/graphql"
+          "url": "https://moonriver-beta.indexer.gc.subsquid.io/v4/graphql",
+          "version": "5.0.0-alpha.32"
         }
       ],
       "genesisHash": "0x401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b"
@@ -303,7 +338,8 @@
       "providers": [
         {
           "name": "subsquid",
-          "url": "https://astar-beta.indexer.gc.subsquid.io/v4/graphql"
+          "url": "https://astar-beta.indexer.gc.subsquid.io/v4/graphql",
+          "version": "5.0.0-alpha.32"
         }
       ],
       "genesisHash": "0x9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6"
@@ -313,7 +349,8 @@
       "providers": [
         {
           "name": "subsquid",
-          "url": "https://shiden-beta.indexer.gc.subsquid.io/v4/graphql"
+          "url": "https://shiden-beta.indexer.gc.subsquid.io/v4/graphql",
+          "version": "5.0.0-alpha.32"
         }
       ],
       "genesisHash": "0xf1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108"
@@ -323,7 +360,8 @@
       "providers": [
         {
           "name": "subsquid",
-          "url": "https://hydradx.indexer.gc.subsquid.io/v4/graphql"
+          "url": "https://hydradx.indexer.gc.subsquid.io/v4/graphql",
+          "version": "5.0.0-alpha.32"
         }
       ],
       "genesisHash": "0xd2a620c27ec5cbc5621ff9a522689895074f7cca0d08e7134a7804e1a3ba86fc"
@@ -333,7 +371,8 @@
       "providers": [
         {
           "name": "fatcat",
-          "url": "https://robonomics.subsquid.fatcat.ventures/v1/graphql"
+          "url": "https://robonomics.subsquid.fatcat.ventures/v1/graphql",
+          "version": "5.0.0-alpha.28"
         }
       ],
       "genesisHash": "0x631ccc82a078481584041656af292834e1ae6daab61d2875b4dd0c14bb9b17bc"
@@ -344,7 +383,8 @@
       "providers": [
         {
           "name": "subsquid",
-          "url": "https://subsocial.indexer.gc.subsquid.io/v4/graphql"
+          "url": "https://subsocial.indexer.gc.subsquid.io/v4/graphql",
+          "version": "5.0.0-alpha.32"
         }
       ]
     }
