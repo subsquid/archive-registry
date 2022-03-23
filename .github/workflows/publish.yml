@@ -1,6 +1,7 @@
 name: publish
 on:
   workflow_dispatch: # manually run 
+    inputs:
       releaseTag:
         description: 'Tag the release (next, latest)'
         required: false
