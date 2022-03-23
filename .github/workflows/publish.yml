@@ -32,7 +32,8 @@ jobs:
           npm ci
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
-      
+      - name: npm build  
+        run: npm run build      
       - name: npm publish
         run: |
           npm publish --tag $RELEASE_TAG --access public
