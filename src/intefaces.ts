@@ -4,8 +4,10 @@ export interface DataSource {
 }
 
 export interface ArchiveProvider {
-    name: string,
-    version?: string,
+    provider: string,
+    version: string,
+    image: string,
+    gateway: string,
     url: string
 }
 

@@ -2,22 +2,31 @@ import fs from "fs"
 import fetch from "node-fetch"
 import { AbortController } from "node-abort-controller";
 import assert from "assert"
-import { Network, ArchiveRegistry, NetworkRegistry } from "."
+import { satisfies } from "semver"
+import { Network, ArchiveRegistry, NetworkRegistry, ArchiveProvider } from "."
 
 
 export const networkRegistry = JSON.parse(fs.readFileSync(`${__dirname}/../networks.json`).toString()) as NetworkRegistry
 export const archivesRegistry = JSON.parse(fs.readFileSync(`${__dirname}/../registryNew.json`).toString()) as ArchiveRegistry
 
 /**
- * Lookup an archive endpoint by name, provider (optional) and genesis hash (optional)
+ * Lookup an archive endpoint by network name, provider (optional) and genesis hash (optional)
  * 
- * @param Filter for the lookup
+ * @param network network name for lookup
+ * @param genesis network genesis hex string (must start with "0x...")
+ * @param semver semver range to match archive image version 
+ * @param image archive image name
+ * @param gateway archive gateway image 
+ * 
  * @returns Archive endpoint url matching the filter
+ * @throws If none matching archive is found or if there's ambiguity in choosing the network
  */
 export function lookupArchive(
     network: string,
+    semver?: string,
     genesis?: string,
-    provider?: string): { url: string, version: string } {
+    image?: string,
+    gateway?: string): ArchiveProvider[] {
     
     let archives = archivesRegistry.archives.filter(a => a.network.toLowerCase() === network.toLowerCase())
     if (genesis) {
@@ -29,17 +38,33 @@ export function lookupArchive(
 Please consider submitting a PR to subsquid/archive-registry github repo to extend the registry`)
     }
     
-    const archive = archives[0]
-    if (provider) {
-        const filtered = archive.providers.filter(p => p.name.toLowerCase() === provider.toLowerCase()) 
-        if (filtered.length === 0) {
-            throw new Error(`Failed to lookup a matching archive. \
-Please consider submitting a PR to subsquid/archive-registry github repo to extend the registry`)
-        }
-        return filtered[0]
+    if (archives.length > 1) {
+        throw new Error(`There are multiple networks with name ${network}. \
+Provide genesis hash option to prevent ambiguity.`)
     }
-    // take the first one by default (which is subsquid)
-    return archive.providers[0]
+
+    let matched = archives[0].providers
+    if (semver) {
+        // if (valid(semver) === null) {
+        //     throw new Error(`${semver} is not a valid semver range`)
+        // }
+        matched = matched.filter(p => satisfies(p.version, semver))
+    }
+
+    if (image) {
+        matched = matched.filter(p => p.image === image)
+    }
+
+    if (gateway) {
+        matched = matched.filter(p => p.gateway === gateway)
+    }
+
+    if (matched.length === 0) {
+        throw new Error(`Failed to lookup a matching archive. \
+Please consider submitting a PR to subsquid/archive-registry github repo to extend the registry`)
+    }
+    
+    return matched
 }
 
 /**
