@@ -8,20 +8,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          ref: release
+        
       - name: configure git
         run: |
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
-      - name: create local release branch
-        run: git fetch origin release:release
+
       - name: npm install
         run:  npm ci   
       - name: bump version
         run: npm version patch -m"bump to %s"
-      - name: merge back release branch
-        run: |
-          git checkout "${GITHUB_REF##*/}"
-          git merge release
-          git push origin "${GITHUB_REF##*/}"
+      - name: git push
+        run: git push origin 
