@@ -5,6 +5,7 @@ export interface DataSource {
 
 export interface ArchiveProvider {
     name: string,
+    version?: string,
     url: string
 }
 
