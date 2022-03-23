@@ -20,7 +20,6 @@ jobs:
       
       - name: Authenticate with Registry
         run: |
-          npm logout
           echo "always-auth=true" > .npmrc
           echo "@subsquid:registry=https://registry.npmjs.org/" >> .npmrc
           echo "registry=https://registry.npmjs.org/" >> .npmrc
