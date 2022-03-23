@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 0
+          ref: release
       - name: configure git
         run: |
           git config --global user.name 'github-actions'
