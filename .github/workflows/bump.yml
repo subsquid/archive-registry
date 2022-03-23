@@ -17,6 +17,6 @@ jobs:
       - name: npm install
         run:  npm ci   
       - name: bump version
-        run: npm version patch -m"bump to %s"
+        run: npm version patch -m "bump to %s"
       - name: git push
         run: git push origin 
