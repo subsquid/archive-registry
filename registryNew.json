@@ -62,10 +62,6 @@
         {
           "name": "subsquid",
           "url": "https://moonbeam-beta.indexer.gc.subsquid.io/v4/graphql"
-        },
-        {
-          "name": "fatcat",
-          "url": "https://moonbeam.subsquid.fatcat.ventures/v1/graphql"
         }
       ],
       "genesisHash": "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d"
@@ -88,10 +84,6 @@
       "network": "nodle",
       "providers": [
         {
-          "name": "subsquid",
-          "url": "https://nodle.indexer.gc.subsquid.io/v4/graphql"
-        },
-        {
           "name": "fatcat",
           "url": "https://nodle.subsquid.fatcat.ventures/v1/graphql"
         }
@@ -111,20 +103,6 @@
         }
       ],
       "genesisHash": "0xcd4d732201ebe5d6b014edda071c4203e16867305332301dc8d092044b28e554"
-    },
-    {
-      "network": "genshiro",
-      "providers": [
-        {
-          "name": "subsquid",
-          "url": "https://genshiro.indexer.gc.subsquid.io/v4/graphql"
-        },
-        {
-          "name": "fatcat",
-          "url": "https://genshiro.subsquid.fatcat.ventures/v1/graphql"
-        }
-      ],
-      "genesisHash": "0x615853d331292f8801d0171e941ba9327475e5b71de24f1a47b06300f1287e94"
     },
     {
       "network": "heiko",
@@ -202,10 +180,6 @@
         {
           "name": "subsquid",
           "url": "https://kusama.indexer.gc.subsquid.io/v4/graphql"
-        },
-        {
-          "name": "fatcat",
-          "url": "https://kusama.subsquid.fatcat.ventures/v1/graphql"
         }
       ],
       "genesisHash": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe"
@@ -230,10 +204,6 @@
         {
           "name": "subsquid",
           "url": "https://karura.indexer.gc.subsquid.io/v4/graphql"
-        },
-        {
-          "name": "fatcat",
-          "url": "https://karura.subsquid.fatcat.ventures/v1/graphql"
         }
       ],
       "genesisHash": "0xbaf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b"
@@ -244,14 +214,6 @@
         {
           "name": "subsquid",
           "url": "https://crust.indexer.gc.subsquid.io/v4/graphql"
-        },
-        {
-          "name": "subsquid",
-          "url": "https://crust.indexer.gc.subsquid.io/v4/graphql"
-        },
-        {
-          "name": "fatcat",
-          "url": "https://crust.subsquid.fatcat.ventures/v1/graphql"
         }
       ],
       "genesisHash": "0x8b404e7ed8789d813982b9cb4c8b664c05b3fbf433309f603af014ec9ce56a8c"
@@ -332,10 +294,6 @@
         {
           "name": "subsquid",
           "url": "https://moonriver-beta.indexer.gc.subsquid.io/v4/graphql"
-        },
-        {
-          "name": "fatcat",
-          "url": "https://moonriver.subsquid.fatcat.ventures/v1/graphql"
         }
       ],
       "genesisHash": "0x401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b"
@@ -346,10 +304,6 @@
         {
           "name": "subsquid",
           "url": "https://astar-beta.indexer.gc.subsquid.io/v4/graphql"
-        },
-        {
-          "name": "fatcat",
-          "url": "https://astar.subsquid.fatcat.ventures/v1/graphql"
         }
       ],
       "genesisHash": "0x9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6"
@@ -360,10 +314,6 @@
         {
           "name": "subsquid",
           "url": "https://shiden-beta.indexer.gc.subsquid.io/v4/graphql"
-        },
-        {
-          "name": "fatcat",
-          "url": "https://shiden.subsquid.fatcat.ventures/v1/graphql"
         }
       ],
       "genesisHash": "0xf1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108"
