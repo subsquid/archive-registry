@@ -1,3 +1,9 @@
+#### 0.0.5 (2022-03-28)
+
+##### New Features
+
+*  set robonomics archive to squid ([#13](https://github.com/subsquid/archive-registry/pull/13)) ([33bfad67](https://github.com/subsquid/archive-registry/commit/33bfad67759338a06aecbcbf4f1c85dd63f3cf29))
+
 #### 0.0.4 (2022-03-23)
 
 ##### Continuous Integration
