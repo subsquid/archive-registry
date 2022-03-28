@@ -454,9 +454,9 @@
       "network": "robonomics",
       "providers": [
         {
-          "provider": "fatcat",
-          "url": "https://robonomics.subsquid.fatcat.ventures/v1/graphql",
-          "version": "5.0.0-alpha.28",
+          "provider": "subsquid",
+          "url": "https://robonomics.indexer.gc.subsquid.io/v4/graphql",
+          "version": "5.0.0-alpha.32",
           "image": "hydra-indexer",
           "gateway": "hydra-indexer-gateway"
         }
