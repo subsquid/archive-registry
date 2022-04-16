@@ -1,6 +1,6 @@
 {
   "name": "@subsquid/archive-registry",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A community-owned registry of Squid archives and networks",
   "main": "lib/index.js",
   "files": [
