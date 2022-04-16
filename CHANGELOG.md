@@ -1,3 +1,9 @@
+#### 0.0.6 (2022-04-16)
+
+##### New Features
+
+*  add moonbase ([#14](https://github.com/subsquid/archive-registry/pull/14)) ([05875819](https://github.com/subsquid/archive-registry/commit/05875819d3dd2fe04a7353a87fdd9bb0b9ebd249))
+
 #### 0.0.5 (2022-03-28)
 
 ##### New Features
