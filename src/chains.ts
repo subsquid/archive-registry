@@ -4,4 +4,4 @@
 // Run npm run gen-types to generate this file from archives.
 //
 
-export type ChainName = "calamari"|"pioneer"|"statemint"|"parallel"|"moonbeam"|"clover"|"nodle"|"quartz"|"heiko"|"kintsugi"|"basilisk"|"altair"|"acala"|"kusama"|"polkadot"|"karura"|"crust"|"bifrost"|"statemine"|"khala"|"darwinia"|"kilt"|"moonriver"|"astar"|"shiden"|"hydradx"|"robonomics"|"subsocial"|"moonbase"
+export type ChainName = "calamari"|"pioneer"|"statemint"|"parallel"|"moonbeam"|"clover"|"nodle"|"quartz"|"heiko"|"kintsugi"|"basilisk"|"altair"|"acala"|"kusama"|"polkadot"|"karura"|"crust"|"bifrost"|"statemine"|"khala"|"darwinia"|"kilt"|"moonriver"|"astar"|"shiden"|"hydradx"|"robonomics"|"subsocial"|"moonbase"|"shibuya"
