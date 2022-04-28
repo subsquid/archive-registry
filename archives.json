@@ -73,7 +73,7 @@
         {
           "provider": "fatcat",
           "url": "https://parallel.subsquid.fatcat.ventures/v1/graphql",
-          "version": "5.0.0-alpha.28",
+          "version": "5.0.0-alpha.31",
           "image": "hydra-indexer",
           "gateway": "hydra-indexer-gateway"
         }
@@ -119,7 +119,7 @@
         {
           "provider": "fatcat",
           "url": "https://nodle.subsquid.fatcat.ventures/v1/graphql",
-          "version": "5.0.0-alpha.28",
+          "version": "5.0.0-alpha.31",
           "image": "hydra-indexer",
           "gateway": "hydra-indexer-gateway"
         }
@@ -159,7 +159,7 @@
         {
           "provider": "fatcat",
           "url": "https://heiko.subsquid.fatcat.ventures/v1/graphql",
-          "version": "5.0.0-alpha.28",
+          "version": "5.0.0-alpha.31",
           "image": "hydra-indexer",
           "gateway": "hydra-indexer-gateway"
         }
@@ -179,7 +179,7 @@
         {
           "provider": "fatcat",
           "url": "https://kintsugi.subsquid.fatcat.ventures/v1/graphql",
-          "version": "5.0.0-alpha.29",
+          "version": "5.0.0-alpha.31",
           "image": "hydra-indexer",
           "gateway": "hydra-indexer-gateway"
         }
@@ -358,7 +358,7 @@
         {
           "provider": "fatcat",
           "url": "https://khala.subsquid.fatcat.ventures/v1/graphql",
-          "version": "5.0.0-alpha.31",
+          "version": "5.0.0-alpha.32",
           "image": "hydra-indexer",
           "gateway": "hydra-indexer-gateway"
         }
