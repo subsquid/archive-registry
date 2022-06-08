@@ -363,6 +363,18 @@
       "relayChain": null,
       "parachainId": null,
       "genesisHash": "0x91bc6e169807aaa54802737e1c504b2577d4fafedd5a02c10293b1cd60e39527"
+    },
+    {
+      "name": "shibuya",
+      "displayName": "Shibuya Testnet",
+      "tokens": [
+        "SBY"
+      ],
+      "website": "https://moonbeam.network/",
+      "description": "",
+      "relayChain": null,
+      "parachainId": null,
+      "genesisHash": "0x91bc6e169807aaa54802737e1c504b2577d4fafedd5a02c10293b1cd60e39527"
     }
   ]
 }

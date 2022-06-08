@@ -73,7 +73,7 @@
         {
           "provider": "fatcat",
           "url": "https://parallel.subsquid.fatcat.ventures/v1/graphql",
-          "version": "5.0.0-alpha.28",
+          "version": "5.0.0-alpha.31",
           "image": "hydra-indexer",
           "gateway": "hydra-indexer-gateway"
         }
@@ -119,7 +119,7 @@
         {
           "provider": "fatcat",
           "url": "https://nodle.subsquid.fatcat.ventures/v1/graphql",
-          "version": "5.0.0-alpha.28",
+          "version": "5.0.0-alpha.31",
           "image": "hydra-indexer",
           "gateway": "hydra-indexer-gateway"
         }
@@ -159,7 +159,7 @@
         {
           "provider": "fatcat",
           "url": "https://heiko.subsquid.fatcat.ventures/v1/graphql",
-          "version": "5.0.0-alpha.28",
+          "version": "5.0.0-alpha.31",
           "image": "hydra-indexer",
           "gateway": "hydra-indexer-gateway"
         }
@@ -179,7 +179,7 @@
         {
           "provider": "fatcat",
           "url": "https://kintsugi.subsquid.fatcat.ventures/v1/graphql",
-          "version": "5.0.0-alpha.29",
+          "version": "5.0.0-alpha.31",
           "image": "hydra-indexer",
           "gateway": "hydra-indexer-gateway"
         }
@@ -358,7 +358,7 @@
         {
           "provider": "fatcat",
           "url": "https://khala.subsquid.fatcat.ventures/v1/graphql",
-          "version": "5.0.0-alpha.31",
+          "version": "5.0.0-alpha.32",
           "image": "hydra-indexer",
           "gateway": "hydra-indexer-gateway"
         }
@@ -483,6 +483,19 @@
         {
           "provider": "subsquid",
           "url": "https://moonbase.indexer.gc.subsquid.io/v4/graphql",
+          "version": "5.0.0-alpha.32",
+          "image": "hydra-indexer",
+          "gateway": "hydra-indexer-gateway"
+        }
+      ]
+    },
+    {
+      "network": "shibuya",
+      "genesisHash": "0xddb89973361a170839f80f152d2e9e38a376a5a7eccefcade763f46a8e567019",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "url": "https://shibuya.indexer.gc.subsquid.io/v4/graphql",
           "version": "5.0.0-alpha.32",
           "image": "hydra-indexer",
           "gateway": "hydra-indexer-gateway"
