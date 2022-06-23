@@ -1,6 +1,6 @@
 {
   "name": "@subsquid/archive-registry",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A community-owned registry of Squid archives and networks",
   "main": "lib/index.js",
   "files": [
@@ -9,6 +9,7 @@
     "CHANGELOG.md",
     "LICENSE",
     "archives.json",
+    "archives-v5.json",
     "networks.json"
   ],
   "publishConfig": {
