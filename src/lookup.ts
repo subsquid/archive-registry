@@ -9,7 +9,7 @@ export interface LookupOptions {
     genesis?: string,
     image?: string,
     gateway?: string
-    version?: string
+    version: "5" | "fire-squid"
 }
 
 /**
@@ -44,7 +44,7 @@ export function lookupV5Archive (network: KnownArchivesV5, opts?: LookupOptions)
  * @returns Archive endpoint url matching the filter
  * @throws If none matching archive is found or if there's ambiguity in choosing the network
  */
- export function lookupFireSquidArchive(network: KnownArchives, opts?: LookupOptions): ArchiveProvider[] {
+ export function lookupArchive(network: KnownArchives, opts: LookupOptions): ArchiveProvider[] {
     return doLookup(network, { ...opts, version: 'fire-squid'}, archivesRegistry) as ArchiveProvider[]
 }
 

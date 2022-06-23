@@ -1,5 +1,5 @@
 import assert from "assert"
-import { ArchiveRegistry, doLookup, lookupFireSquidArchive, lookupV5Archive } from '.'
+import { ArchiveRegistry, doLookup, lookupArchive, lookupV5Archive } from '.'
 
 const mockRegistry: ArchiveRegistry = {
     "archives": [
@@ -51,16 +51,16 @@ describe("archive lookup", function() {
     })
 
     it("lookups up by name and genesis hash", () => {
-        const polkaArchive = doLookup("polkadot", { genesis : "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d" }, mockRegistry)[0].url
+        const polkaArchive = doLookup("polkadot", { version: "fire-squid", genesis : "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d" }, mockRegistry)[0].url
         assert(polkaArchive === "https://polkadot.archive.subsquid.io/graphql")
     })
 
     it("fails to lookup by wrong hash", () => {
-        assert.throws(() => doLookup("polkadot", { genesis : "0xaaa" }, mockRegistry)[0].url, Error);
+        assert.throws(() => doLookup("polkadot", { genesis : "0xaaa", version: "fire-squid" }, mockRegistry)[0].url, Error);
     })
 
     it("lookups up fire squid archive by name", () => {
-        const polkaArchive = lookupFireSquidArchive("polkadot")[0].url
+        const polkaArchive = lookupArchive("polkadot", { version: "fire-squid" })[0].url
         assert(polkaArchive === "https://polkadot.archive.subsquid.io/graphql")
     })
 
