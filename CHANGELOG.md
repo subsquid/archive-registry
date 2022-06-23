@@ -1,3 +1,11 @@
+#### 1.0.0 (2022-06-23)
+
+##### Features
+
+* FireSquid archives supported by `lookupArchive`
+* `lookupArchive` returns a string
+* `lookupArchive` accepts `LookupOptions` as a second argument
+
 #### 0.0.6 (2022-04-16)
 
 ##### New Features
