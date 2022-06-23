@@ -7,7 +7,7 @@ async function verifyGenesisHashes() {
         for (const provider of archive.providers) {
             console.log(`Archive: ${provider.url}`)
             try {
-                const hash = await getGenesisHash(provider["explorer-url"])
+                const hash = await getGenesisHash(provider.explorerUrl)
                 if (hash !== archive.genesisHash) {
                     console.error(`\tError: expected ${archive.genesisHash} but got ${hash}`)
                 } else {
