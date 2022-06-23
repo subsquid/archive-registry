@@ -9,7 +9,7 @@ export interface LookupOptions {
     genesis?: string,
     image?: string,
     gateway?: string
-    version: "5" | "fire-squid"
+    version: "5" | "FireSquid"
 }
 
 /**
@@ -26,8 +26,8 @@ export interface LookupOptions {
  * @returns Archive endpoint url matching the filter
  * @throws If none matching archive is found or if there's ambiguity in choosing the network
  */
-export function lookupV5Archive (network: KnownArchivesV5, opts?: LookupOptions): ArchiveProviderV5[] {
-    return doLookup(network, { ...opts, version: '5'}, archivesRegistryV5)
+export function lookupV5Archive (network: KnownArchivesV5, opts?: LookupOptions): string {
+    return lookupInRegistry(network, archivesRegistryV5, { ...opts, version: '5' })[0].url
 }
 
 /**
@@ -44,12 +44,12 @@ export function lookupV5Archive (network: KnownArchivesV5, opts?: LookupOptions)
  * @returns Archive endpoint url matching the filter
  * @throws If none matching archive is found or if there's ambiguity in choosing the network
  */
- export function lookupArchive(network: KnownArchives, opts: LookupOptions): ArchiveProvider[] {
-    return doLookup(network, { ...opts, version: 'fire-squid'}, archivesRegistry) as ArchiveProvider[]
+ export function lookupArchive(network: KnownArchives, opts: LookupOptions): string {
+    return lookupInRegistry(network, archivesRegistry, opts)[0].url
 }
 
 /**
- * Lookup an archive endpoint by network name, provider (optional) and genesis hash (optional)
+ * Lookup providers matching the optional filtering criteria in a given registry
  * 
  * @param opts.network network name for lookup
  * @param opts.version matches the major version for numbered versions (e.g. 5 matches 5.0.1-alpha) 
@@ -59,11 +59,11 @@ export function lookupV5Archive (network: KnownArchivesV5, opts?: LookupOptions)
  * @param opts.image archive image name
  * @param opts.gateway archive gateway image 
  * 
- * @returns Archive endpoint url matching the filter
+ * @returns A list of matching providers
  * @throws If none matching archive is found or if there's ambiguity in choosing the network
  */
-export function doLookup(
-    network: string, opts?: LookupOptions, registry: ArchiveRegistry | ArchiveRegistryV5 = archivesRegistry): (ArchiveProvider | ArchiveProviderV5)[] {
+export function lookupInRegistry(
+    network: string, registry: ArchiveRegistry | ArchiveRegistryV5, opts?: LookupOptions): (ArchiveProvider | ArchiveProviderV5)[] {
     
     let archives = registry.archives.filter(a => a.network.toLowerCase() === network.toLowerCase())
     if (opts?.genesis) {
