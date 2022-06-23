@@ -10,7 +10,8 @@ export interface ArchiveProvider {
     version: string,
     image: string,
     gateway: string,
-    url: string
+    url: string,
+    "explorer-url": string
 }
 
 export interface ArchiveEntry {
