@@ -4,27 +4,25 @@ A community-owned registry of [Squid archives](https://github.com/subsquid/squid
 
 ## Usage of `@subsquid/archive-registry`
 
-The registry is available as an npm package `@subsquid/archive-registry`. It can be used to conveniently access registry files and e.g. lookup a Squid Archive by network name:
+The registry is available as an npm package `@subsquid/archive-registry`. It can be used to conveniently access registry files and e.g. lookup a Squid Archive by network name. The second argument is set of lookup filters of type `LookupOptions`. The only mandatory lookup filter is `version` which can only be `"FireSquid"` (for the new FireSquid Archives) and `"5"` for the legacy v5 archives. Note that v5 Archives are now deprecated and will be gradually phased out.
 
 ```typescript
 import { lookupArchive } from '@subsquid/archive-registry'
 
 const processor = new SubstrateProcessor("kusama_balances");
 processor.setDataSource({
-  archive: lookupArchive("kusama")[0].url, 
-  chain: "wss://kusama-rpc.polkadot.io",
+  archive: lookupArchive("kusama", { version: "FireSquid" }), 
 });
 
 ```
 
-`lookupArchive()` supports additional filtering by genesis hash, archive version (semver range) and docker image names (of archive and archive gateway).
+`LookupOptions` supports additional filtering by genesis hash, archive version (semver range) and docker image names (of archive and archive gateway):
 
 There is also a convenience method to get network infomation by its name:
 ```typescript
-import { getChainInfo } from '@subsquid/archive-registry'
-
-const info = getChainInfo("kusama")
-console.log(info.genesisHash) // 0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe
+processor.setDataSource({
+  archive: lookupArchive("kusama", { version: "FireSquid", genesis: "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe" }), 
+});
 ```
 
 
@@ -38,23 +36,32 @@ Squid Archive provides easy access to the historical on-chain data with little m
 
 The primary use case of a Squid Archive is to serve data to a [Squid Processor](https://github.com/subsquid/squid/tree/master/substrate-processor)
 
-The urls are not supposed to be accessed with a browser. To explore the endpoint with an interactive and human-friendly console, replace `/graphql` with `/console` in the url. 
+The urls are not supposed to be accessed with a browser. To explore the endpoint with an interactive and human-friendly console, use `explorerUrl` field in `archives.json`. 
 
-For example, for exploring Kusama historical data, open `https://kusama.indexer.gc.subsquid.io/v4/console` and use the pane on right hand side to filter (`where:`) and pick the fields of interest.
+For example, for exploring Kusama historical data, one can inspect `archives.json` and local Kusama explorer at  `https://kusama.explorer.subsquid.io/graphql`. One can open the GraphQL playground by navigating to this url and use the pane on right hand side to filter (`where:`) and pick the fields of interest.
 
 For example, the following query will return details on the last 10 transfers:
 
 ```gql
 query RecentBalancesTransfers {
-  substrate_event(where: {name: {_eq: "balances.Transfer"}}, limit: 10, order_by: {blockNumber: desc}) {
-    blockNumber
-    blockId
-    data
+  query MyQuery {
+  events(orderBy: block_height_DESC, where: {name_eq: "Balances.Transfer"}, limit: 10) {
+    args
+    name
+    call {
+      name
+      args
+    }
+    block {
+      timestamp
+      height
+    }
   }
+}
 }
 ```
 
-To learn more how to construct the queries, consult [Hasura Docs](https://hasura.io/docs/latest/graphql/core/databases/postgres/queries/index.html)
+
 
 ## How to contribute
 
