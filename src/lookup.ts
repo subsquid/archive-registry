@@ -9,7 +9,8 @@ export interface LookupOptions {
     genesis?: string,
     image?: string,
     gateway?: string
-    version: "5" | "FireSquid"
+    release: "5" | "FireSquid"
+    version?: string
 }
 
 /**
@@ -27,7 +28,7 @@ export interface LookupOptions {
  * @throws If none matching archive is found or if there's ambiguity in choosing the network
  */
 export function lookupV5Archive (network: KnownArchivesV5, opts?: LookupOptions): string {
-    return lookupInRegistry(network, archivesRegistryV5, { ...opts, version: '5' })[0].url
+    return lookupInRegistry(network, archivesRegistryV5, { ...opts, release: '5' })[0].url
 }
 
 /**
@@ -77,7 +78,7 @@ Please consider submitting a PR to subsquid/archive-registry github repo to exte
     
     if (archives.length > 1) {
         throw new Error(`There are multiple networks with name ${network}. \
-Provide genesis hash option to prevent ambiguity.`)
+Provide the genesis hash to disambiguate.`)
     }
 
     let matched = archives[0].providers
@@ -90,18 +91,10 @@ Provide genesis hash option to prevent ambiguity.`)
         matched = matched.filter(p => p.gateway === opts.gateway)
     }
 
-    if (opts?.version) {
-
-        let majVersion = (s: string) => {
-            if (s.indexOf('.') > 0) {
-                 // take the major version if it's not a named version
-                return s.split('.')[0]
-            }
-            return s
-        }
-        
-        matched = matched.filter(p => majVersion(p.version) === opts.version)
+    if (opts?.release) {
+        matched = matched.filter(p => p.release === opts.release)
     }
+
 
     if (matched.length === 0) {
         throw new Error(`Failed to lookup a matching archive. \

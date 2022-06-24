@@ -5,7 +5,7 @@ export interface DataSource {
 
 export interface ArchiveProviderV5 {
     provider: string,
-    version: string,
+    release: string,
     image: string,
     gateway: string,
     url: string    
@@ -13,7 +13,7 @@ export interface ArchiveProviderV5 {
 
 export interface ArchiveProvider {
     provider: string,
-    version: string,
+    release: string,
     image: string,
     gateway: string,
     url: string,
