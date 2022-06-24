@@ -1,3 +1,9 @@
+#### 1.0.2 (2022-06-24)
+
+##### Bug Fixes
+
+*  rename url -> dataSourceUrl ([de9ccb18](https://github.com/subsquid/archive-registry/commit/de9ccb180593d94527acc979d2c25a59fcc0414f))
+
 #### 1.0.0 (2022-06-23)
 
 ##### Features
