@@ -5,7 +5,7 @@
         "providers": [
           {
             "provider": "subsquid",
-            "url": "https://calamari.indexer.gc.subsquid.io/v4/graphql",
+            "dataSourceUrl": "https://calamari.indexer.gc.subsquid.io/v4/graphql",
             "release": "5",
             "version": "5.0.0-alpha.32",
             "image": "hydra-indexer",
@@ -19,7 +19,7 @@
         "providers": [
           {
             "provider": "subsquid",
-            "url": "https://pioneer.indexer.gc.subsquid.io/v4/graphql",
+            "dataSourceUrl": "https://pioneer.indexer.gc.subsquid.io/v4/graphql",
             "release": "5",
             "version": "5.0.0-alpha.32",
             "image": "hydra-indexer",
@@ -33,7 +33,7 @@
         "providers": [
           {
             "provider": "subsquid",
-            "url": "https://statemint.indexer.gc.subsquid.io/v4/graphql",
+            "dataSourceUrl": "https://statemint.indexer.gc.subsquid.io/v4/graphql",
             "release": "5",
             "version": "5.0.0-alpha.32",
             "image": "hydra-indexer",
@@ -47,7 +47,7 @@
         "providers": [
           {
             "provider": "subsquid",
-            "url": "https://parallel.indexer.gc.subsquid.io/v4/graphql",
+            "dataSourceUrl": "https://parallel.indexer.gc.subsquid.io/v4/graphql",
             "release": "5",
             "version": "5.0.0-alpha.32",
             "image": "hydra-indexer",
@@ -61,7 +61,7 @@
         "providers": [
           {
             "provider": "subsquid",
-            "url": "https://moonbeam-beta.indexer.gc.subsquid.io/v4/graphql",
+            "dataSourceUrl": "https://moonbeam-beta.indexer.gc.subsquid.io/v4/graphql",
             "release": "5",
             "version": "5.0.0-alpha.32",
             "image": "hydra-evm-indexer",
@@ -75,7 +75,7 @@
         "providers": [
           {
             "provider": "subsquid",
-            "url": "https://clover.indexer.gc.subsquid.io/v4/graphql",
+            "dataSourceUrl": "https://clover.indexer.gc.subsquid.io/v4/graphql",
             "release": "5",
             "version": "5.0.0-alpha.32",
             "image": "hydra-indexer",
@@ -83,7 +83,7 @@
           },
           {
             "provider": "fatcat",
-            "url": "https://clover.subsquid.fatcat.ventures/v1/graphql",
+            "dataSourceUrl": "https://clover.subsquid.fatcat.ventures/v1/graphql",
             "release": "5",
             "version": "5.0.0-alpha.28",
             "image": "hydra-indexer",
@@ -97,7 +97,7 @@
         "providers": [
           {
             "provider": "fatcat",
-            "url": "https://nodle.subsquid.fatcat.ventures/v1/graphql",
+            "dataSourceUrl": "https://nodle.subsquid.fatcat.ventures/v1/graphql",
             "release": "5",
             "version": "5.0.0-alpha.28",
             "image": "hydra-indexer",
@@ -112,14 +112,14 @@
           {
             "provider": "subsquid",
             "release": "5",
-            "url": "https://quartz.indexer.gc.subsquid.io/v4/graphql",
+            "dataSourceUrl": "https://quartz.indexer.gc.subsquid.io/v4/graphql",
             "version": "5.0.0-alpha.32",
             "image": "hydra-indexer",
             "gateway": "hydra-indexer-gateway"
           },
           {
             "provider": "fatcat",
-            "url": "https://quartz.subsquid.fatcat.ventures/v1/graphql",
+            "dataSourceUrl": "https://quartz.subsquid.fatcat.ventures/v1/graphql",
             "release": "5",
             "version": "5.0.0-alpha.28",
             "image": "hydra-indexer",
@@ -133,7 +133,7 @@
         "providers": [
           {
             "provider": "subsquid",
-            "url": "https://heiko.indexer.gc.subsquid.io/v4/graphql",
+            "dataSourceUrl": "https://heiko.indexer.gc.subsquid.io/v4/graphql",
             "release": "5",
             "version": "5.0.0-alpha.32",
             "image": "hydra-indexer",
@@ -147,7 +147,7 @@
         "providers": [
           {
             "provider": "subsquid",
-            "url": "https://kintsugi.indexer.gc.subsquid.io/v4/graphql",
+            "dataSourceUrl": "https://kintsugi.indexer.gc.subsquid.io/v4/graphql",
             "release": "5",
             "version": "5.0.0-alpha.32",
             "image": "hydra-indexer",
@@ -161,7 +161,7 @@
         "providers": [
           {
             "provider": "subsquid",
-            "url": "https://basilisk.indexer.gc.subsquid.io/v4/graphql",
+            "dataSourceUrl": "https://basilisk.indexer.gc.subsquid.io/v4/graphql",
             "release": "5",
             "version": "5.0.0-alpha.32",
             "image": "hydra-indexer",
@@ -175,7 +175,7 @@
         "providers": [
           {
             "provider": "subsquid",
-            "url": "https://altair.indexer.gc.subsquid.io/v4/graphql",
+            "dataSourceUrl": "https://altair.indexer.gc.subsquid.io/v4/graphql",
             "release": "5",
             "version": "5.0.0-alpha.32",
             "image": "hydra-indexer",
@@ -189,7 +189,7 @@
         "providers": [
           {
             "provider": "subsquid",
-            "url": "https://acala.indexer.gc.subsquid.io/v4/graphql",
+            "dataSourceUrl": "https://acala.indexer.gc.subsquid.io/v4/graphql",
             "release": "5",
             "version": "5.0.0-alpha.32",
             "image": "hydra-indexer",
@@ -203,7 +203,7 @@
         "providers": [
           {
             "provider": "subsquid",
-            "url": "https://kusama.indexer.gc.subsquid.io/v4/graphql",
+            "dataSourceUrl": "https://kusama.indexer.gc.subsquid.io/v4/graphql",
             "release": "5",
             "version": "5.0.0-alpha.32",
             "image": "hydra-indexer",
@@ -217,7 +217,7 @@
         "providers": [
           {
             "provider": "subsquid",
-            "url": "https://polkadot.indexer.gc.subsquid.io/v4/graphql",
+            "dataSourceUrl": "https://polkadot.indexer.gc.subsquid.io/v4/graphql",
             "release": "5",
             "version": "5.0.0-alpha.32",
             "image": "hydra-indexer",
@@ -231,7 +231,7 @@
         "providers": [
           {
             "provider": "subsquid",
-            "url": "https://karura.indexer.gc.subsquid.io/v4/graphql",
+            "dataSourceUrl": "https://karura.indexer.gc.subsquid.io/v4/graphql",
             "release": "5",
             "version": "5.0.0-alpha.32",
             "image": "hydra-indexer",
@@ -245,7 +245,7 @@
         "providers": [
           {
             "provider": "subsquid",
-            "url": "https://crust.indexer.gc.subsquid.io/v4/graphql",
+            "dataSourceUrl": "https://crust.indexer.gc.subsquid.io/v4/graphql",
             "release": "5",
             "version": "5.0.0-alpha.32",
             "image": "hydra-indexer",
@@ -259,7 +259,7 @@
         "providers": [
           {
             "provider": "subsquid",
-            "url": "https://bifrost.indexer.gc.subsquid.io/v4/graphql",
+            "dataSourceUrl": "https://bifrost.indexer.gc.subsquid.io/v4/graphql",
             "release": "5",
             "version": "5.0.0-alpha.32",
             "image": "hydra-indexer",
@@ -273,7 +273,7 @@
         "providers": [
           {
             "provider": "subsquid",
-            "url": "https://statemine-full.indexer.gc.subsquid.io/v4/graphql",
+            "dataSourceUrl": "https://statemine-full.indexer.gc.subsquid.io/v4/graphql",
             "release": "5",
             "version": "5.0.0-alpha.32",
             "image": "hydra-indexer",
@@ -287,7 +287,7 @@
         "providers": [
           {
             "provider": "subsquid",
-            "url": "https://khala.indexer.gc.subsquid.io/v4/graphql",
+            "dataSourceUrl": "https://khala.indexer.gc.subsquid.io/v4/graphql",
             "release": "5",
             "version": "5.0.0-alpha.32",
             "image": "hydra-indexer",
@@ -301,7 +301,7 @@
         "providers": [
           {
             "provider": "subsquid",
-            "url": "https://kilt.indexer.gc.subsquid.io/v4/graphql",
+            "dataSourceUrl": "https://kilt.indexer.gc.subsquid.io/v4/graphql",
             "release": "5",
             "version": "5.0.0-alpha.32",
             "image": "hydra-indexer",
@@ -315,7 +315,7 @@
         "providers": [
           {
             "provider": "subsquid",
-            "url": "https://moonriver-beta.indexer.gc.subsquid.io/v4/graphql",
+            "dataSourceUrl": "https://moonriver-beta.indexer.gc.subsquid.io/v4/graphql",
             "release": "5",
             "version": "5.0.0-alpha.32",
             "image": "hydra-evm-indexer",
@@ -329,7 +329,7 @@
         "providers": [
           {
             "provider": "subsquid",
-            "url": "https://astar-beta.indexer.gc.subsquid.io/v4/graphql",
+            "dataSourceUrl": "https://astar-beta.indexer.gc.subsquid.io/v4/graphql",
             "release": "5",
             "version": "5.0.0-alpha.32",
             "image": "hydra-evm-indexer",
@@ -343,7 +343,7 @@
         "providers": [
           {
             "provider": "subsquid",
-            "url": "https://shiden-beta.indexer.gc.subsquid.io/v4/graphql",
+            "dataSourceUrl": "https://shiden-beta.indexer.gc.subsquid.io/v4/graphql",
             "release": "5",
             "version": "5.0.0-alpha.32",
             "image": "hydra-evm-indexer",
@@ -357,7 +357,7 @@
         "providers": [
           {
             "provider": "subsquid",
-            "url": "https://hydradx.indexer.gc.subsquid.io/v4/graphql",
+            "dataSourceUrl": "https://hydradx.indexer.gc.subsquid.io/v4/graphql",
             "release": "5",
             "version": "5.0.0-alpha.32",
             "image": "hydra-indexer",
@@ -371,7 +371,7 @@
         "providers": [
           {
             "provider": "subsquid",
-            "url": "https://robonomics.indexer.gc.subsquid.io/v4/graphql",
+            "dataSourceUrl": "https://robonomics.indexer.gc.subsquid.io/v4/graphql",
             "release": "5",
             "version": "5.0.0-alpha.32",
             "image": "hydra-indexer",
@@ -386,7 +386,7 @@
         "providers": [
           {
             "provider": "subsquid",
-            "url": "https://subsocial.indexer.gc.subsquid.io/v4/graphql",
+            "dataSourceUrl": "https://subsocial.indexer.gc.subsquid.io/v4/graphql",
             "release": "5",
             "version": "5.0.0-alpha.32",
             "image": "hydra-indexer",
@@ -400,7 +400,7 @@
         "providers": [
           {
             "provider": "subsquid",
-            "url": "https://moonbase.indexer.gc.subsquid.io/v4/graphql",
+            "dataSourceUrl": "https://moonbase.indexer.gc.subsquid.io/v4/graphql",
             "release": "5",
             "version": "5.0.0-alpha.32",
             "image": "hydra-indexer",

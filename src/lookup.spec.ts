@@ -8,7 +8,7 @@ const mockRegistry: ArchiveRegistry = {
         "providers": [
           {
             "provider": "subsquid",
-            "url": "https://polkadot.archive.subsquid.io/graphql",
+            "dataSourceUrl": "https://polkadot.archive.subsquid.io/graphql",
             "explorerUrl": "https://polkadot.explorer.subsquid.io/graphql",
             "release": "FireSquid",
             "image": "substrate-ingest",
@@ -22,7 +22,7 @@ const mockRegistry: ArchiveRegistry = {
         "providers": [
           {
             "provider": "subsquid",
-            "url": "https://moonbeam.archive.subsquid.io/graphql",
+            "dataSourceUrl": "https://moonbeam.archive.subsquid.io/graphql",
             "explorerUrl": "https://moonbeam.explorer.subsquid.io/graphql",
             "image": "substrate-ingest",
             "gateway": "archive-gateway",
@@ -36,22 +36,22 @@ const mockRegistry: ArchiveRegistry = {
 
 describe("archive lookup", function() {
     it("looks up by archive name", () => {
-        const polkaArchive = lookupInRegistry("polkadot", mockRegistry)[0].url
+        const polkaArchive = lookupInRegistry("polkadot", mockRegistry)[0].dataSourceUrl
         assert(polkaArchive === "https://polkadot.archive.subsquid.io/graphql")
     })
 
     it("looks up by a numbered version", () => {
-        const polkaArchive = lookupInRegistry("moonbeam", mockRegistry, { release : "5" })[0].url
+        const polkaArchive = lookupInRegistry("moonbeam", mockRegistry, { release : "5" })[0].dataSourceUrl
         assert(polkaArchive === "https://moonbeam.archive.subsquid.io/graphql")
     })
 
     it("looks up by a named version", () => {
-        const polkaArchive = lookupInRegistry("polkadot", mockRegistry, { release : "FireSquid" })[0].url
+        const polkaArchive = lookupInRegistry("polkadot", mockRegistry, { release : "FireSquid" })[0].dataSourceUrl
         assert(polkaArchive === "https://polkadot.archive.subsquid.io/graphql")
     })
 
     it("lookups up by name and genesis hash", () => {
-        const polkaArchive = lookupInRegistry("polkadot", mockRegistry, { release: "FireSquid", genesis : "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d" })[0].url
+        const polkaArchive = lookupInRegistry("polkadot", mockRegistry, { release: "FireSquid", genesis : "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d" })[0].dataSourceUrl
         assert(polkaArchive === "https://polkadot.archive.subsquid.io/graphql")
     })
 

@@ -6,7 +6,7 @@
       "providers": [
         {
           "provider": "subsquid",
-          "url": "https://moonbeam.archive.subsquid.io/graphql",
+          "dataSourceUrl": "https://moonbeam.archive.subsquid.io/graphql",
           "explorerUrl": "https://moonbeam.explorer.subsquid.io/graphql",
           "release": "FireSquid",
           "image": "substrate-ingest",
@@ -20,7 +20,7 @@
       "providers": [
         {
           "provider": "subsquid",
-          "url": "https://acala.archive.subsquid.io/graphql",
+          "dataSourceUrl": "https://acala.archive.subsquid.io/graphql",
           "explorerUrl": "https://acala.explorer.subsquid.io/graphql",
           "release": "FireSquid",
           "image": "substrate-ingest",
@@ -34,7 +34,7 @@
       "providers": [
         {
           "provider": "subsquid",
-          "url": "https://kusama.archive.subsquid.io/graphql",
+          "dataSourceUrl": "https://kusama.archive.subsquid.io/graphql",
           "explorerUrl": "https://kusama.explorer.subsquid.io/graphql",
           "release": "FireSquid",
           "image": "substrate-ingest",
@@ -48,7 +48,7 @@
       "providers": [
         {          
             "provider": "subsquid",
-            "url": "https://polkadot.archive.subsquid.io/graphql",
+            "dataSourceUrl": "https://polkadot.archive.subsquid.io/graphql",
             "explorerUrl": "https://polkadot.explorer.subsquid.io/graphql",
             "release": "FireSquid",
             "image": "substrate-ingest",
@@ -62,7 +62,7 @@
       "providers": [
         {
           "provider": "subsquid",
-          "url": "https://karura.archive.subsquid.io/graphql",
+          "dataSourceUrl": "https://karura.archive.subsquid.io/graphql",
           "explorerUrl": "https://karura.explorer.subsquid.io/graphql",
           "release": "FireSquid",
           "image": "substrate-ingest",
@@ -76,7 +76,7 @@
       "providers": [
         {
           "provider": "subsquid",
-          "url": "https://crust.archive.subsquid.io/graphql",
+          "dataSourceUrl": "https://crust.archive.subsquid.io/graphql",
           "explorerUrl": "https://crust.explorer.subsquid.io/graphql",
           "release": "FireSquid",
           "image": "substrate-ingest",
@@ -90,7 +90,7 @@
       "providers": [
         {
           "provider": "subsquid",
-          "url": "https://bifrost.archive.subsquid.io/graphql",
+          "dataSourceUrl": "https://bifrost.archive.subsquid.io/graphql",
           "explorerUrl": "https://bifrost.explorer.subsquid.io/graphql",
           "release": "FireSquid",
           "image": "substrate-ingest",
@@ -104,7 +104,7 @@
       "providers": [
         {
           "provider": "subsquid",
-          "url": "https://moonriver.archive.subsquid.io/graphql",
+          "dataSourceUrl": "https://moonriver.archive.subsquid.io/graphql",
           "explorerUrl": "https://moonriver.explorer.subsquid.io/graphql",
           "release": "FireSquid",
           "image": "substrate-ingest",
@@ -118,7 +118,7 @@
       "providers": [
         {
           "provider": "subsquid",
-          "url": "https://astar.archive.subsquid.io/graphql",
+          "dataSourceUrl": "https://astar.archive.subsquid.io/graphql",
           "explorerUrl": "https://astar.explorer.subsquid.io/graphql",
           "release": "FireSquid",
           "image": "substrate-ingest",
@@ -132,7 +132,7 @@
       "providers": [
         {
           "provider": "subsquid",
-          "url": "https://shibuya.archive.subsquid.io/graphql",
+          "dataSourceUrl": "https://shibuya.archive.subsquid.io/graphql",
           "explorerUrl": "https://shibuya.explorer.subsquid.io/graphql",
           "release": "FireSquid",
           "image": "substrate-ingest",
@@ -146,7 +146,7 @@
       "providers": [
         {
           "provider": "subsquid",
-          "url": "https://hydradx-snakenet.archive.subsquid.io/graphql",
+          "dataSourceUrl": "https://hydradx-snakenet.archive.subsquid.io/graphql",
           "explorerUrl": "https://hydradx-snakenet.explorer.subsquid.io/graphql",
           "release": "FireSquid",
           "image": "substrate-ingest",
@@ -161,7 +161,7 @@
       "providers": [
         {
           "provider": "subsquid",
-          "url": "https://subsocial.archive.subsquid.io/graphql",
+          "dataSourceUrl": "https://subsocial.archive.subsquid.io/graphql",
           "explorerUrl": "https://subsocial.explorer.subsquid.io/graphql",
           "release": "FireSquid",
           "image": "substrate-ingest",

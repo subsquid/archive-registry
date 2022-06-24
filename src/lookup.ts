@@ -28,7 +28,7 @@ export interface LookupOptions {
  * @throws If none matching archive is found or if there's ambiguity in choosing the network
  */
 export function lookupV5Archive (network: KnownArchivesV5, opts?: LookupOptions): string {
-    return lookupInRegistry(network, archivesRegistryV5, { ...opts, release: '5' })[0].url
+    return lookupInRegistry(network, archivesRegistryV5, { ...opts, release: '5' })[0].dataSourceUrl
 }
 
 /**
@@ -46,7 +46,7 @@ export function lookupV5Archive (network: KnownArchivesV5, opts?: LookupOptions)
  * @throws If none matching archive is found or if there's ambiguity in choosing the network
  */
  export function lookupArchive(network: KnownArchives, opts: LookupOptions): string {
-    return lookupInRegistry(network, archivesRegistry, opts)[0].url
+    return lookupInRegistry(network, archivesRegistry, opts)[0].dataSourceUrl
 }
 
 /**

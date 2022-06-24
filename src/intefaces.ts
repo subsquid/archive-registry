@@ -8,7 +8,7 @@ export interface ArchiveProviderV5 {
     release: string,
     image: string,
     gateway: string,
-    url: string    
+    dataSourceUrl: string    
 }
 
 export interface ArchiveProvider {
@@ -16,7 +16,7 @@ export interface ArchiveProvider {
     release: string,
     image: string,
     gateway: string,
-    url: string,
+    dataSourceUrl: string,
     explorerUrl: string
 }
 
