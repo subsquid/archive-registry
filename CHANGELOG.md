@@ -1,3 +1,9 @@
+#### 1.0.3 (2022-07-04)
+
+##### Bug Fixes
+
+*  add equilibrium archive ([a0fc147b](https://github.com/subsquid/archive-registry/commit/a0fc147bdae42bc918e4deb0fd76f7930ce0a0a1))
+
 #### 1.0.2 (2022-06-24)
 
 ##### Bug Fixes
