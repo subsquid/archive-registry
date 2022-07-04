@@ -1,6 +1,19 @@
 {
   "archives": [
-  
+    {
+      "network": "equilibrium",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://equilibrium.archive.subsquid.io/graphql",
+          "explorerUrl": "https://equilibrium.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "substrate-ingest",
+          "gateway": "archive-gateway"
+        }
+      ],
+      "genesisHash": "0x89d3ec46d2fb43ef5a9713833373d5ea666b092fa8fd68fbc34596036571b907"
+    },
     {
       "network": "moonbeam",
       "providers": [
