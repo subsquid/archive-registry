@@ -1,33 +1,74 @@
 import fetch from "node-fetch"
 import { AbortController } from "node-abort-controller";
 import assert from "assert"
-import { satisfies } from "semver"
-import { Network, ArchiveProvider } from "."
-import { ChainName } from "./chains";
-import { archivesRegistry, networkRegistry } from "./registry";
+import { Network, ArchiveProvider, ArchiveRegistry, ArchiveRegistryV5, ArchiveProviderV5 } from "."
+import { KnownArchives, KnownArchivesV5 } from "./chains";
+import { archivesRegistry, archivesRegistryV5, networkRegistry } from "./registry";
+
+export interface LookupOptions {
+    genesis?: string,
+    image?: string,
+    gateway?: string
+    release: "5" | "FireSquid"
+    version?: string
+}
 
 /**
- * Lookup an archive endpoint by network name, provider (optional) and genesis hash (optional)
+ * Lookup Subsquid V5 Archive endpoint by network name, provider (optional) and genesis hash (optional)
  * 
- * @param network network name for lookup
- * @param genesis network genesis hex string (must start with "0x...")
- * @param semver semver range to match archive image version 
- * @param image archive image name
- * @param gateway archive gateway image 
+ * @param opts.network network name for lookup
+ * @param opts.version matches the major version for numbered versions (e.g. 5 matches 5.0.1-alpha) 
+ *                     or an exact match for named versions
+ * @param opts.genesis network genesis hex string (must start with "0x...")
+ * @param opts.semver semver range to match archive image version 
+ * @param opts.image archive image name
+ * @param opts.gateway archive gateway image 
  * 
  * @returns Archive endpoint url matching the filter
  * @throws If none matching archive is found or if there's ambiguity in choosing the network
  */
-export function lookupArchive(
-    network: ChainName,
-    semver?: string,
-    genesis?: string,
-    image?: string,
-    gateway?: string): ArchiveProvider[] {
+export function lookupV5Archive (network: KnownArchivesV5, opts?: LookupOptions): string {
+    return lookupInRegistry(network, archivesRegistryV5, { ...opts, release: '5' })[0].dataSourceUrl
+}
+
+/**
+ * Lookup Subsquid Archive endpoint by network name, provider (optional) and genesis hash (optional)
+ * 
+ * @param opts.network network name for lookup
+ * @param opts.version matches the major version for numbered versions (e.g. 5 matches 5.0.1-alpha) 
+ *                     or an exact match for named versions
+ * @param opts.genesis network genesis hex string (must start with "0x...")
+ * @param opts.semver semver range to match archive image version 
+ * @param opts.image archive image name
+ * @param opts.gateway archive gateway image 
+ * 
+ * @returns Archive endpoint url matching the filter
+ * @throws If none matching archive is found or if there's ambiguity in choosing the network
+ */
+ export function lookupArchive(network: KnownArchives, opts: LookupOptions): string {
+    return lookupInRegistry(network, archivesRegistry, opts)[0].dataSourceUrl
+}
+
+/**
+ * Lookup providers matching the optional filtering criteria in a given registry
+ * 
+ * @param opts.network network name for lookup
+ * @param opts.version matches the major version for numbered versions (e.g. 5 matches 5.0.1-alpha) 
+ *                     or an exact match for named versions
+ * @param opts.genesis network genesis hex string (must start with "0x...")
+ * @param opts.semver semver range to match archive image version 
+ * @param opts.image archive image name
+ * @param opts.gateway archive gateway image 
+ * 
+ * @returns A list of matching providers
+ * @throws If none matching archive is found or if there's ambiguity in choosing the network
+ */
+export function lookupInRegistry(
+    network: string, registry: ArchiveRegistry | ArchiveRegistryV5, opts?: LookupOptions): (ArchiveProvider | ArchiveProviderV5)[] {
     
-    let archives = archivesRegistry.archives.filter(a => a.network.toLowerCase() === network.toLowerCase())
-    if (genesis) {
-        archives = archives.filter(a => a.genesisHash?.toLowerCase() === genesis.toLowerCase())
+    let archives = registry.archives.filter(a => a.network.toLowerCase() === network.toLowerCase())
+    if (opts?.genesis) {
+        archives = archives.filter(a => a.genesisHash?.toLowerCase() === opts.genesis?.toLowerCase())
     }
 
     if (archives.length === 0) {
@@ -37,24 +78,23 @@ Please consider submitting a PR to subsquid/archive-registry github repo to exte
     
     if (archives.length > 1) {
         throw new Error(`There are multiple networks with name ${network}. \
-Provide genesis hash option to prevent ambiguity.`)
+Provide the genesis hash to disambiguate.`)
     }
 
     let matched = archives[0].providers
-    if (semver) {
-        // if (valid(semver) === null) {
-        //     throw new Error(`${semver} is not a valid semver range`)
-        // }
-        matched = matched.filter(p => satisfies(p.version, semver))
+
+    if (opts?.image) {
+        matched = matched.filter(p => p.image === opts.image)
     }
 
-    if (image) {
-        matched = matched.filter(p => p.image === image)
+    if (opts?.gateway) {
+        matched = matched.filter(p => p.gateway === opts.gateway)
     }
 
-    if (gateway) {
-        matched = matched.filter(p => p.gateway === gateway)
+    if (opts?.release) {
+        matched = matched.filter(p => p.release === opts.release)
     }
+
 
     if (matched.length === 0) {
         throw new Error(`Failed to lookup a matching archive. \
@@ -93,26 +133,14 @@ Provide genesis hash option to prevent ambiguity.`)
 export async function getGenesisHash(endpoint: string): Promise<string> {
     const query = `
     query {
-        substrate_block(where: {height: {_eq: 0}}) {
+        blocks(where: {height_eq: 0}) {
             hash
         }
     }
     `
-    const result = await archiveRequest<{ substrate_block: {hash: string}[] }>(endpoint, query)
-    return result.substrate_block[0].hash
+    const result = await archiveRequest<{ blocks: {hash: string}[] }>(endpoint, query)
+    return result.blocks[0].hash
 }  
-
-export async function getVersion(endpoint: string): Promise<string> {
-    const query = `
-    query {
-        indexerStatus {
-            hydraVersion
-        }
-    }
-    `
-    const result = await archiveRequest<{indexerStatus: { hydraVersion: string }}>(endpoint, query)
-    return result.indexerStatus.hydraVersion
-}
 
 
 async function archiveRequest<T>(endpoint: string, query: string): Promise<T> {

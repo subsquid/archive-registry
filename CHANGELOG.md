@@ -1,3 +1,23 @@
+#### 1.0.3 (2022-07-04)
+
+##### Bug Fixes
+
+*  add equilibrium archive ([a0fc147b](https://github.com/subsquid/archive-registry/commit/a0fc147bdae42bc918e4deb0fd76f7930ce0a0a1))
+
+#### 1.0.2 (2022-06-24)
+
+##### Bug Fixes
+
+*  rename url -> dataSourceUrl ([de9ccb18](https://github.com/subsquid/archive-registry/commit/de9ccb180593d94527acc979d2c25a59fcc0414f))
+
+#### 1.0.0 (2022-06-23)
+
+##### Features
+
+* FireSquid archives supported by `lookupArchive`
+* `lookupArchive` returns a string
+* `lookupArchive` accepts `LookupOptions` as a second argument
+
 #### 0.0.6 (2022-04-16)
 
 ##### New Features
