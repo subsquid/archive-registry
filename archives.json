@@ -169,6 +169,20 @@
       "genesisHash": "0xd2a620c27ec5cbc5621ff9a522689895074f7cca0d08e7134a7804e1a3ba86fc"
     },
     {
+      "network": "hydradx",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://hydradx.archive.subsquid.io/graphql",
+          "explorerUrl": "https://hydradx.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "substrate-ingest",
+          "gateway": "archive-gateway"
+        }
+      ],
+      "genesisHash": "0xafdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d"
+    },
+    {
       "network": "subsocial-solochain",
       "genesisHash": "0x0bd72c1c305172e1275278aaeb3f161e02eccb7a819e63f62d47bd53a28189f8",
       "providers": [
