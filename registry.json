@@ -1,5 +1,5 @@
 {
-    "_comment": "This file is deprecated in favour of achives.json. It is left in the repository for backward compatibility of some tools",
+    "_comment": "This file is deprecated in favour of archives.json. It is left in the repository for backward compatibility of some tools",
     "archives": [
         {
             "network": "calamari",
