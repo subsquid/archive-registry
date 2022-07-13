@@ -109,6 +109,16 @@
       "genesisHash": "0xa3d114c2b8d0627c1aa9b134eafcf7d05ca561fdc19fb388bb9457f81809fb23"
     },
     {
+      "name": "hydradx-snakenet",
+      "displayName": "HydraDX Snakenet",
+      "tokens": [
+        "HDX"
+      ],
+      "website": "https://hydradx.io",
+      "description": "HydraDX is built as a parachain – specialized blockchain in the Polkadot network. It is benefiting from shared security, speed and flexibility of the Substrate framework while remaining optimized for a single purpose: enabling fluid programmable value exchange.",
+      "genesisHash": "0xd2a620c27ec5cbc5621ff9a522689895074f7cca0d08e7134a7804e1a3ba86fc"
+    },
+    {
       "name": "hydradx",
       "displayName": "HydraDX",
       "tokens": [
@@ -118,7 +128,7 @@
       "description": "HydraDX is built as a parachain – specialized blockchain in the Polkadot network. It is benefiting from shared security, speed and flexibility of the Substrate framework while remaining optimized for a single purpose: enabling fluid programmable value exchange.",
       "relayChain": "polkadot",
       "parachainId": "2034",
-      "genesisHash": "0xd2a620c27ec5cbc5621ff9a522689895074f7cca0d08e7134a7804e1a3ba86fc"
+      "genesisHash": "0xafdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d"
     },
     {
       "name": "darwinia",
