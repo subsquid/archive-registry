@@ -9,10 +9,10 @@ The registry is available as an npm package `@subsquid/archive-registry`. It can
 ```typescript
 import { lookupArchive } from '@subsquid/archive-registry'
 
-const processor = new SubstrateProcessor("kusama_balances");
-processor.setDataSource({
-  archive: lookupArchive("kusama", { release: "FireSquid" }), 
-});
+const processor = new SubstrateProcessor()
+  .setDataSource({
+    archive: lookupArchive("kusama", { release: "FireSquid" }), 
+  });
 
 ```
 
@@ -20,9 +20,10 @@ processor.setDataSource({
 
 There is also a convenience method to get network infomation by its name:
 ```typescript
-processor.setDataSource({
-  archive: lookupArchive("kusama", { release: "FireSquid", genesis: "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe" }), 
-});
+//
+  .setDataSource({
+    archive: lookupArchive("kusama", { release: "FireSquid", genesis: "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe" }), 
+  });
 ```
 
 
