@@ -4,7 +4,7 @@ A community-owned registry of [Squid archives](https://github.com/subsquid/squid
 
 ## Usage of `@subsquid/archive-registry`
 
-The registry is available as an npm package `@subsquid/archive-registry`. It can be used to conveniently access registry files and e.g. lookup a Squid Archive by network name. The second argument is set of lookup filters of type `LookupOptions`. The only mandatory lookup filter is `version` which can only be `"FireSquid"` (for the new FireSquid Archives) and `"5"` for the legacy v5 archives. Note that v5 Archives are now deprecated and will be gradually phased out.
+The registry is available as an npm package `@subsquid/archive-registry`. It can be used to conveniently access registry files and e.g. lookup a Squid Archive by network name. The second argument is set of lookup filters of type `LookupOptions`. The only mandatory lookup filter is `release` which can only be `"FireSquid"` (for the new FireSquid Archives) and `"5"` for the legacy v5 archives. Note that v5 Archives are now deprecated and will be gradually phased out.
 
 ```typescript
 import { lookupArchive } from '@subsquid/archive-registry'
@@ -20,7 +20,7 @@ const processor = new SubstrateProcessor()
 
 There is also a convenience method to get network infomation by its name:
 ```typescript
-//
+  // ...
   .setDataSource({
     archive: lookupArchive("kusama", { release: "FireSquid", genesis: "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe" }), 
   });
