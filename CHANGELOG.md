@@ -1,3 +1,9 @@
+#### 1.0.6 (2022-07-18)
+
+##### New Features
+
+*  add more icons ([65aa35aa](https://github.com/subsquid/archive-registry/commit/65aa35aa53e49c72763ceb683d2c2851a61bf297))
+
 #### 1.0.5 (2022-07-13)
 
 #### 1.0.4 (2022-07-08)
