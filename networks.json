@@ -373,6 +373,18 @@
       "relayChain": null,
       "parachainId": null,
       "genesisHash": "0x91bc6e169807aaa54802737e1c504b2577d4fafedd5a02c10293b1cd60e39527"
+    },
+    {
+      "name": "aleph-zero-testnet",
+      "displayName": "Aleph Zero Testnet",
+      "tokens": [
+        "TZERO"
+      ],
+      "website": "https://testnet.alephzero.org/",
+      "description": "Aleph Zero is a public blockchain that has been designed to offer powerful, scalable and open source infrastructure layer. Testnet is a part of development process. In this network, new features will be tested by the community.",
+      "relayChain": null,
+      "parachainId": null,
+      "genesisHash": "0x05d5279c52c484cc80396535a316add7d47b1c5b9e0398dd1f584149341460c5"
     }
   ]
 }
