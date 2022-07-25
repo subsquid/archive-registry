@@ -223,6 +223,20 @@
           "gateway": "archive-gateway"
         }
       ]
+    },
+    {
+      "network": "rococo",
+      "genesisHash": "0x6408de7737c59c238890533af25896a2c20608d8b380bb01029acb392781063e",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://rococo.archive.subsquid.io/graphql",
+          "explorerUrl": "https://rococo.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "substrate-ingest",
+          "gateway": "archive-gateway"
+        }
+      ]
     }
   ]
 }
