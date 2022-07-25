@@ -155,20 +155,6 @@
       "genesisHash": "0xddb89973361a170839f80f152d2e9e38a376a5a7eccefcade763f46a8e567019"
     },
     {
-      "network": "hydradx-snakenet",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://hydradx-snakenet.archive.subsquid.io/graphql",
-          "explorerUrl": "https://hydradx-snakenet.explorer.subsquid.io/graphql",
-          "release": "FireSquid",
-          "image": "substrate-ingest",
-          "gateway": "archive-gateway"
-        }
-      ],
-      "genesisHash": "0xd2a620c27ec5cbc5621ff9a522689895074f7cca0d08e7134a7804e1a3ba86fc"
-    },
-    {
       "network": "hydradx",
       "providers": [
         {
@@ -190,20 +176,6 @@
           "provider": "subsquid",
           "dataSourceUrl": "https://subsocial.archive.subsquid.io/graphql",
           "explorerUrl": "https://subsocial.explorer.subsquid.io/graphql",
-          "release": "FireSquid",
-          "image": "substrate-ingest",
-          "gateway": "archive-gateway"
-        }
-      ]
-    },
-    {
-      "network": "quartz",
-      "genesisHash": "0xcd4d732201ebe5d6b014edda071c4203e16867305332301dc8d092044b28e554",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://quartz.archive.subsquid.io/graphql",
-          "explorerUrl": "https://quartz.explorer.subsquid.io/graphql",
           "release": "FireSquid",
           "image": "substrate-ingest",
           "gateway": "archive-gateway"
