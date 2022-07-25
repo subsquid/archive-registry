@@ -1,3 +1,9 @@
+#### 1.0.7 (2022-07-25)
+
+##### New Features
+
+*  add rococo archive ([cba6b30c](https://github.com/subsquid/archive-registry/commit/cba6b30c61c7fdaabbc70e9b1afee36b1c108d73))
+
 #### 1.0.6 (2022-07-18)
 
 ##### New Features
