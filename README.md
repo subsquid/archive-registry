@@ -45,7 +45,6 @@ For example, the following query will return details on the last 10 transfers:
 
 ```gql
 query RecentBalancesTransfers {
-  query MyQuery {
   events(orderBy: block_height_DESC, where: {name_eq: "Balances.Transfer"}, limit: 10) {
     args
     name
@@ -59,10 +58,8 @@ query RecentBalancesTransfers {
     }
   }
 }
-}
+
 ```
-
-
 
 ## How to contribute
 
