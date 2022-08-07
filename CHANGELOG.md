@@ -1,3 +1,9 @@
+#### 1.0.8 (2022-08-07)
+
+##### New Features
+
+*  add interlay archive ([6421b917](https://github.com/subsquid/archive-registry/commit/6421b9171a57f6c38b7472621b0847bf47b1f3fd))
+
 #### 1.0.7 (2022-07-25)
 
 ##### New Features
