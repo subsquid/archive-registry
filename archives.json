@@ -265,6 +265,20 @@
           "gateway": "archive-gateway"
         }
       ]
+    },
+    {
+      "network": "interlay",
+      "genesisHash": "0xbf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://interlay.archive.subsquid.io/graphql",
+          "explorerUrl": "https://interlay.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "substrate-ingest",
+          "gateway": "archive-gateway"
+        }
+      ]
     }
   ]
 }

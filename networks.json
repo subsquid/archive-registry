@@ -418,9 +418,21 @@
       ],
       "website": "https://x.mangata.finance/",
       "description": "Mangata X is a community-owned exchange for experienced traders & experimental tokens.",
-      "relayChain": null,
-      "parachainId": null,
+      "relayChain": "kusama",
+      "parachainId": "2110",
       "genesisHash": "0xd611f22d291c5b7b69f1e105cca03352984c344c4421977efaa4cbdd1834e2aa"
+    },
+    {
+      "name": "interlay",
+      "displayName": "Interlay",
+      "tokens": [
+        "INTR"
+      ],
+      "website": "https://interlay.io/",
+      "description": "Interlay is a decentralized network dedicated to connecting crypto-currencies like Bitcoin with DeFi platforms like Polkadot and Ethereum. The Interlay network is hosted as a Polkadot parachain and will be connected to Cosmos, Ethereum, and other major DeFi networks.",
+      "relayChain": "polkadot",
+      "parachainId": "2032",
+      "genesisHash": "0xbf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72"
     }
   ]
 }
