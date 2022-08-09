@@ -6,7 +6,7 @@
       "tokens": [
         "DOT"
       ],
-      "website": "https://polkadot.network",
+      "website": "https://polkadot.network/",
       "description": "",
       "relayChain": "polkadot",
       "parachainId": "0",
@@ -18,7 +18,7 @@
       "tokens": [
         "KSM"
       ],
-      "website": "https://kusama.network",
+      "website": "https://kusama.network/",
       "description": "",
       "relayChain": "kusama",
       "parachainId": "0",
@@ -54,7 +54,7 @@
       "tokens": [
         "ASTR"
       ],
-      "website": "https://astar.network",
+      "website": "https://astar.network/",
       "description": "Astar is a Substrate Runtime Module Library which allows developers to add Plasma functions to their Substrate chain.",
       "relayChain": "polkadot",
       "parachainId": "2006",
@@ -78,7 +78,7 @@
       "tokens": [
         "GLMR"
       ],
-      "website": "https://moonbeam.network",
+      "website": "https://moonbeam.network/",
       "description": "Moonbeam makes it easy to build decentralized applications on Polkadot — which means your DApps can integrate with other blockchains, including Bitcoin and Ethereum.",
       "relayChain": "polkadot",
       "parachainId": "2004",
@@ -90,7 +90,7 @@
       "tokens": [
         "CLV"
       ],
-      "website": "https://clover.finance",
+      "website": "https://clover.finance/",
       "description": "Clover is a substrate based smart contract platform built for Polkadot, with added support for Ethereum developers to participate in the Polkadot ecosystem.",
       "relayChain": "polkadot",
       "parachainId": "2002",
@@ -114,7 +114,7 @@
       "tokens": [
         "HDX"
       ],
-      "website": "https://hydradx.io",
+      "website": "https://hydradx.io/",
       "description": "HydraDX is built as a parachain – specialized blockchain in the Polkadot network. It is benefiting from shared security, speed and flexibility of the Substrate framework while remaining optimized for a single purpose: enabling fluid programmable value exchange.",
       "genesisHash": "0xd2a620c27ec5cbc5621ff9a522689895074f7cca0d08e7134a7804e1a3ba86fc"
     },
@@ -124,7 +124,7 @@
       "tokens": [
         "HDX"
       ],
-      "website": "https://hydradx.io",
+      "website": "https://hydradx.io/",
       "description": "HydraDX is built as a parachain – specialized blockchain in the Polkadot network. It is benefiting from shared security, speed and flexibility of the Substrate framework while remaining optimized for a single purpose: enabling fluid programmable value exchange.",
       "relayChain": "polkadot",
       "parachainId": "2034",
@@ -161,7 +161,7 @@
       "tokens": [
         "NEER"
       ],
-      "website": "https://bit.country",
+      "website": "https://bit.country/",
       "description": "Bit.Country enables everyone to start their own metaverse for their people with the 3D world, NFTs, play-to-earn & build communities to earn, and takes community engagement to a new dimension on web3.0.",
       "relayChain": "kusama",
       "parachainId": "2096",
@@ -199,7 +199,7 @@
         "EQD",
         "LPT0"
       ],
-      "website": "https://genshiro.equilibrium.io",
+      "website": "https://genshiro.equilibrium.io/",
       "description": "",
       "relayChain": "kusama",
       "parachainId": "2024",
@@ -247,7 +247,7 @@
       "tokens": [
         "MOVR"
       ],
-      "website": "https://moonbeam.network",
+      "website": "https://moonbeam.network/",
       "description": "The network’s Kusama deployment will be called Moonriver, and have its own utility token which is called River. Supply and other token economic behaviors on Moonriver will be the same as Moonbeam, but token distribution will be different in order to support the unique goals and attributes of the network.",
       "relayChain": "kusama",
       "parachainId": "2023",
@@ -296,7 +296,7 @@
       "tokens": [
         "BSX"
       ],
-      "website": "https://bsx.fi",
+      "website": "https://bsx.fi/",
       "description": "",
       "relayChain": "kusama",
       "parachainId": "2090",
@@ -332,7 +332,7 @@
       "tokens": [
         "CRU"
       ],
-      "website": "https://crust.network",
+      "website": "https://crust.network/",
       "description": "Crust implements the incentive layer protocol for decentralized storage. It is adaptable to multiple storage layer protocols such as IPFS, and provides support for the application layer.",
       "relayChain": "polkadot",
       "parachainId": "2008",
@@ -344,7 +344,7 @@
       "tokens": [
         "XRT"
       ],
-      "website": "https://robonomics.network",
+      "website": "https://robonomics.network/",
       "description": "The creation and development of a platform that provides tools for working with the robot economy network (briefly - the Robonomics platform) will allow designers of new cities and industrial zones to build trust among the autonomous robots services, provide direct user access for ordering products from autonomous factories and services of urban sensor networks.",
       "relayChain": "kusama",
       "parachainId": "2048",
@@ -433,6 +433,30 @@
       "relayChain": "polkadot",
       "parachainId": "2032",
       "genesisHash": "0xbf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72"
+    },
+    {
+      "name": "litentry",
+      "displayName": "Litentry",
+      "tokens": [
+        "LIT"
+      ],
+      "website": "https://litentry.com/",
+      "description": "Litentry is a decentralized cross-chain Identity Aggregator that enables linking user identities across multiple networks.",
+      "relayChain": "polkadot",
+      "parachainId": "2013",
+      "genesisHash": "0x2fc8bb6ed7c0051bdcf4866c322ed32b6276572713607e3297ccf411b8f14aa9"
+    },
+    {
+      "name": "litmus",
+      "displayName": "Litmus",
+      "tokens": [
+        "LIT"
+      ],
+      "website": "https://kusama-crowdloan.litentry.com/",
+      "description": "Litmus is a companion canary network to Litentry, connects to the Kusama ecosystem. Litentry is a decentralized cross-chain Identity Aggregator that enables linking user identities across multiple networks.",
+      "relayChain": "kusama",
+      "parachainId": "2106",
+      "genesisHash": "0xda5831fbc8570e3c6336d0d72b8c08f8738beefec812df21ef2afc2982ede09c"
     }
   ]
 }

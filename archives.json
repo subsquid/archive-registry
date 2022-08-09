@@ -279,6 +279,48 @@
           "gateway": "archive-gateway"
         }
       ]
+    },
+    {
+      "network": "litentry",
+      "genesisHash": "0x2fc8bb6ed7c0051bdcf4866c322ed32b6276572713607e3297ccf411b8f14aa9",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://litentry.archive.subsquid.io/graphql",
+          "explorerUrl": "https://litentry.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "substrate-ingest",
+          "gateway": "archive-gateway"
+        }
+      ]
+    },
+    {
+      "network": "litmus",
+      "genesisHash": "0xda5831fbc8570e3c6336d0d72b8c08f8738beefec812df21ef2afc2982ede09c",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://litmus.archive.subsquid.io/graphql",
+          "explorerUrl": "https://litmus.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "substrate-ingest",
+          "gateway": "archive-gateway"
+        }
+      ]
+    },
+    {
+      "network": "khala",
+      "genesisHash": "0xd43540ba6d3eb4897c28a77d48cb5b729fea37603cbbfc7a86a73b72adb3be8d",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://khala.archive.subsquid.io/graphql",
+          "explorerUrl": "https://khala.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "substrate-ingest",
+          "gateway": "archive-gateway"
+        }
+      ]
     }
   ]
 }
