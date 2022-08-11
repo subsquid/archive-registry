@@ -239,34 +239,6 @@
       ]
     },
     {
-      "network": "crab",
-      "genesisHash": "0x34f61bfda344b3fad3c3e38832a91448b3c613b199eb23e5110a635d71c13c65",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://crab.archive.subsquid.io/graphql",
-          "explorerUrl": "https://crab.explorer.subsquid.io/graphql",
-          "release": "FireSquid",
-          "image": "substrate-ingest",
-          "gateway": "archive-gateway"
-        }
-      ]
-    },
-    {
-      "network": "mangata-x",
-      "genesisHash": "0xd611f22d291c5b7b69f1e105cca03352984c344c4421977efaa4cbdd1834e2aa",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://mangata-x.archive.subsquid.io/graphql",
-          "explorerUrl": "https://mangata-x.explorer.subsquid.io/graphql",
-          "release": "FireSquid",
-          "image": "substrate-ingest",
-          "gateway": "archive-gateway"
-        }
-      ]
-    },
-    {
       "network": "interlay",
       "genesisHash": "0xbf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72",
       "providers": [
