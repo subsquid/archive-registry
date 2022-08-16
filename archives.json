@@ -293,6 +293,48 @@
           "gateway": "archive-gateway"
         }
       ]
+    },
+    {
+      "network": "quartz",
+      "genesisHash": "0xcd4d732201ebe5d6b014edda071c4203e16867305332301dc8d092044b28e554",
+      "providers": [
+        {
+          "provider": "Unique Network",
+          "dataSourceUrl": "https://archive.unique.network/quartz/graphql",
+          "explorerUrl": "https://archive.unique.network/quartz/graphql",
+          "release": "FireSquid",
+          "image": "substrate-ingest",
+          "gateway": "archive-gateway"
+        }
+      ]
+    },
+    {
+      "network": "opal",
+      "genesisHash": "0x083f8c4495eaaca28f95762cac09fed3db67ed6f8e5934ae1a20a7eed4fd3328",
+      "providers": [
+        {
+          "provider": "Unique Network",
+          "dataSourceUrl": "https://archive.unique.network/opal/graphql",
+          "explorerUrl": "https://archive.unique.network/opal/graphql",
+          "release": "FireSquid",
+          "image": "substrate-ingest",
+          "gateway": "archive-gateway"
+        }
+      ]
+    },
+    {
+      "network": "unique",
+      "genesisHash": "0x84322d9cddbf35088f1e54e9a85c967a41a56a4f43445768125e61af166c7d31",
+      "providers": [
+        {
+          "provider": "Unique Network",
+          "dataSourceUrl": "https://archive.unique.network/unique/graphql",
+          "explorerUrl": "https://archive.unique.network/unique/graphql",
+          "release": "FireSquid",
+          "image": "substrate-ingest",
+          "gateway": "archive-gateway"
+        }
+      ]
     }
   ]
 }
