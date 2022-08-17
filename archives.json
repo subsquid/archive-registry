@@ -301,7 +301,7 @@
         {
           "provider": "Unique Network",
           "dataSourceUrl": "https://archive.unique.network/quartz/graphql",
-          "explorerUrl": "https://archive.unique.network/quartz/graphql",
+          "explorerUrl": "https://archive.unique.network/quartz/explorer/graphql",
           "release": "FireSquid",
           "image": "substrate-ingest",
           "gateway": "archive-gateway"
@@ -315,7 +315,7 @@
         {
           "provider": "Unique Network",
           "dataSourceUrl": "https://archive.unique.network/opal/graphql",
-          "explorerUrl": "https://archive.unique.network/opal/graphql",
+          "explorerUrl": "https://archive.unique.network/opal/explorer/graphql",
           "release": "FireSquid",
           "image": "substrate-ingest",
           "gateway": "archive-gateway"
@@ -329,7 +329,7 @@
         {
           "provider": "Unique Network",
           "dataSourceUrl": "https://archive.unique.network/unique/graphql",
-          "explorerUrl": "https://archive.unique.network/unique/graphql",
+          "explorerUrl": "https://archive.unique.network/unique/explorer/graphql",
           "release": "FireSquid",
           "image": "substrate-ingest",
           "gateway": "archive-gateway"
