@@ -1,3 +1,9 @@
+#### 1.0.10 (2022-08-17)
+
+##### Other Changes
+
+*  opal, quartz, unique. ([#21](https://github.com/subsquid/archive-registry/pull/21)) ([ca800962](https://github.com/subsquid/archive-registry/commit/ca8009623e866536f36bbb32273c788b858a6d1d))
+
 #### 1.0.9 (2022-08-09)
 
 #### 1.0.8 (2022-08-07)
