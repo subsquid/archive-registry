@@ -457,6 +457,30 @@
       "relayChain": "kusama",
       "parachainId": "2106",
       "genesisHash": "0xda5831fbc8570e3c6336d0d72b8c08f8738beefec812df21ef2afc2982ede09c"
+    },
+    {
+      "name": "opal",
+      "displayName": "Opal",
+      "tokens": [
+        "OPL"
+      ],
+      "website": "https://docs.unique.network/unique-and-quartz-wiki/build/get-started/testnet-and-mainnet#opal-testnet",
+      "description": "Unique Network provides an Opal Testnet to it's users in order to play with all blockchain features in a safe and free of network fees environment.",
+      "relayChain": null,
+      "parachainId": null,
+      "genesisHash": "0x083f8c4495eaaca28f95762cac09fed3db67ed6f8e5934ae1a20a7eed4fd3328"
+    },
+    {
+      "name": "unique",
+      "displayName": "Unique",
+      "tokens": [
+        "UNQ"
+      ],
+      "website": "https://unique.network/",
+      "description": "Unique Network is a scalable blockchain for marketplaces, games and dApps with advanced features, built for Polkadot.",
+      "relayChain": "polkadot",
+      "parachainId": "2037",
+      "genesisHash": "0x84322d9cddbf35088f1e54e9a85c967a41a56a4f43445768125e61af166c7d31"
     }
   ]
 }
