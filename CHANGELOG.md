@@ -1,3 +1,9 @@
+#### 1.0.11 (2022-08-23)
+
+##### Bug Fixes
+
+*  update gmordie image ([9f7719ed](https://github.com/subsquid/archive-registry/commit/9f7719eddf5a3fe30a8826835f453c7666a45d19))
+
 #### 1.0.10 (2022-08-17)
 
 ##### Other Changes
