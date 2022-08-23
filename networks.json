@@ -481,6 +481,16 @@
       "relayChain": "polkadot",
       "parachainId": "2037",
       "genesisHash": "0x84322d9cddbf35088f1e54e9a85c967a41a56a4f43445768125e61af166c7d31"
+    },
+    {
+      "name": "gmordie",
+      "displayName": "GM",
+      "tokens": [],
+      "website": "https://gmordie.com/",
+      "description": "GMorDie is a blockchain to test the boundaries of what Dotsama can really do.",
+      "relayChain": "kusama",
+      "parachainId": "2123",
+      "genesisHash": "0x19a3733beb9cb8a970a308d835599e9005e02dc007a35440e461a451466776f8"
     }
   ]
 }
