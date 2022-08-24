@@ -57,6 +57,20 @@
       "genesisHash": "0x9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed"
     },
     {
+      "network": "calamari",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://calamari.archive.subsquid.io/graphql",
+          "explorerUrl": "https://calamari.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "substrate-ingest",
+          "gateway": "archive-gateway"
+        }
+      ],
+      "genesisHash": "0x4ac80c99289841dd946ef92765bf659a307d39189b3ce374a92b5f0415ee17a1"
+    },
+    {
       "network": "crust",
       "providers": [
         {
@@ -253,6 +267,20 @@
       ]
     },
     {
+      "network": "peaq",
+      "genesisHash": "0xf496028047ba9e394a575e5d2d93828360d35a4c2dade61efff0de309021909f",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://peaq.archive.subsquid.io/graphql",
+          "explorerUrl": "https://peaq.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "substrate-ingest",
+          "gateway": "archive-gateway"
+        }
+      ]
+    },
+    {
       "network": "phala",
       "genesisHash": "0x1bb969d85965e4bb5a651abbedf21a54b6b31a21f66b5401cc3f1e286268d736",
       "providers": [
@@ -321,6 +349,34 @@
         }
       ],
       "genesisHash": "0xddb89973361a170839f80f152d2e9e38a376a5a7eccefcade763f46a8e567019"
+    },
+    {
+      "network": "shiden",
+      "genesisHash": "0xf1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://shiden.archive.subsquid.io/graphql",
+          "explorerUrl": "https://shiden.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "substrate-ingest",
+          "gateway": "archive-gateway"
+        }
+      ]
+    },
+    {
+      "network": "statemint",
+      "genesisHash": "0x68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://statemint.archive.subsquid.io/graphql",
+          "explorerUrl": "https://statemint.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "substrate-ingest",
+          "gateway": "archive-gateway"
+        }
+      ]
     },
     {
       "network": "subsocial-solochain",

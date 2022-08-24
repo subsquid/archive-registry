@@ -373,6 +373,18 @@
       "genesisHash": "0xe61a41c53f5dcd0beb09df93b34402aada44cb05117b71059cce40a2723a4e97"
     },
     {
+      "name": "peaq",
+      "displayName": "peaq",
+      "tokens": [
+        "PARA"
+      ],
+      "website": "https://peaq.network/",
+      "description": "peaq network is a smart contract platform built on Substrate supporting ink! and Ethereum Virtual Machine (EVM) smart contracts.",
+      "relayChain": null,
+      "parachainId": null,
+      "genesisHash": "0xf496028047ba9e394a575e5d2d93828360d35a4c2dade61efff0de309021909f"
+    },
+    {
       "name": "pioneer",
       "displayName": "Pioneer Network",
       "tokens": [
