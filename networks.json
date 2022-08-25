@@ -134,6 +134,16 @@
       "genesisHash": "0x729cb8f2cf428adcf81fe69610edda32c5711b2ff17de747e8604a3587021db8"
     },
     {
+      "name": "gear-testnet",
+      "displayName": "Gear Testnet",
+      "tokens": [],
+      "website": "https://gear-tech.io/",
+      "description": "Gear is an advanced WASM based smart contract platform, aiming to be a Polkadot and Kusama parachain, that enables developers to deploy their dApps in under 5 minutes in the easiest and most efficient way possible.",
+      "relayChain": null,
+      "parachainId": null,
+      "genesisHash": "0x6cf0c78d265512c4f4e7d8c046ef25795f163fe476a838b64e7dbf2cdc164593"
+    },
+    {
       "name": "genshiro",
       "displayName": "Genshiro Network",
       "tokens": [
