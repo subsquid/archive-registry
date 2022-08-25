@@ -376,7 +376,7 @@
       "name": "peaq",
       "displayName": "peaq",
       "tokens": [
-        "PARA"
+        "PEAQ"
       ],
       "website": "https://peaq.network/",
       "description": "peaq network is a smart contract platform built on Substrate supporting ink! and Ethereum Virtual Machine (EVM) smart contracts.",
