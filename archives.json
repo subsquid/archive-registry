@@ -85,6 +85,20 @@
       "genesisHash": "0x8b404e7ed8789d813982b9cb4c8b664c05b3fbf433309f603af014ec9ce56a8c"
     },
     {
+      "network": "efinity",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://efinity.archive.subsquid.io/graphql",
+          "explorerUrl": "https://efinity.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "substrate-ingest",
+          "gateway": "archive-gateway"
+        }
+      ],
+      "genesisHash": "0x335369975fced3fc22e23498da306a712f4fd964c957364d53c49cea9db8bc2f"
+    },
+    {
       "network": "equilibrium",
       "providers": [
         {
