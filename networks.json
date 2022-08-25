@@ -134,6 +134,18 @@
       "genesisHash": "0x729cb8f2cf428adcf81fe69610edda32c5711b2ff17de747e8604a3587021db8"
     },
     {
+      "name": "efinity",
+      "displayName": "Efinity",
+      "tokens": [
+        "EFI"
+      ],
+      "website": "https://efinity.io",
+      "description": "Efinity is a decentralized cross-chain token network built with Substrate that gives users the tools to create, manage, and scale NFT operations fast and affordably. It can be thought of as the NFT super-highway; buying, selling, trading and utilizing NFT's to their full potential is the priority.",
+      "relayChain": "polkadot",
+      "parachainId": "2021",
+      "genesisHash": "0x335369975fced3fc22e23498da306a712f4fd964c957364d53c49cea9db8bc2f"
+    },
+    {
       "name": "gear-testnet",
       "displayName": "Gear Testnet",
       "tokens": [],
