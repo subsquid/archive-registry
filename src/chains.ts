@@ -4,6 +4,6 @@
 // Run npm run gen-types to generate this file from archives.
 //
 
-export type KnownArchives = "acala"|"aleph-zero-testnet"|"astar"|"bifrost"|"calamari"|"crust"|"equilibrium"|"gear-testnet"|"gmordie"|"hydradx"|"interlay"|"karura"|"khala"|"kusama"|"litentry"|"litmus"|"moonbase"|"moonbeam"|"moonriver"|"opal"|"peaq"|"phala"|"polkadot"|"quartz"|"rococo"|"shibuya"|"shiden"|"statemint"|"subsocial-solochain"|"unique"
+export type KnownArchives = "acala"|"aleph-zero-testnet"|"astar"|"bifrost"|"calamari"|"crust"|"efinity"|"equilibrium"|"gear-testnet"|"gmordie"|"hydradx"|"interlay"|"karura"|"khala"|"kusama"|"litentry"|"litmus"|"moonbase"|"moonbeam"|"moonriver"|"opal"|"peaq"|"phala"|"polkadot"|"quartz"|"rococo"|"shibuya"|"shiden"|"statemint"|"subsocial-solochain"|"unique"
 export type KnownArchivesV5 = "basilisk-test"|"peaq"|"calamari"|"parallel"|"moonbeam"|"clover"|"acala"|"kusama"|"polkadot"|"karura"|"crust"|"moonriver"|"astar"|"hydradx"|"subsocial"
 
