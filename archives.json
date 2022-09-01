@@ -36,8 +36,8 @@
           "dataSourceUrl": "https://astar.archive.subsquid.io/graphql",
           "explorerUrl": "https://astar.explorer.subsquid.io/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:0.3.1",
-          "gateway": "subsquid/substrate-gateway:1.3.1"
+          "image": "subsquid/substrate-ingest:1.1.0",
+          "gateway": "subsquid/substrate-gateway:2.1.1"
         }
       ],
       "genesisHash": "0x9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6"
@@ -50,8 +50,8 @@
           "dataSourceUrl": "https://bifrost.archive.subsquid.io/graphql",
           "explorerUrl": "https://bifrost.explorer.subsquid.io/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:0.3.1",
-          "gateway": "subsquid/substrate-gateway:1.3.1"
+          "image": "subsquid/substrate-ingest:1.1.0",
+          "gateway": "subsquid/substrate-gateway:2.1.1"
         }
       ],
       "genesisHash": "0x9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed"
@@ -247,8 +247,8 @@
           "dataSourceUrl": "https://moonbase.archive.subsquid.io/graphql",
           "explorerUrl": "https://moonbase.explorer.subsquid.io/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:0.3.1",
-          "gateway": "subsquid/substrate-gateway:1.3.1"
+          "image": "subsquid/substrate-ingest:1.1.0",
+          "gateway": "subsquid/substrate-gateway:2.1.1"
         }
       ]
     },
