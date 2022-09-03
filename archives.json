@@ -451,17 +451,17 @@
       ]
     },
     {
-      "network": "subsocial-solochain",
-      "genesisHash": "0x0bd72c1c305172e1275278aaeb3f161e02eccb7a819e63f62d47bd53a28189f8",
+      "network": "subsocial-parachain",
+      "genesisHash": "0x4a12be580bb959937a1c7a61d5cf24428ed67fa571974b4007645d1886e7c89f",
       "providers": [
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://subsocial.archive.subsquid.io/graphql",
           "explorerUrl": "https://subsocial.explorer.subsquid.io/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:0.3.1",
-          "ingest": "subsquid/substrate-ingest:0.3.1",
-          "gateway": "subsquid/substrate-gateway:1.3.1"
+          "image": "subsquid/substrate-ingest:1.1.1",
+          "ingest": "subsquid/substrate-ingest:1.1.1",
+          "gateway": "subsquid/substrate-gateway:2.1.1"
         }
       ]
     },
