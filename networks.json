@@ -510,8 +510,8 @@
       ],
       "website": "http://subsocial.network/",
       "description": "An open platform for decentralized social networks and marketplaces. It's censorship-resistant and has built-in monetization methods. Built with Polkadot and IPFS tech stack.",
-      "relayChain": "",
-      "parachainId": "",
+      "relayChain": null,
+      "parachainId": null,
       "genesisHash": "0x4a12be580bb959937a1c7a61d5cf24428ed67fa571974b4007645d1886e7c89f"
     },
     {

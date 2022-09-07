@@ -8,9 +8,9 @@
           "dataSourceUrl": "https://acala.archive.subsquid.io/graphql",
           "explorerUrl": "https://acala.explorer.subsquid.io/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1.1.0",
-          "ingest": "subsquid/substrate-ingest:1.1.0",
-          "gateway": "subsquid/substrate-gateway:1.3.1"
+          "image": "subsquid/substrate-ingest:firesquid",
+          "ingest": "subsquid/substrate-ingest:firesquid",
+          "gateway": "subsquid/substrate-gateway:firesquid"
         }
       ],
       "genesisHash": "0xfc41b9bd8ef8fe53d58c7ea67c794c7ec9a73daf05e6d54b14ff6342c99ba64c"
@@ -24,9 +24,9 @@
           "dataSourceUrl": "https://aleph-zero-testnet.archive.subsquid.io/graphql",
           "explorerUrl": "https://aleph-zero-testnet.explorer.subsquid.io/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1.1.0",
-          "ingest": "subsquid/substrate-ingest:1.1.0",
-          "gateway": "subsquid/substrate-gateway:2.1.1"
+          "image": "subsquid/substrate-ingest:firesquid",
+          "ingest": "subsquid/substrate-ingest:firesquid",
+          "gateway": "subsquid/substrate-gateway:firesquid"
         }
       ]
     },
@@ -38,9 +38,9 @@
           "dataSourceUrl": "https://astar.archive.subsquid.io/graphql",
           "explorerUrl": "https://astar.explorer.subsquid.io/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1.1.0",
-          "ingest": "subsquid/substrate-ingest:1.1.0",
-          "gateway": "subsquid/substrate-gateway:2.1.1"
+          "image": "subsquid/substrate-ingest:firesquid",
+          "ingest": "subsquid/substrate-ingest:firesquid",
+          "gateway": "subsquid/substrate-gateway:firesquid"
         }
       ],
       "genesisHash": "0x9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6"
@@ -53,9 +53,9 @@
           "dataSourceUrl": "https://bifrost.archive.subsquid.io/graphql",
           "explorerUrl": "https://bifrost.explorer.subsquid.io/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1.1.0",
-          "ingest": "subsquid/substrate-ingest:1.1.0",
-          "gateway": "subsquid/substrate-gateway:2.1.1"
+          "image": "subsquid/substrate-ingest:firesquid",
+          "ingest": "subsquid/substrate-ingest:firesquid",
+          "gateway": "subsquid/substrate-gateway:firesquid"
         }
       ],
       "genesisHash": "0x9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed"
@@ -68,9 +68,9 @@
           "dataSourceUrl": "https://calamari.archive.subsquid.io/graphql",
           "explorerUrl": "https://calamari.explorer.subsquid.io/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1.1.0",
-          "ingest": "subsquid/substrate-ingest:1.1.0",
-          "gateway": "subsquid/substrate-gateway:2.1.1"
+          "image": "subsquid/substrate-ingest:firesquid",
+          "ingest": "subsquid/substrate-ingest:firesquid",
+          "gateway": "subsquid/substrate-gateway:firesquid"
         }
       ],
       "genesisHash": "0x4ac80c99289841dd946ef92765bf659a307d39189b3ce374a92b5f0415ee17a1"
@@ -98,9 +98,9 @@
           "dataSourceUrl": "https://efinity.archive.subsquid.io/graphql",
           "explorerUrl": "https://efinity.explorer.subsquid.io/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1.1.0",
-          "ingest": "subsquid/substrate-ingest:1.1.0",
-          "gateway": "subsquid/substrate-gateway:2.1.1"
+          "image": "subsquid/substrate-ingest:firesquid",
+          "ingest": "subsquid/substrate-ingest:firesquid",
+          "gateway": "subsquid/substrate-gateway:firesquid"
         }
       ],
       "genesisHash": "0x335369975fced3fc22e23498da306a712f4fd964c957364d53c49cea9db8bc2f"
@@ -129,9 +129,9 @@
           "dataSourceUrl": "https://gear-testnet.archive.subsquid.io/graphql",
           "explorerUrl": "https://gear-testnet.explorer.subsquid.io/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:0.3.1",
-          "ingest": "subsquid/substrate-ingest:0.3.1",
-          "gateway": "subsquid/substrate-gateway:1.3.1"
+          "image": "subsquid/substrate-ingest:1.1.1",
+          "ingest": "subsquid/substrate-ingest:1.1.1",
+          "gateway": "subsquid/substrate-gateway:2.1.1"
         }
       ]
     },
@@ -144,9 +144,9 @@
           "dataSourceUrl": "https://gmordie.archive.subsquid.io/graphql",
           "explorerUrl": "https://gmordie.explorer.subsquid.io/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1.1.0",
-          "ingest": "subsquid/substrate-ingest:1.1.0",
-          "gateway": "subsquid/substrate-gateway:2.1.1"
+          "image": "subsquid/substrate-ingest:firesquid",
+          "ingest": "subsquid/substrate-ingest:firesquid",
+          "gateway": "subsquid/substrate-gateway:firesquid"
         }
       ]
     },
@@ -158,9 +158,9 @@
           "dataSourceUrl": "https://hydradx.archive.subsquid.io/graphql",
           "explorerUrl": "https://hydradx.explorer.subsquid.io/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:0.3.1",
-          "ingest": "subsquid/substrate-ingest:0.3.1",
-          "gateway": "subsquid/substrate-gateway:1.3.1"
+          "image": "subsquid/substrate-ingest:firesquid",
+          "ingest": "subsquid/substrate-ingest:firesquid",
+          "gateway": "subsquid/substrate-gateway:firesquid"
         }
       ],
       "genesisHash": "0xafdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d"
@@ -174,9 +174,9 @@
           "dataSourceUrl": "https://interlay.archive.subsquid.io/graphql",
           "explorerUrl": "https://interlay.explorer.subsquid.io/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1.1.0",
-          "ingest": "subsquid/substrate-ingest:1.1.0",
-          "gateway": "subsquid/substrate-gateway:2.1.1"
+          "image": "subsquid/substrate-ingest:firesquid",
+          "ingest": "subsquid/substrate-ingest:firesquid",
+          "gateway": "subsquid/substrate-gateway:firesquid"
         }
       ]
     },
@@ -188,9 +188,9 @@
           "dataSourceUrl": "https://karura.archive.subsquid.io/graphql",
           "explorerUrl": "https://karura.explorer.subsquid.io/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:0.3.1",
-          "ingest": "subsquid/substrate-ingest:0.3.1",
-          "gateway": "subsquid/substrate-gateway:1.3.1"
+          "image": "subsquid/substrate-ingest:firesquid",
+          "ingest": "subsquid/substrate-ingest:firesquid",
+          "gateway": "subsquid/substrate-gateway:firesquid"
         }
       ],
       "genesisHash": "0xbaf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b"
@@ -204,9 +204,24 @@
           "dataSourceUrl": "https://khala.archive.subsquid.io/graphql",
           "explorerUrl": "https://khala.explorer.subsquid.io/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:0.3.1",
-          "ingest": "subsquid/substrate-ingest:0.3.1",
-          "gateway": "subsquid/substrate-gateway:1.3.1"
+          "image": "subsquid/substrate-ingest:firesquid",
+          "ingest": "subsquid/substrate-ingest:firesquid",
+          "gateway": "subsquid/substrate-gateway:firesquid"
+        }
+      ]
+    },
+    {
+      "network": "kintsugi",
+      "genesisHash": "0x9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://kintsugi.archive.subsquid.io/graphql",
+          "explorerUrl": "https://kintsugi.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "subsquid/substrate-ingest:firesquid",
+          "ingest": "subsquid/substrate-ingest:firesquid",
+          "gateway": "subsquid/substrate-gateway:firesquid"
         }
       ]
     },
@@ -218,9 +233,9 @@
           "dataSourceUrl": "https://kusama.archive.subsquid.io/graphql",
           "explorerUrl": "https://kusama.explorer.subsquid.io/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1.1.0",
-          "ingest": "subsquid/substrate-ingest:1.1.0",
-          "gateway": "subsquid/substrate-gateway:2.1.1"
+          "image": "subsquid/substrate-ingest:firesquid",
+          "ingest": "subsquid/substrate-ingest:firesquid",
+          "gateway": "subsquid/substrate-gateway:firesquid"
         }
       ],
       "genesisHash": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe"
@@ -234,9 +249,9 @@
           "dataSourceUrl": "https://litentry.archive.subsquid.io/graphql",
           "explorerUrl": "https://litentry.explorer.subsquid.io/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1.1.0",
-          "ingest": "subsquid/substrate-ingest:1.1.0",
-          "gateway": "subsquid/substrate-gateway:2.1.1"
+          "image": "subsquid/substrate-ingest:firesquid",
+          "ingest": "subsquid/substrate-ingest:firesquid",
+          "gateway": "subsquid/substrate-gateway:firesquid"
         }
       ]
     },
@@ -249,9 +264,9 @@
           "dataSourceUrl": "https://litmus.archive.subsquid.io/graphql",
           "explorerUrl": "https://litmus.explorer.subsquid.io/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1.1.0",
-          "ingest": "subsquid/substrate-ingest:1.1.0",
-          "gateway": "subsquid/substrate-gateway:2.1.1"
+          "image": "subsquid/substrate-ingest:firesquid",
+          "ingest": "subsquid/substrate-ingest:firesquid",
+          "gateway": "subsquid/substrate-gateway:firesquid"
         }
       ]
     },
@@ -264,9 +279,9 @@
           "dataSourceUrl": "https://moonbase.archive.subsquid.io/graphql",
           "explorerUrl": "https://moonbase.explorer.subsquid.io/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1.1.0",
-          "ingest": "subsquid/substrate-ingest:1.1.0",
-          "gateway": "subsquid/substrate-gateway:2.1.1"
+          "image": "subsquid/substrate-ingest:firesquid",
+          "ingest": "subsquid/substrate-ingest:firesquid",
+          "gateway": "subsquid/substrate-gateway:firesquid"
         }
       ]
     },
@@ -278,9 +293,9 @@
           "dataSourceUrl": "https://moonbeam.archive.subsquid.io/graphql",
           "explorerUrl": "https://moonbeam.explorer.subsquid.io/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1.1.0",
-          "ingest": "subsquid/substrate-ingest:1.1.0",
-          "gateway": "subsquid/substrate-gateway:2.1.1"
+          "image": "subsquid/substrate-ingest:firesquid",
+          "ingest": "subsquid/substrate-ingest:firesquid",
+          "gateway": "subsquid/substrate-gateway:firesquid"
         }
       ],
       "genesisHash": "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d"
@@ -293,9 +308,9 @@
           "dataSourceUrl": "https://moonriver.archive.subsquid.io/graphql",
           "explorerUrl": "https://moonriver.explorer.subsquid.io/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1.1.0",
-          "ingest": "subsquid/substrate-ingest:1.1.0",
-          "gateway": "subsquid/substrate-gateway:2.1.1"
+          "image": "subsquid/substrate-ingest:firesquid",
+          "ingest": "subsquid/substrate-ingest:firesquid",
+          "gateway": "subsquid/substrate-gateway:firesquid"
         }
       ],
       "genesisHash": "0x401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b"
@@ -309,9 +324,9 @@
           "dataSourceUrl": "https://archive.unique.network/opal/graphql",
           "explorerUrl": "https://archive.unique.network/opal/explorer/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:0.3.1",
-          "ingest": "subsquid/substrate-ingest:0.3.1",
-          "gateway": "subsquid/substrate-gateway:1.3.1"
+          "image": "subsquid/substrate-ingest:1.1.0",
+          "ingest": "subsquid/substrate-ingest:1.1.0",
+          "gateway": "subsquid/substrate-gateway:2.1.1"
         }
       ]
     },
@@ -324,9 +339,9 @@
           "dataSourceUrl": "https://peaq.archive.subsquid.io/graphql",
           "explorerUrl": "https://peaq.explorer.subsquid.io/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1.1.0",
-          "ingest": "subsquid/substrate-ingest:1.1.0",
-          "gateway": "subsquid/substrate-gateway:2.1.1"
+          "image": "subsquid/substrate-ingest:firesquid",
+          "ingest": "subsquid/substrate-ingest:firesquid",
+          "gateway": "subsquid/substrate-gateway:firesquid"
         }
       ]
     },
@@ -339,9 +354,9 @@
           "dataSourceUrl": "https://phala.archive.subsquid.io/graphql",
           "explorerUrl": "https://phala.explorer.subsquid.io/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:0.3.1",
-          "ingest": "subsquid/substrate-ingest:0.3.1",
-          "gateway": "subsquid/substrate-gateway:1.3.1"
+          "image": "subsquid/substrate-ingest:firesquid",
+          "ingest": "subsquid/substrate-ingest:firesquid",
+          "gateway": "subsquid/substrate-gateway:firesquid"
         }
       ]
     },
@@ -353,9 +368,9 @@
           "dataSourceUrl": "https://polkadot.archive.subsquid.io/graphql",
           "explorerUrl": "https://polkadot.explorer.subsquid.io/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1.1.0",
-          "ingest": "subsquid/substrate-ingest:1.1.0",
-          "gateway": "subsquid/substrate-gateway:2.1.1"
+          "image": "subsquid/substrate-ingest:firesquid",
+          "ingest": "subsquid/substrate-ingest:firesquid",
+          "gateway": "subsquid/substrate-gateway:firesquid"
         }
       ],
       "genesisHash": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3"
@@ -369,9 +384,9 @@
           "dataSourceUrl": "https://archive.unique.network/quartz/graphql",
           "explorerUrl": "https://archive.unique.network/quartz/explorer/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:0.3.1",
-          "ingest": "subsquid/substrate-ingest:0.3.1",
-          "gateway": "subsquid/substrate-gateway:1.3.1"
+          "image": "subsquid/substrate-ingest:1.1.0",
+          "ingest": "subsquid/substrate-ingest:1.1.0",
+          "gateway": "subsquid/substrate-gateway:2.1.1"
         }
       ]
     },
@@ -384,9 +399,9 @@
           "dataSourceUrl": "https://rococo.archive.subsquid.io/graphql",
           "explorerUrl": "https://rococo.explorer.subsquid.io/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1.1.1",
-          "ingest": "subsquid/substrate-ingest:1.1.1",
-          "gateway": "subsquid/substrate-gateway:1.3.1"
+          "image": "subsquid/substrate-ingest:firesquid",
+          "ingest": "subsquid/substrate-ingest:firesquid",
+          "gateway": "subsquid/substrate-gateway:firesquid"
         }
       ]
     },
@@ -398,9 +413,9 @@
           "dataSourceUrl": "https://shibuya.archive.subsquid.io/graphql",
           "explorerUrl": "https://shibuya.explorer.subsquid.io/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1.1.0",
-          "ingest": "subsquid/substrate-ingest:1.1.0",
-          "gateway": "subsquid/substrate-gateway:2.1.1"
+          "image": "subsquid/substrate-ingest:firesquid",
+          "ingest": "subsquid/substrate-ingest:firesquid",
+          "gateway": "subsquid/substrate-gateway:firesquid"
         }
       ],
       "genesisHash": "0xddb89973361a170839f80f152d2e9e38a376a5a7eccefcade763f46a8e567019"
@@ -414,9 +429,9 @@
           "dataSourceUrl": "https://shiden.archive.subsquid.io/graphql",
           "explorerUrl": "https://shiden.explorer.subsquid.io/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1.1.0",
-          "ingest": "subsquid/substrate-ingest:1.1.0",
-          "gateway": "subsquid/substrate-gateway:2.1.1"
+          "image": "subsquid/substrate-ingest:firesquid",
+          "ingest": "subsquid/substrate-ingest:firesquid",
+          "gateway": "subsquid/substrate-gateway:firesquid"
         }
       ]
     },
@@ -429,9 +444,9 @@
           "dataSourceUrl": "https://statemine.archive.subsquid.io/graphql",
           "explorerUrl": "https://statemine.explorer.subsquid.io/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:0.3.1",
-          "ingest": "subsquid/substrate-ingest:0.3.1",
-          "gateway": "subsquid/substrate-gateway:1.3.1"
+          "image": "subsquid/substrate-ingest:firesquid",
+          "ingest": "subsquid/substrate-ingest:firesquid",
+          "gateway": "subsquid/substrate-gateway:firesquid"
         }
       ]
     },
@@ -444,9 +459,9 @@
           "dataSourceUrl": "https://statemint.archive.subsquid.io/graphql",
           "explorerUrl": "https://statemint.explorer.subsquid.io/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:0.3.1",
-          "ingest": "subsquid/substrate-ingest:0.3.1",
-          "gateway": "subsquid/substrate-gateway:1.3.1"
+          "image": "subsquid/substrate-ingest:firesquid",
+          "ingest": "subsquid/substrate-ingest:firesquid",
+          "gateway": "subsquid/substrate-gateway:firesquid"
         }
       ]
     },
@@ -459,9 +474,9 @@
           "dataSourceUrl": "https://subsocial.archive.subsquid.io/graphql",
           "explorerUrl": "https://subsocial.explorer.subsquid.io/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1.1.1",
-          "ingest": "subsquid/substrate-ingest:1.1.1",
-          "gateway": "subsquid/substrate-gateway:2.1.1"
+          "image": "subsquid/substrate-ingest:firesquid",
+          "ingest": "subsquid/substrate-ingest:firesquid",
+          "gateway": "subsquid/substrate-gateway:firesquid"
         }
       ]
     },
@@ -474,9 +489,9 @@
           "dataSourceUrl": "https://archive.unique.network/unique/graphql",
           "explorerUrl": "https://archive.unique.network/unique/explorer/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:0.3.1",
-          "ingest": "subsquid/substrate-ingest:0.3.1",
-          "gateway": "subsquid/substrate-gateway:1.3.1"
+          "image": "subsquid/substrate-ingest:1.1.0",
+          "ingest": "subsquid/substrate-ingest:1.1.0",
+          "gateway": "subsquid/substrate-gateway:2.1.1"
         }
       ]
     }
