@@ -1,3 +1,9 @@
+#### 1.0.13 (2022-09-07)
+
+##### New Features
+
+*  update images versions and add kintsugi ([e0aee825](https://github.com/subsquid/archive-registry/commit/e0aee825ee17de5e4b19bdd70d457c285385be49))
+
 #### 1.0.12 (2022-08-25)
 
 #### 1.0.11 (2022-08-23)
