@@ -1,3 +1,9 @@
+#### 1.0.14 (2022-09-13)
+
+##### New Features
+
+*  add bajun archive ([3861dbd2](https://github.com/subsquid/archive-registry/commit/3861dbd264d9f45458512b3dc7ca578fddfe45cf))
+
 #### 1.0.13 (2022-09-07)
 
 ##### New Features
