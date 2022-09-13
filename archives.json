@@ -46,6 +46,21 @@
       "genesisHash": "0x9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6"
     },
     {
+      "network": "bajun",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://bajun.archive.subsquid.io/graphql",
+          "explorerUrl": "https://bajun.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "subsquid/substrate-ingest:1",
+          "ingest": "subsquid/substrate-ingest:1",
+          "gateway": "subsquid/substrate-gateway:2"
+        }
+      ],
+      "genesisHash": "0x35a06bfec2edf0ff4be89a6428ccd9ff5bd0167d618c5a0d4341f9600a458d14"
+    },
+    {
       "network": "bifrost",
       "providers": [
         {
