@@ -151,11 +151,23 @@
       "tokens": [
         "EFI"
       ],
-      "website": "https://efinity.io",
+      "website": "https://efinity.io/",
       "description": "Efinity is a decentralized cross-chain token network built with Substrate that gives users the tools to create, manage, and scale NFT operations fast and affordably. It can be thought of as the NFT super-highway; buying, selling, trading and utilizing NFT's to their full potential is the priority.",
       "relayChain": "polkadot",
       "parachainId": "2021",
       "genesisHash": "0x335369975fced3fc22e23498da306a712f4fd964c957364d53c49cea9db8bc2f"
+    },
+    {
+      "name": "equilibrium",
+      "displayName": "Equilibrium",
+      "tokens": [
+        "EQ"
+      ],
+      "website": "https://equilibrium.io/",
+      "description": "Equilibrium is introducing the first cross-chain money market that combines pooled lending with synthetic asset generation and trading.",
+      "relayChain": null,
+      "parachainId": null,
+      "genesisHash": "0x89d3ec46d2fb43ef5a9713833373d5ea666b092fa8fd68fbc34596036571b907"
     },
     {
       "name": "gear-testnet",
@@ -243,7 +255,7 @@
       "tokens": [
         "TNKR"
       ],
-      "website": "https://invarch.network/tinkernet",
+      "website": "https://invarch.network/tinkernet/",
       "description": "The Tinkernet Parachain is the canary network of the InvArch Network, designed as the IP Asset & accelerated development staging grounds for the Kusama ecosystem.",
       "relayChain": "kusama",
       "parachainId": "2125",
