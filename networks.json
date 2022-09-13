@@ -49,13 +49,25 @@
       "genesisHash": "0x9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6"
     },
     {
+      "name": "bajun",
+      "displayName": "Bajun Network",
+      "tokens": [
+        "BAJU"
+      ],
+      "website": "https://ajuna.io/",
+      "description": "The Bajun Network will be fully functional and host games. It will be mainly used for testing and introducing new Ajuna features, services,  and functionalities. This will provide a fastmoving environment for development and testing. ",
+      "relayChain": "kusama",
+      "parachainId": "2119",
+      "genesisHash": "0x35a06bfec2edf0ff4be89a6428ccd9ff5bd0167d618c5a0d4341f9600a458d14"
+    },
+    {
       "name": "basilisk",
       "displayName": "Basilisk",
       "tokens": [
         "BSX"
       ],
       "website": "https://bsx.fi/",
-      "description": "",
+      "description": "Basilisk is not a mere canary network of HydraDX - it is an independent chain which has the mission to enable frictionless liquidity bootstrapping for new cryptoassets.",
       "relayChain": "kusama",
       "parachainId": "2090",
       "genesisHash": "0xa85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755"
@@ -224,6 +236,18 @@
       "relayChain": "polkadot",
       "parachainId": "2032",
       "genesisHash": "0xbf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72"
+    },
+    {
+      "name": "invarch-tinkernet",
+      "displayName": "InvArch Tinkernet",
+      "tokens": [
+        "TNKR"
+      ],
+      "website": "https://invarch.network/tinkernet",
+      "description": "The Tinkernet Parachain is the canary network of the InvArch Network, designed as the IP Asset & accelerated development staging grounds for the Kusama ecosystem.",
+      "relayChain": "kusama",
+      "parachainId": "2125",
+      "genesisHash": "0xd42e9606a995dfe433dc7955dc2a70f495f350f373daa200098ae84437816ad2"
     },
     {
       "name": "karura",
