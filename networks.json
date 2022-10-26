@@ -180,6 +180,18 @@
       "genesisHash": "0x6cf0c78d265512c4f4e7d8c046ef25795f163fe476a838b64e7dbf2cdc164593"
     },
     {
+      "name": "gemini-2a-testnet",
+      "displayName": "Gemini 2a Testnet",
+      "tokens": [
+        "TSSC"
+      ],
+      "website": "https://subspace.network/",
+      "description": "Subspace Network is a massively scalable infrastructure for Web3 that will empower and connect other blockchain ecosystems. Core use cases will include data availability for rollups on Ethereum (to start with), archival storage for all layer ones, and trustless cross-chain bridging to enable a true multi-chain future. Applications on any blockchain ecosystem can leverage the Subspace Network to connect to other ecosystems without migrating their current implementations.",
+      "relayChain": null,
+      "parachainId": null,
+      "genesisHash": "0x43d10ffd50990380ffe6c9392145431d630ae67e89dbc9c014cac2a417759101"
+    },
+    {
       "name": "genshiro",
       "displayName": "Genshiro Network",
       "tokens": [

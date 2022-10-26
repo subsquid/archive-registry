@@ -151,6 +151,21 @@
       ]
     },
     {
+      "network": "gemini-2a-testnet",
+      "genesisHash": "0x43d10ffd50990380ffe6c9392145431d630ae67e89dbc9c014cac2a417759101",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://gemini-2a-testnet.archive.subsquid.io/graphql",
+          "explorerUrl": "https://gemini-2a-testnet.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "subsquid/substrate-ingest:1",
+          "ingest": "subsquid/substrate-ingest:1",
+          "gateway": "subsquid/substrate-gateway:2"
+        }
+      ]
+    },
+    {
       "network": "gmordie",
       "genesisHash": "0x19a3733beb9cb8a970a308d835599e9005e02dc007a35440e461a451466776f8",
       "providers": [
