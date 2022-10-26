@@ -1,3 +1,9 @@
+#### 1.0.15 (2022-10-26)
+
+##### Other Changes
+
+* //github.com/subsquid/archive-registry into main ([f27d18b5](https://github.com/subsquid/archive-registry/commit/f27d18b5569e221660086f407f9fdd4c1d091018))
+
 #### 1.0.14 (2022-09-13)
 
 ##### New Features
