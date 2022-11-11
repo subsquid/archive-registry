@@ -369,9 +369,9 @@
           "dataSourceUrl": "https://archive.unique.network/opal/graphql",
           "explorerUrl": "https://archive.unique.network/opal/explorer/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1.1.0",
-          "ingest": "subsquid/substrate-ingest:1.1.0",
-          "gateway": "subsquid/substrate-gateway:2.1.1"
+          "image": "subsquid/substrate-ingest:1.2.2",
+          "ingest": "subsquid/substrate-ingest:1.2.2",
+          "gateway": "subsquid/substrate-gateway:2.3.1"
         }
       ]
     },
@@ -429,9 +429,9 @@
           "dataSourceUrl": "https://archive.unique.network/quartz/graphql",
           "explorerUrl": "https://archive.unique.network/quartz/explorer/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1.1.0",
-          "ingest": "subsquid/substrate-ingest:1.1.0",
-          "gateway": "subsquid/substrate-gateway:2.1.1"
+          "image": "subsquid/substrate-ingest:1.2.2",
+          "ingest": "subsquid/substrate-ingest:1.2.2",
+          "gateway": "subsquid/substrate-gateway:2.3.1"
         }
       ]
     },
@@ -534,9 +534,9 @@
           "dataSourceUrl": "https://archive.unique.network/unique/graphql",
           "explorerUrl": "https://archive.unique.network/unique/explorer/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1.1.0",
-          "ingest": "subsquid/substrate-ingest:1.1.0",
-          "gateway": "subsquid/substrate-gateway:2.1.1"
+          "image": "subsquid/substrate-ingest:1.2.2",
+          "ingest": "subsquid/substrate-ingest:1.2.2",
+          "gateway": "subsquid/substrate-gateway:2.3.1"
         }
       ]
     }
