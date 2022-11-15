@@ -1,3 +1,9 @@
+#### 1.0.16 (2022-11-15)
+
+##### New Features
+
+*  add snow and debio networks ([3dba5458](https://github.com/subsquid/archive-registry/commit/3dba54583c99052c235adfa12baf4830c9877d00))
+
 #### 1.0.15 (2022-10-26)
 
 ##### Other Changes
