@@ -106,6 +106,21 @@
       "genesisHash": "0x8b404e7ed8789d813982b9cb4c8b664c05b3fbf433309f603af014ec9ce56a8c"
     },
     {
+      "network": "debionetwork",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://debionetwork.archive.subsquid.io/graphql",
+          "explorerUrl": "https://debionetwork.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "subsquid/substrate-ingest:1",
+          "ingest": "subsquid/substrate-ingest:1",
+          "gateway": "subsquid/substrate-gateway:2"
+        }
+      ],
+      "genesisHash": "0x996800af345b3109acdada9913e36d1efa98b89e7dcd0b61b70fdbfc13b2fa50"
+    },
+    {
       "network": "efinity",
       "providers": [
         {
@@ -473,6 +488,21 @@
           "provider": "subsquid",
           "dataSourceUrl": "https://shiden.archive.subsquid.io/graphql",
           "explorerUrl": "https://shiden.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "subsquid/substrate-ingest:1",
+          "ingest": "subsquid/substrate-ingest:1",
+          "gateway": "subsquid/substrate-gateway:2"
+        }
+      ]
+    },
+    {
+      "network": "snow",
+      "genesisHash": "0xb34f6cd03a41f0fab38ba9fd5b11cce5f303633c46f39f0c6fdc7c3c602bafa9",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://snow.archive.subsquid.io/graphql",
+          "explorerUrl": "https://snow.explorer.subsquid.io/graphql",
           "release": "FireSquid",
           "image": "subsquid/substrate-ingest:1",
           "ingest": "subsquid/substrate-ingest:1",

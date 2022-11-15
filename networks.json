@@ -146,6 +146,19 @@
       "genesisHash": "0x729cb8f2cf428adcf81fe69610edda32c5711b2ff17de747e8604a3587021db8"
     },
     {
+      "name": "debionetwork",
+      "displayName": "DeBio Network",
+      "tokens": [
+        "DBIO",
+        "OCT"
+      ],
+      "website": "https://app.debio.network/landing-page/",
+      "description": "DeBio Network allows users to sample and test anonymously, without leaving home. Empower labs of all sizes to collaborate on analyzing genetic and medical data, and offering joint biomedical products.",
+      "relayChain": null,
+      "parachainId":  null,
+      "genesisHash": "0x996800af345b3109acdada9913e36d1efa98b89e7dcd0b61b70fdbfc13b2fa50"
+    },
+    {
       "name": "efinity",
       "displayName": "Efinity",
       "tokens": [
@@ -525,6 +538,18 @@
       "relayChain": "kusama",
       "parachainId": "2007",
       "genesisHash": "0xf1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108"
+    },
+    {
+      "name": "snow",
+      "displayName": "SNOW",
+      "tokens": [
+        "ICZ"
+      ],
+      "website": "https://icenetwork.io/snow/",
+      "description": "SNOW is a long-term incentivized network for cutting-edge development backed by the ICZ token, which has real-world value. SNOW will serve as a ‘canary network’ for ICE. SNOW comes packed with a set of top tier features such as full EVM and eWASM-compatibility, BTP cross-chain interoperability optimization and the backing of a vibrant L1 community.",
+      "relayChain": "kusama",
+      "parachainId": "2129",
+      "genesisHash": "0xb34f6cd03a41f0fab38ba9fd5b11cce5f303633c46f39f0c6fdc7c3c602bafa9"
     },
     {
       "name": "statemine",
