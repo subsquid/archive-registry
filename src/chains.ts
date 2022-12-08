@@ -4,6 +4,6 @@
 // Run npm run gen-types to generate this file from archives.
 //
 
-export type KnownArchives = "acala"|"aleph-zero-testnet"|"astar"|"bajun"|"bifrost"|"calamari"|"crust"|"debionetwork"|"efinity"|"equilibrium"|"gear-testnet"|"gemini-2a-testnet"|"gmordie"|"hydradx"|"interlay"|"invarch-tinkernet"|"karura"|"khala"|"kintsugi"|"kusama"|"litentry"|"litmus"|"moonbase"|"moonbeam"|"moonriver"|"opal"|"peaq"|"phala"|"polkadot"|"quartz"|"rococo"|"shibuya"|"shiden"|"snow"|"statemine"|"statemint"|"subsocial-parachain"|"unique"
+export type KnownArchives = "acala"|"aleph-zero-testnet"|"astar"|"bajun"|"bifrost"|"calamari"|"crust"|"efinity"|"equilibrium"|"gear-testnet"|"gemini-2a-testnet"|"gmordie"|"hydradx"|"interlay"|"invarch-tinkernet"|"karura"|"khala"|"kintsugi"|"kusama"|"litentry"|"litmus"|"moonbase"|"moonbeam"|"moonriver"|"opal"|"peaq"|"phala"|"polkadot"|"quartz"|"rococo"|"shibuya"|"shiden"|"snow"|"statemine"|"statemint"|"subsocial-parachain"|"unique"
 export type KnownArchivesV5 = "basilisk-test"|"peaq"|"calamari"|"parallel"|"moonbeam"|"clover"|"acala"|"kusama"|"polkadot"|"karura"|"crust"|"moonriver"|"astar"|"hydradx"|"subsocial"
 

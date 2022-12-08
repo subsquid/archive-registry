@@ -106,21 +106,6 @@
       "genesisHash": "0x8b404e7ed8789d813982b9cb4c8b664c05b3fbf433309f603af014ec9ce56a8c"
     },
     {
-      "network": "debionetwork",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://debionetwork.archive.subsquid.io/graphql",
-          "explorerUrl": "https://debionetwork.explorer.subsquid.io/graphql",
-          "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1",
-          "ingest": "subsquid/substrate-ingest:1",
-          "gateway": "subsquid/substrate-gateway:2"
-        }
-      ],
-      "genesisHash": "0x996800af345b3109acdada9913e36d1efa98b89e7dcd0b61b70fdbfc13b2fa50"
-    },
-    {
       "network": "efinity",
       "providers": [
         {
