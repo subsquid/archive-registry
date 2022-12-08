@@ -1,3 +1,9 @@
+#### 1.0.17 (2022-12-08)
+
+##### Chores
+
+*  remove debionetwork ([8c704a23](https://github.com/subsquid/archive-registry/commit/8c704a23d0245bfa777cd1f3c4cc7671c4173c91))
+
 #### 1.0.16 (2022-11-15)
 
 ##### New Features
