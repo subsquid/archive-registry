@@ -504,6 +504,30 @@
       "genesisHash": "0xcd4d732201ebe5d6b014edda071c4203e16867305332301dc8d092044b28e554"
     },
     {
+      "name": "reef",
+      "displayName": "Reef Chain",
+      "tokens": [
+        "REEF"
+      ],
+      "website": "https://reef.io/",
+      "description": "Layer 1, EVM compatible, based on Substrate framework. Scalable with low transactions and fast block time.",
+      "relayChain": null,
+      "parachainId": null,
+      "genesisHash": "0x7834781d38e4798d548e34ec947d19deea29df148a7bf32484b7b24dacf8d4b7"
+    },
+    {
+      "name": "reef-testnet",
+      "displayName": "Reef Testnet",
+      "tokens": [
+        "REEF"
+      ],
+      "website": "https://reef.io/",
+      "description": "Testnet for L1 Substrate based EVM compatible chain with multi VM support.",
+      "relayChain": null,
+      "parachainId": null,
+      "genesisHash": "0x0f89efd7bf650f2d521afef7456ed98dff138f54b5b7915cc9bce437ab728660"
+    },
+    {
       "name": "robonomics",
       "displayName": "Robonomics",
       "tokens": [

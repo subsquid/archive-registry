@@ -1,6 +1,15 @@
 name: bump
 on:
   workflow_dispatch:
+    inputs:
+      version:
+        type: choice
+        description: Version
+        required: true
+        options:
+          - patch
+          - minor
+          - major
 
 jobs:
   bump:
@@ -22,6 +31,6 @@ jobs:
           git add CHANGELOG.md
           git commit -m 'updated CHANGELOG.md'
       - name: bump version
-        run: npm version patch -m "bump to %s"
+        run: npm version ${{ github.event.inputs.version }} -m "bump to %s"
       - name: git push
         run: git push origin 

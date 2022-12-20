@@ -436,6 +436,36 @@
       ]
     },
     {
+      "network": "reef",
+      "genesisHash": "0x7834781d38e4798d548e34ec947d19deea29df148a7bf32484b7b24dacf8d4b7",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://reef.archive.subsquid.io/graphql",
+          "explorerUrl": "https://reef.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "subsquid/substrate-ingest:1",
+          "ingest": "subsquid/substrate-ingest:1",
+          "gateway": "subsquid/substrate-gateway:2"
+        }
+      ]
+    },
+    {
+      "network": "reef-testnet",
+      "genesisHash": "0x0f89efd7bf650f2d521afef7456ed98dff138f54b5b7915cc9bce437ab728660",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://reef-testnet.archive.subsquid.io/graphql",
+          "explorerUrl": "https://reef-testnet.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "subsquid/substrate-ingest:1",
+          "ingest": "subsquid/substrate-ingest:1",
+          "gateway": "subsquid/substrate-gateway:2"
+        }
+      ]
+    },
+    {
       "network": "rococo",
       "genesisHash": "0x6408de7737c59c238890533af25896a2c20608d8b380bb01029acb392781063e",
       "providers": [
