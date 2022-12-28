@@ -9,7 +9,7 @@
     "CHANGELOG.md",
     "LICENSE",
     "archives.json",
-    "archives-v5.json",
+    "archives-evm.json",
     "networks.json"
   ],
   "publishConfig": {

@@ -10,14 +10,14 @@ export interface LookupOptions {
     image?: string,
     ingest?: string,
     gateway?: string
-    release: "FireSquid"
+    release?: "FireSquid"
     version?: string
 }
 
 export interface LookupOptionsEVM {
     ingester?: string,
     worker?: string,
-    release: "Stage 1" | "Stage 2"
+    release?: "Stage 1" | "Stage 2"
 }
 
 /**

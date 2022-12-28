@@ -1,43 +1,66 @@
 # Squid Archive Registry
 
-A community-owned registry of [Squid archives](https://github.com/subsquid/squid/tree/master/substrate-archive) in a json format. 
+A community-owned registry of Squid archives in a json format. 
 
 ## Usage of `@subsquid/archive-registry`
 
-The registry is available as an npm package `@subsquid/archive-registry`. It can be used to conveniently access registry files and e.g. lookup a Squid Archive by network name. The second argument is set of lookup filters of type `LookupOptions`. The only mandatory lookup filter is `release` which can only be `"FireSquid"` (for the new FireSquid Archives) and `"5"` for the legacy v5 archives. Note that v5 Archives are now deprecated and will be gradually phased out.
+The registry is available as an npm package `@subsquid/archive-registry`. It can be used to conveniently access registry files and e.g. lookup a Squid Archive or EVM Squid Archive by network name.
+
+### Substrate archives
+
+The first argument is the name of the network. The second argument is set of lookup filters of type `LookupOptions`. 
 
 ```typescript
 import { lookupArchive } from '@subsquid/archive-registry'
 
 const processor = new SubstrateProcessor()
   .setDataSource({
-    archive: lookupArchive("kusama", { release: "FireSquid" }), 
+    archive: lookupArchive("kusama"), 
   });
-
 ```
 
 `LookupOptions` supports additional filtering by genesis hash, archive version (semver range) and docker image names (of archive and archive gateway):
 
-There is also a convenience method to get network infomation by its name:
+There is also a convenience method to get network information by its name:
 ```typescript
   // ...
   .setDataSource({
-    archive: lookupArchive("kusama", { release: "FireSquid", genesis: "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe" }), 
+    archive: lookupArchive("kusama", { genesis: "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe" }), 
   });
 ```
 
+### EVM archives
 
+Similar to Substrate archive: first argument is the name of the network, second one is a set of lookup filters of type `LookupOptionsEVM`. 
+
+```typescript
+import { lookupArchive } from '@subsquid/archive-registry'
+
+const processor = new EvmBatchProcessor()
+  .setDataSource({
+    archive: lookupArchiveEVM("avalanche"), 
+  });
+```
+
+`LookupOptions` supports additional filtering by release type and docker image names (of archive ingester and archive worker):
+
+There is also a convenience method to get network information by its name:
+```typescript
+  // ...
+  .setDataSource({
+    archive: lookupArchiveEVM("avalanche", { release: "Stage 1" }), 
+  });
+```
 
 ## What is a Squid Archive?
 
-Squid Archive provides easy access to the historical on-chain data with little modifications. It is essential for [Squid pipelines](https://github.com/subsquid/squid-template). It can also be used on its own as a [GraphQL-based](https://graphql.org/) block explorer with powerful filtering and search capabilities over historical events and transactions.
+Squid Archive provides easy access to the historical on-chain data with little modifications. It is essential for [Substrate Squid pipelines](https://github.com/subsquid/squid-substrate-template) or [EVM Squid pipelines](https://github.com/subsquid/squid-evm-template). It can also be used on its own as a [GraphQL-based](https://graphql.org/) block explorer with powerful filtering and search capabilities over historical events and transactions.
 
+## How to use an Archive?
 
-## How to use an Archive ?
+The primary use case of a Squid Archive is to serve data to a [Substrate Squid Processor](https://github.com/subsquid/squid-sdk/tree/master/substrate/substrate-processor) or EVM Squid Processor.
 
-The primary use case of a Squid Archive is to serve data to a [Squid Processor](https://github.com/subsquid/squid/tree/master/substrate-processor)
-
-The urls are not supposed to be accessed with a browser. To explore the endpoint with an interactive and human-friendly console, use `explorerUrl` field in `archives.json`. 
+The urls are not supposed to be accessed with a browser. To explore the endpoint with an interactive and human-friendly console, use `explorerUrl` field in `archives.json` (only for substrate archives). 
 
 For example, for exploring Kusama historical data, one can inspect `archives.json` and local Kusama explorer at  `https://kusama.explorer.subsquid.io/graphql`. One can open the GraphQL playground by navigating to this url and use the pane on right hand side to filter (`where:`) and pick the fields of interest.
 
@@ -63,4 +86,4 @@ query RecentBalancesTransfers {
 
 ## How to contribute
 
-To contribute a new archive, make a PR updating `archives.json` specifying the network name and the url. Further, one has to regenerate types in `src/chains.ts` by running `npm run gen-types`. This will update the list of supported chain names and makes it easier to developers to discover which lookups will succeed at compile time.
+To contribute a new archive, make a PR updating `archives.json` or `archives-evm.json` specifying the network name and the url. Further, one has to regenerate types in `src/chains.ts` by running `npm run gen-types`. This will update the list of supported chain names and makes it easier to developers to discover which lookups will succeed at compile time.
