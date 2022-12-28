@@ -5,5 +5,5 @@
 //
 
 export type KnownArchives = "acala"|"aleph-zero-testnet"|"astar"|"bajun"|"bifrost"|"calamari"|"crust"|"efinity"|"equilibrium"|"gear-testnet"|"gemini-2a-testnet"|"gmordie"|"hydradx"|"interlay"|"invarch-tinkernet"|"karura"|"khala"|"kintsugi"|"kusama"|"litentry"|"litmus"|"moonbase"|"moonbeam"|"moonriver"|"opal"|"peaq"|"phala"|"polkadot"|"quartz"|"reef"|"reef-testnet"|"rococo"|"shibuya"|"shiden"|"snow"|"statemine"|"statemint"|"subsocial-parachain"|"unique"
-export type KnownArchivesV5 = "basilisk-test"|"peaq"|"calamari"|"parallel"|"moonbeam"|"clover"|"acala"|"kusama"|"polkadot"|"karura"|"crust"|"moonriver"|"astar"|"hydradx"|"subsocial"
+export type KnownArchivesEVM = "avalanche"|"binance"|"binance-testnet"|"eth-l2"|"eth-mainnet"|"exosama"|"fantom"|"goerli"|"polygon"|"polygon-mumbai"
 

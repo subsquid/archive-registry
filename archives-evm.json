@@ -1,0 +1,124 @@
+{
+  "archives": [
+    {
+      "network": "avalanche",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://avalanche-c.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.0.39",
+          "worker": "eth-stage1-worker:0.0.39"
+        }
+      ]
+    },
+    {
+      "network": "binance",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://binance.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.0.39",
+          "worker": "eth-stage1-worker:0.0.39"
+        }
+      ]
+    },
+    {
+      "network": "binance-testnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://binance-testnet.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.0.39",
+          "worker": "eth-stage1-worker:0.0.39"
+        }
+      ]
+    },
+    {
+      "network": "eth-l2",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://eth-l2.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.0.43",
+          "worker": "eth-stage1-worker:0.0.43"
+        }
+      ]
+    },
+    {
+      "network": "eth-mainnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://eth.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.0.39",
+          "worker": "eth-stage1-worker:0.0.39"
+        }
+      ]
+    },
+    {
+      "network": "exosama",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://exosama.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.0.39",
+          "worker": "eth-stage1-worker:0.0.39"
+        }
+      ]
+    },
+    {
+      "network": "fantom",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://fantom.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.0.39",
+          "worker": "eth-stage1-worker:0.0.39"
+        }
+      ]
+    },
+    {
+      "network": "goerli",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://goerli.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.0.39",
+          "worker": "eth-stage1-worker:0.0.39"
+        }
+      ]
+    },
+    {
+      "network": "polygon",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://polygon.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.0.39",
+          "worker": "eth-stage1-worker:0.0.39"
+        }
+      ]
+    },
+    {
+      "network": "polygon-mumbai",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://polygon-mumbai.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.0.39",
+          "worker": "eth-stage1-worker:0.0.39"
+        }
+      ]
+    }
+  ]
+}

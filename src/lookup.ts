@@ -1,38 +1,77 @@
 import fetch from "node-fetch"
 import { AbortController } from "node-abort-controller";
 import assert from "assert"
-import { Network, ArchiveProvider, ArchiveRegistry, ArchiveRegistryV5, ArchiveProviderV5 } from "."
-import { KnownArchives, KnownArchivesV5 } from "./chains";
-import { archivesRegistry, archivesRegistryV5, networkRegistry } from "./registry";
+import { Network, ArchiveProvider, ArchiveRegistry, ArchiveRegistryEVM, ArchiveProviderEVM } from "."
+import { KnownArchives, KnownArchivesEVM } from "./chains";
+import { archivesRegistry, archivesRegistryEVM, networkRegistry } from "./registry";
 
 export interface LookupOptions {
     genesis?: string,
     image?: string,
+    ingest?: string,
     gateway?: string
-    release: "5" | "FireSquid"
+    release: "FireSquid"
     version?: string
 }
 
+export interface LookupOptionsEVM {
+    ingester?: string,
+    worker?: string,
+    release: "Stage 1" | "Stage 2"
+}
+
 /**
- * Lookup Subsquid V5 Archive endpoint by network name, provider (optional) and genesis hash (optional)
+ * Lookup Subsquid EVM Archive endpoint by network name, provider (optional)
  * 
  * @param opts.network network name for lookup
- * @param opts.version matches the major version for numbered versions (e.g. 5 matches 5.0.1-alpha) 
- *                     or an exact match for named versions
- * @param opts.genesis network genesis hex string (must start with "0x...")
- * @param opts.semver semver range to match archive image version 
- * @param opts.image archive image name
- * @param opts.gateway archive gateway image 
+ * @param opts.ingester archive ingester name
+ * @param opts.worker archive worker image 
  * 
  * @returns Archive endpoint url matching the filter
  * @throws If none matching archive is found or if there's ambiguity in choosing the network
  */
-export function lookupV5Archive (network: KnownArchivesV5, opts?: LookupOptions): string {
-    return lookupInRegistry(network, archivesRegistryV5, { ...opts, release: '5' })[0].dataSourceUrl
+export function lookupArchiveEVM(network: KnownArchivesEVM, opts?: LookupOptionsEVM): string {
+    return lookupInEVMRegistry(network, archivesRegistryEVM, opts)[0].dataSourceUrl
+}
+
+
+/**
+ * Lookup Subsquid Substrate Archive endpoint by network name, provider (optional) and genesis hash (optional)
+ * 
+ * @param opts.network network name for lookup
+ * @param opts.ingester archive ingester name
+ * @param opts.worker archive worker image 
+ * 
+ * @returns Archive endpoint url matching the filter
+ * @throws If none matching archive is found or if there's ambiguity in choosing the network
+ */
+export function lookupInEVMRegistry(
+    network: string, registry: ArchiveRegistryEVM, opts?: LookupOptionsEVM): (ArchiveProviderEVM)[] {
+
+    let archives = archivesRegistryEVM.archives.filter(a => a.network.toLowerCase() === network.toLowerCase())
+
+    let matched = archives[0].providers
+    
+    if (opts?.ingester) {
+        matched = matched.filter(p => p.ingester === opts.ingester)
+    }
+    if (opts?.worker) {
+        matched = matched.filter(p => p.worker === opts.worker)
+    }
+    if (opts?.release) {
+        matched = matched.filter(p => p.release === opts.release)
+    }
+
+    if (matched.length === 0) {
+        throw new Error(`Failed to lookup a matching EVM archive. \
+Please consider submitting a PR to subsquid/archive-registry github repo to extend the registry`)
+    }
+
+    return matched
 }
 
 /**
- * Lookup Subsquid Archive endpoint by network name, provider (optional) and genesis hash (optional)
+ * Lookup Subsquid Substrate Archive endpoint by network name, provider (optional) and genesis hash (optional)
  * 
  * @param opts.network network name for lookup
  * @param opts.version matches the major version for numbered versions (e.g. 5 matches 5.0.1-alpha) 
@@ -46,11 +85,11 @@ export function lookupV5Archive (network: KnownArchivesV5, opts?: LookupOptions)
  * @throws If none matching archive is found or if there's ambiguity in choosing the network
  */
  export function lookupArchive(network: KnownArchives, opts: LookupOptions): string {
-    return lookupInRegistry(network, archivesRegistry, opts)[0].dataSourceUrl
+    return lookupInSubstrateRegistry(network, archivesRegistry, opts)[0].dataSourceUrl
 }
 
 /**
- * Lookup providers matching the optional filtering criteria in a given registry
+ * Lookup providers matching the optional filtering criteria in a given Substrate registry
  * 
  * @param opts.network network name for lookup
  * @param opts.version matches the major version for numbered versions (e.g. 5 matches 5.0.1-alpha) 
@@ -63,8 +102,8 @@ export function lookupV5Archive (network: KnownArchivesV5, opts?: LookupOptions)
  * @returns A list of matching providers
  * @throws If none matching archive is found or if there's ambiguity in choosing the network
  */
-export function lookupInRegistry(
-    network: string, registry: ArchiveRegistry | ArchiveRegistryV5, opts?: LookupOptions): (ArchiveProvider | ArchiveProviderV5)[] {
+export function lookupInSubstrateRegistry(
+    network: string, registry: ArchiveRegistry, opts?: LookupOptions): (ArchiveProvider)[] {
     
     let archives = registry.archives.filter(a => a.network.toLowerCase() === network.toLowerCase())
     if (opts?.genesis) {
@@ -87,6 +126,10 @@ Provide the genesis hash to disambiguate.`)
         matched = matched.filter(p => p.image === opts.image)
     }
 
+    if (opts?.ingest) {
+        matched = matched.filter(p => p.ingest === opts.ingest)
+    }
+
     if (opts?.gateway) {
         matched = matched.filter(p => p.gateway === opts.gateway)
     }
@@ -100,7 +143,7 @@ Provide the genesis hash to disambiguate.`)
         throw new Error(`Failed to lookup a matching archive. \
 Please consider submitting a PR to subsquid/archive-registry github repo to extend the registry`)
     }
-    
+
     return matched
 }
 

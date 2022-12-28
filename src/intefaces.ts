@@ -3,11 +3,11 @@ export interface DataSource {
     chain: string
 }
 
-export interface ArchiveProviderV5 {
+export interface ArchiveProviderEVM {
     provider: string,
+    ingester: string,
+    worker: string,
     release: string,
-    image: string,
-    gateway: string,
     dataSourceUrl: string    
 }
 
@@ -15,15 +15,15 @@ export interface ArchiveProvider {
     provider: string,
     release: string,
     image: string,
+    ingest: string,
     gateway: string,
     dataSourceUrl: string,
     explorerUrl: string
 }
 
-export interface ArchiveEntryV5 {
+export interface ArchiveEntryEVM {
     network: string,
-    genesisHash?: string
-    providers: ArchiveProviderV5[]
+    providers: ArchiveProviderEVM[]
 }
 
 export interface ArchiveEntry {
@@ -32,8 +32,8 @@ export interface ArchiveEntry {
     providers: ArchiveProvider[]
 }
 
-export interface ArchiveRegistryV5 {
-    archives: ArchiveEntryV5[]
+export interface ArchiveRegistryEVM {
+    archives: ArchiveEntryEVM[]
 } 
 
 export interface ArchiveRegistry {
