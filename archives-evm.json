@@ -13,6 +13,18 @@
       ]
     },
     {
+      "network": "arbitrum",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://arbitrum.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.0.42",
+          "worker": "eth-stage1-worker:0.0.42"
+        }
+      ]
+    },
+    {
       "network": "binance",
       "providers": [
         {
