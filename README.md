@@ -8,7 +8,7 @@ The registry is available as an npm package `@subsquid/archive-registry`. It can
 
 ### Substrate archives
 
-The first argument is the name of the network. The second argument is set of lookup filters of type `LookupOptions`. 
+The first argument is the name of the network. The second argument is set of lookup filters of type `LookupOptionsSubstrate`.
 
 ```typescript
 import { lookupArchive } from '@subsquid/archive-registry'
@@ -19,7 +19,16 @@ const processor = new SubstrateProcessor()
   });
 ```
 
-`LookupOptions` supports additional filtering by genesis hash, archive version (semver range) and docker image names (of archive and archive gateway):
+More accurate way to choose from Substrate networks is to specify `type` parameter inside options for the function. By default `type` is set to `Substrate`.
+
+```typescript
+const processor = new SubstrateProcessor()
+  .setDataSource({
+    archive: lookupArchive("kusama", { type: "Substrate" }), 
+  });
+```
+
+`LookupOptionsSubstrate` supports additional filtering by genesis hash, archive version (semver range) and docker image names (of archive and archive gateway). 
 
 There is also a convenience method to get network information by its name:
 ```typescript
@@ -31,24 +40,24 @@ There is also a convenience method to get network information by its name:
 
 ### EVM archives
 
-Similar to Substrate archive: first argument is the name of the network, second one is a set of lookup filters of type `LookupOptionsEVM`. 
+Similar to Substrate archive: first argument is the name of the network, second one is a set of lookup filters of type `LookupOptionsEVM`. In lookup filters argument you must specify `type` parameter to `EVM`.
 
 ```typescript
 import { lookupArchive } from '@subsquid/archive-registry'
 
 const processor = new EvmBatchProcessor()
   .setDataSource({
-    archive: lookupArchiveEVM("avalanche"), 
+    archive: lookupArchive("avalanche", { type: "EVM" }), 
   });
 ```
 
-`LookupOptions` supports additional filtering by release type and docker image names (of archive ingester and archive worker):
+`LookupOptionsEVM` supports additional filtering by release type and docker image names (of archive `ingester` and archive `worker`):
 
 There is also a convenience method to get network information by its name:
 ```typescript
   // ...
   .setDataSource({
-    archive: lookupArchiveEVM("avalanche", { release: "Stage 1" }), 
+    archive: lookupArchiveEVM("avalanche", { type: "EVM", release: "Stage 1" }), 
   });
 ```
 
@@ -58,7 +67,7 @@ Squid Archive provides easy access to the historical on-chain data with little m
 
 ## How to use an Archive?
 
-The primary use case of a Squid Archive is to serve data to a [Substrate Squid Processor](https://github.com/subsquid/squid-sdk/tree/master/substrate/substrate-processor) or EVM Squid Processor.
+The primary use case of a Squid Archive is to serve data to a [Substrate Squid Processor](https://github.com/subsquid/squid-sdk/tree/master/substrate/substrate-processor) or [EVM Squid Processor](https://github.com/subsquid/evm-processor).
 
 The urls are not supposed to be accessed with a browser. To explore the endpoint with an interactive and human-friendly console, use `explorerUrl` field in `archives.json` (only for substrate archives). 
 

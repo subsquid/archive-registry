@@ -1,7 +1,7 @@
 import assert from "assert"
-import { ArchiveRegistry, ArchiveRegistryEVM, lookupInSubstrateRegistry, lookupInEVMRegistry, lookupArchive, lookupArchiveEVM } from '.'
+import { ArchiveRegistrySubstrate, ArchiveRegistryEVM, lookupInSubstrateRegistry, lookupInEVMRegistry, lookupArchive } from '.'
 
-const mockRegistry: ArchiveRegistry = {
+const mockRegistry: ArchiveRegistrySubstrate = {
     "archives": [
       {
         "network": "polkadot",
@@ -70,7 +70,7 @@ describe("archive lookup", function() {
     })
 
     it("lookups up evm archive by name", () => {
-        const binanceArchive = lookupArchiveEVM("binance")
+        const binanceArchive = lookupArchive("binance", { type: "EVM" })
         assert(binanceArchive === "https://binance.archive.subsquid.io")
     })
 })

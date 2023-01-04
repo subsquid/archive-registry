@@ -1,11 +1,10 @@
-import fs from "fs"
-import { archivesRegistry, getGenesisHash } from '../src/'
+import { archivesRegistrySubstrate, getGenesisHash } from '../src/'
 
 
 async function verifyGenesisHashes() {
-    for (const archive of archivesRegistry.archives) {
+    for (const archive of archivesRegistrySubstrate.archives) {
         for (const provider of archive.providers) {
-            console.log(`Archive: ${provider.url}`)
+            console.log(`Archive: ${provider.dataSourceUrl}`)
             try {
                 const hash = await getGenesisHash(provider.explorerUrl)
                 if (hash !== archive.genesisHash) {

@@ -1,8 +1,8 @@
 import fs from "fs"
-import { ArchiveRegistry, ArchiveRegistryEVM, archivesRegistry, archivesRegistryEVM } from '../src/'
+import { ArchiveRegistrySubstrate, ArchiveRegistryEVM, archivesRegistrySubstrate, archivesRegistryEVM } from '../src/'
 
 
-function genTypes(registry: ArchiveRegistry | ArchiveRegistryEVM): string {
+function genTypes(registry: ArchiveRegistrySubstrate | ArchiveRegistryEVM): string {
     const names: string[] = []
     for (const archive of registry.archives) { 
         names.push(`"${archive.network}"`)
@@ -18,8 +18,9 @@ fs.writeFileSync(`${__dirname}/../src/chains.ts`,
 // Run npm run gen-types to generate this file from archives.
 //
 
-export type KnownArchives = ${genTypes(archivesRegistry)}
+export type KnownArchivesSubstrate = ${genTypes(archivesRegistrySubstrate)}
 export type KnownArchivesEVM = ${genTypes(archivesRegistryEVM)}
+export type KnownArchives = KnownArchivesSubstrate | KnownArchivesEVM
 
 `
 )

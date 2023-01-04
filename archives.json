@@ -137,7 +137,7 @@
     },
     {
       "network": "gear-testnet",
-      "genesisHash": "0x6cf0c78d265512c4f4e7d8c046ef25795f163fe476a838b64e7dbf2cdc164593",
+      "genesisHash": "0xd144f24baf0b991be22ea8dc7dd4540d9d1e971e6bf17b1770b9fc9c88272484",
       "providers": [
         {
           "provider": "subsquid",
@@ -362,7 +362,7 @@
     },
     {
       "network": "opal",
-      "genesisHash": "0x083f8c4495eaaca28f95762cac09fed3db67ed6f8e5934ae1a20a7eed4fd3328",
+      "genesisHash": "0xc87870ef90a438d574b8e320f17db372c50f62beb52e479c8ff6ee5b460670b9",
       "providers": [
         {
           "provider": "Unique Network",
