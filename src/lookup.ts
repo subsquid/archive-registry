@@ -25,42 +25,108 @@ export interface LookupOptionsEVM {
 }
 
 
+export interface LookupOptionsSubstrate {
+    type?: 'Substrate'
+    /**
+     * Network genesis hex string (must start with "0x...")
+     */
+    genesis?: string
+    /**
+     * Archive image name
+     */
+    image?: string
+    /**
+     * Archive image name
+     */
+    ingest?: string
+    /**
+     * Archive gateway image
+     */
+    gateway?: string
+    /**
+     * Archive release
+     */
+    release?: 'FireSquid'
+}
+
+export interface LookupOptionsEVM {
+    type?: 'EVM'
+    /**
+     * Network genesis hex string (must start with "0x...")
+     */
+    genesis?: string
+    /**
+     * Archive ingester name
+     */
+    ingester?: string
+    /**
+     * Archive worker image
+     */
+    worker?: string
+    /**
+     * Archive release
+     */
+    release?: 'Stage 1' | 'Stage 2'
+}
+
 /**
  * Lookup providers matching the optional filtering criteria in a given Substrate or EVM registry
- * 
  * @param network network name for lookup
- * @param opts.type type of archive registry "Substrate" or "EVM"
- * @param opts.genesis network genesis hex string (must start with "0x...") (Substrate only)
- * @param opts.image archive image name (Substrate only)
- * @param opts.ingest archive image name (Substrate only)
- * @param opts.gateway archive gateway image  (Substrate only)
- * 
- * @param opts.ingester archive ingester name (EVM only)
- * @param opts.worker archive worker image (EVM only)
- * @param opts.release archive release (for example Stage version) (EVM only)
- * 
- * @returns A list of matching providers
+ * @returnsArchive endpoint url matching the filter
  * @throws If none matching archive is found or if there's ambiguity in choosing the network
  */
-export function lookupArchive(network: KnownArchives, opts?: LookupOptionsSubstrate | LookupOptionsEVM): string {
+export function lookupArchive(network: KnownArchives): string
+
+/**
+ * Lookup providers matching the optional filtering criteria in a given Substrate registry
+ * @param network network name for lookup
+ * @param opts susbtrate archive lookup options
+ * @returnsArchive endpoint url matching the filter
+ * @throws If none matching archive is found or if there's ambiguity in choosing the network
+ */
+export function lookupArchive(network: KnownArchivesSubstrate, opts: LookupOptionsSubstrate): string
+
+/**
+ * Lookup providers matching the optional filtering criteria in a given Substrate or EVM registry
+ * @param network network name for lookup
+ * @param opts evm archive lookup options
+ * @returns Archive endpoint url matching the filter
+ * @throws If none matching archive is found or if there's ambiguity in choosing the network
+ */
+export function lookupArchive(network: KnownArchivesEVM, opts: LookupOptionsEVM): string
+
+export function lookupArchive(network: string, opts?: LookupOptionsSubstrate | LookupOptionsEVM) {
     if (!opts) {
         opts = {}
     }
+
     if (!opts.type) {
-        if (knownArchivesSubstrate.includes(<KnownArchivesSubstrate>network))
-            opts.type = "Substrate"
-        else if (knownArchivesEVM.includes(<KnownArchivesEVM>network))
-            opts.type = "EVM"
+        let isSubstrateNetwork = knownArchivesSubstrate.includes(<KnownArchivesSubstrate>network)
+        let isEvmNetwork = knownArchivesSubstrate.includes(<KnownArchivesSubstrate>network)
+        assert(
+            isSubstrateNetwork == false || isEvmNetwork == false,
+            `There are multiple networks with name ${network}. Provide network type to disambiguate.`
+        )
+        if (isEvmNetwork) {
+            opts.type = 'EVM'
+        } else if (isSubstrateNetwork) {
+            opts.type = 'Substrate'
+        } else {
+            throw new Error(`Failed to lookup a matching archive. \
+Please consider submitting a PR to subsquid/archive-registry github repo to extend the registry`)
+        }
     }
+
     switch (opts?.type) {
         case "Substrate":
-            return lookupInSubstrateRegistry(<KnownArchivesSubstrate> network, archivesRegistrySubstrate, <LookupOptionsSubstrate> opts)[0].dataSourceUrl
+            return lookupInSubstrateRegistry(network, archivesRegistrySubstrate, opts)[0].dataSourceUrl
         case "EVM":
-            return lookupInEVMRegistry(<KnownArchivesEVM> network, archivesRegistryEVM, <LookupOptionsEVM> opts)[0].dataSourceUrl
+            return lookupInEVMRegistry(network, archivesRegistryEVM, opts)[0].dataSourceUrl
         default:
             throw new Error(`Archive registry type must be value from RegistryTypes ("Substrate", "EVM", ...)`)
     }
 }
+
 
 /**
  * Lookup providers matching the optional filtering criteria in a given Substrate registry

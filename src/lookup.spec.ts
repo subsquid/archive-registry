@@ -1,7 +1,7 @@
 import assert from "assert"
-import { ArchiveRegistrySubstrate, ArchiveRegistryEVM, lookupInSubstrateRegistry, lookupInEVMRegistry, lookupArchive } from '.'
+import { ArchiveRegistrySubstrate, ArchiveRegistryEVM, lookupArchive, lookupInSubstrateRegistry, lookupInEVMRegistry } from '.'
 
-const mockRegistry: ArchiveRegistrySubstrate = {
+const mockRegistrySubstrate: ArchiveRegistrySubstrate = {
     "archives": [
       {
         "network": "polkadot",
@@ -20,7 +20,6 @@ const mockRegistry: ArchiveRegistrySubstrate = {
       },
     ]
 }
-
 
 const mockRegistryEVM: ArchiveRegistryEVM = {
   "archives": [
@@ -41,22 +40,22 @@ const mockRegistryEVM: ArchiveRegistryEVM = {
 
 describe("archive lookup", function() {
     it("looks up by archive name", () => {
-        const polkaArchive = lookupInSubstrateRegistry("polkadot", mockRegistry)[0].dataSourceUrl
+        const polkaArchive = lookupInSubstrateRegistry("polkadot", mockRegistrySubstrate)[0].dataSourceUrl
         assert(polkaArchive === "https://polkadot.archive.subsquid.io/graphql")
     })
 
     it("looks up by a named version", () => {
-        const polkaArchive = lookupInSubstrateRegistry("polkadot", mockRegistry)[0].dataSourceUrl
+        const polkaArchive = lookupInSubstrateRegistry("polkadot", mockRegistrySubstrate)[0].dataSourceUrl
         assert(polkaArchive === "https://polkadot.archive.subsquid.io/graphql")
     })
 
     it("lookups up by name and genesis hash", () => {
-        const polkaArchive = lookupInSubstrateRegistry("polkadot", mockRegistry, { genesis : "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d" })[0].dataSourceUrl
+        const polkaArchive = lookupInSubstrateRegistry("polkadot", mockRegistrySubstrate, { genesis : "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d" })[0].dataSourceUrl
         assert(polkaArchive === "https://polkadot.archive.subsquid.io/graphql")
     })
 
     it("fails to lookup by wrong hash", () => {
-        assert.throws(() => lookupInSubstrateRegistry("polkadot", mockRegistry, { genesis : "0xaaa" }), Error);
+        assert.throws(() => lookupInSubstrateRegistry("polkadot", mockRegistrySubstrate, { genesis : "0xaaa" }), Error);
     })
 
     it("looks up by evm archive name", () => {
