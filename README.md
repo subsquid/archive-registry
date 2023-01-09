@@ -40,14 +40,14 @@ There is also a convenience method to get network information by its name:
 
 ### EVM archives
 
-Similar to Substrate archive: first argument is the name of the network, second one is a set of lookup filters of type `LookupOptionsEVM`. In lookup filters argument you must specify `type` parameter to `EVM`.
+Similar to Substrate archive: first argument is the name of the network, second one is a set of lookup filters of type `LookupOptionsEVM`.
 
 ```typescript
 import { lookupArchive } from '@subsquid/archive-registry'
 
 const processor = new EvmBatchProcessor()
   .setDataSource({
-    archive: lookupArchive("avalanche", { type: "EVM" }), 
+    archive: lookupArchive("avalanche"), 
   });
 ```
 
@@ -57,7 +57,7 @@ There is also a convenience method to get network information by its name:
 ```typescript
   // ...
   .setDataSource({
-    archive: lookupArchiveEVM("avalanche", { type: "EVM", release: "Stage 1" }), 
+    archive: lookupArchive("avalanche", { type: "EVM", release: "Stage 1" }), 
   });
 ```
 

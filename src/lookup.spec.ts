@@ -73,4 +73,11 @@ describe("archive lookup", function() {
         const binanceArchive = lookupArchive("binance", { type: "EVM" })
         assert(binanceArchive === "https://binance.archive.subsquid.io")
     })
+
+    it("looks up by archive name without type specification", () => {
+        const polkaArchive = lookupArchive("polkadot")
+        assert(polkaArchive === "https://polkadot.archive.subsquid.io/graphql")
+        const binanceArchive = lookupArchive("binance")
+        assert(binanceArchive === "https://binance.archive.subsquid.io")
+    })
 })

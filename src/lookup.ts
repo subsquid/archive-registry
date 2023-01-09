@@ -3,7 +3,7 @@ import assert from "assert"
 
 import { AbortController } from "node-abort-controller";
 import { NetworkSubstrate, ArchiveProviderSubstrate, ArchiveRegistrySubstrate, ArchiveRegistryEVM, ArchiveProviderEVM } from "."
-import { KnownArchives, KnownArchivesEVM, KnownArchivesSubstrate } from "./chains";
+import { KnownArchives, KnownArchivesEVM, KnownArchivesSubstrate, knownArchivesEVM, knownArchivesSubstrate } from "./chains";
 import { archivesRegistrySubstrate, archivesRegistryEVM, networkRegistrySubstrate } from "./registry";
 
 export type RegistryType = "Substrate" | "EVM"
@@ -44,10 +44,13 @@ export interface LookupOptionsEVM {
  */
 export function lookupArchive(network: KnownArchives, opts?: LookupOptionsSubstrate | LookupOptionsEVM): string {
     if (!opts) {
-        opts = {type: "Substrate"}
+        opts = {}
     }
     if (!opts.type) {
-        opts.type = "Substrate"
+        if (knownArchivesSubstrate.includes(<KnownArchivesSubstrate>network))
+            opts.type = "Substrate"
+        else if (knownArchivesEVM.includes(<KnownArchivesEVM>network))
+            opts.type = "EVM"
     }
     switch (opts?.type) {
         case "Substrate":
