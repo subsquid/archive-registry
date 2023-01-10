@@ -3,39 +3,39 @@ import { ArchiveRegistrySubstrate, ArchiveRegistryEVM, lookupArchive, lookupInSu
 
 const mockRegistrySubstrate: ArchiveRegistrySubstrate = {
     "archives": [
-      {
-        "network": "polkadot",
-        "providers": [
-          {
-            "provider": "subsquid",
-            "dataSourceUrl": "https://polkadot.archive.subsquid.io/graphql",
-            "explorerUrl": "https://polkadot.explorer.subsquid.io/graphql",
-            "release": "FireSquid",
-            "image": "substrate-ingest:1",
-            "ingest": "substrate-ingest:1",
-            "gateway": "archive-gateway:2"
-          }
-        ],
-        "genesisHash": "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d"
-      },
+        {
+            "network": "polkadot",
+            "providers": [
+                {
+                    "provider": "subsquid",
+                    "dataSourceUrl": "https://polkadot.archive.subsquid.io/graphql",
+                    "explorerUrl": "https://polkadot.explorer.subsquid.io/graphql",
+                    "release": "FireSquid",
+                    "image": "substrate-ingest:1",
+                    "ingest": "substrate-ingest:1",
+                    "gateway": "archive-gateway:2"
+                }
+            ],
+            "genesisHash": "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d"
+        },
     ]
 }
 
 const mockRegistryEVM: ArchiveRegistryEVM = {
-  "archives": [
-    {
-      "network": "binance",
-      "providers": [
+    "archives": [
         {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://binance.archive.subsquid.io",
-          "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.0.43",
-          "worker": "eth-stage1-worker:0.0.43"
-        }
-      ]
-    },
-  ]
+            "network": "binance",
+            "providers": [
+                {
+                    "provider": "subsquid",
+                    "dataSourceUrl": "https://binance.archive.subsquid.io",
+                    "release": "Stage 1",
+                    "ingester": "eth-stage1-ingester:0.0.43",
+                    "worker": "eth-stage1-worker:0.0.43"
+                }
+            ]
+        },
+    ]
 }
 
 describe("archive lookup", function() {
