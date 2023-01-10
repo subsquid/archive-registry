@@ -9,14 +9,13 @@
     "CHANGELOG.md",
     "LICENSE",
     "archives.json",
-    "archives-v5.json",
+    "archives-evm.json",
     "networks.json"
   ],
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "update-versions": "npx ts-node scripts/updateVersions.ts",
     "verify-hashes": "npx ts-node scripts/verifyGenesisHashes.ts",
     "gen-types": "npx ts-node scripts/generateTypes.ts",
     "build": "rm -rf lib && tsc",

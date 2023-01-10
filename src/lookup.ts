@@ -1,70 +1,130 @@
 import fetch from "node-fetch"
-import { AbortController } from "node-abort-controller";
 import assert from "assert"
-import { Network, ArchiveProvider, ArchiveRegistry, ArchiveRegistryV5, ArchiveProviderV5 } from "."
-import { KnownArchives, KnownArchivesV5 } from "./chains";
-import { archivesRegistry, archivesRegistryV5, networkRegistry } from "./registry";
 
-export interface LookupOptions {
-    genesis?: string,
-    image?: string,
+import { AbortController } from "node-abort-controller";
+import { NetworkSubstrate, ArchiveProviderSubstrate, ArchiveRegistrySubstrate, ArchiveRegistryEVM, ArchiveProviderEVM } from "."
+import { KnownArchives, KnownArchivesEVM, KnownArchivesSubstrate, knownArchivesEVM, knownArchivesSubstrate } from "./chains";
+import { archivesRegistrySubstrate, archivesRegistryEVM, networkRegistrySubstrate } from "./registry";
+
+export type RegistryType = "Substrate" | "EVM"
+
+export interface LookupOptionsSubstrate {
+    type?: 'Substrate'
+    /**
+     * Network genesis hex string (must start with "0x...")
+     */
+    genesis?: string
+    /**
+     * Archive image name
+     */
+    image?: string
+    /**
+     * Archive image name
+     */
+    ingest?: string
+    /**
+     * Archive gateway image
+     */
     gateway?: string
-    release: "5" | "FireSquid"
-    version?: string
+    /**
+     * Archive release
+     */
+    release?: 'FireSquid'
+}
+
+export interface LookupOptionsEVM {
+    type?: 'EVM'
+    /**
+     * Network genesis hex string (must start with "0x...")
+     */
+    genesis?: string
+    /**
+     * Archive ingester name
+     */
+    ingester?: string
+    /**
+     * Archive worker image
+     */
+    worker?: string
+    /**
+     * Archive release
+     */
+    release?: 'Stage 1'
 }
 
 /**
- * Lookup Subsquid V5 Archive endpoint by network name, provider (optional) and genesis hash (optional)
- * 
- * @param opts.network network name for lookup
- * @param opts.version matches the major version for numbered versions (e.g. 5 matches 5.0.1-alpha) 
- *                     or an exact match for named versions
- * @param opts.genesis network genesis hex string (must start with "0x...")
- * @param opts.semver semver range to match archive image version 
- * @param opts.image archive image name
- * @param opts.gateway archive gateway image 
- * 
+ * Lookup providers matching the optional filtering criteria in a given Substrate or EVM registry
+ * @param network network name for lookup
+ * @returnsArchive endpoint url matching the filter
+ * @throws If none matching archive is found or if there's ambiguity in choosing the network
+ */
+export function lookupArchive(network: KnownArchives): string
+
+/**
+ * Lookup providers matching the optional filtering criteria in a given Substrate registry
+ * @param network network name for lookup
+ * @param opts susbtrate archive lookup options
+ * @returnsArchive endpoint url matching the filter
+ * @throws If none matching archive is found or if there's ambiguity in choosing the network
+ */
+export function lookupArchive(network: KnownArchivesSubstrate, opts: LookupOptionsSubstrate): string
+
+/**
+ * Lookup providers matching the optional filtering criteria in a given Substrate or EVM registry
+ * @param network network name for lookup
+ * @param opts evm archive lookup options
  * @returns Archive endpoint url matching the filter
  * @throws If none matching archive is found or if there's ambiguity in choosing the network
  */
-export function lookupV5Archive (network: KnownArchivesV5, opts?: LookupOptions): string {
-    return lookupInRegistry(network, archivesRegistryV5, { ...opts, release: '5' })[0].dataSourceUrl
+export function lookupArchive(network: KnownArchivesEVM, opts: LookupOptionsEVM): string
+
+export function lookupArchive(network: string, opts?: LookupOptionsSubstrate | LookupOptionsEVM) {
+    if (!opts) {
+        opts = {}
+    }
+
+    if (!opts.type) {
+        let isSubstrateNetwork = knownArchivesSubstrate.includes(<KnownArchivesSubstrate>network)
+        let isEvmNetwork = knownArchivesEVM.includes(<KnownArchivesEVM>network)
+        assert(
+            isSubstrateNetwork == false || isEvmNetwork == false,
+            `There are multiple networks with name ${network}. Provide network type to disambiguate.`
+        )
+        if (isEvmNetwork) {
+            opts.type = 'EVM'
+        } else if (isSubstrateNetwork) {
+            opts.type = 'Substrate'
+        } else {
+            throw new Error(`Failed to lookup a matching archive. \
+Please consider submitting a PR to subsquid/archive-registry github repo to extend the registry`)
+        }
+    }
+
+    switch (opts?.type) {
+        case "Substrate":
+            return lookupInSubstrateRegistry(network, archivesRegistrySubstrate, opts)[0].dataSourceUrl
+        case "EVM":
+            return lookupInEVMRegistry(network, archivesRegistryEVM, opts)[0].dataSourceUrl
+        default:
+            throw new Error(`Archive registry type must be value from RegistryTypes ("Substrate", "EVM", ...)`)
+    }
 }
 
-/**
- * Lookup Subsquid Archive endpoint by network name, provider (optional) and genesis hash (optional)
- * 
- * @param opts.network network name for lookup
- * @param opts.version matches the major version for numbered versions (e.g. 5 matches 5.0.1-alpha) 
- *                     or an exact match for named versions
- * @param opts.genesis network genesis hex string (must start with "0x...")
- * @param opts.semver semver range to match archive image version 
- * @param opts.image archive image name
- * @param opts.gateway archive gateway image 
- * 
- * @returns Archive endpoint url matching the filter
- * @throws If none matching archive is found or if there's ambiguity in choosing the network
- */
- export function lookupArchive(network: KnownArchives, opts: LookupOptions): string {
-    return lookupInRegistry(network, archivesRegistry, opts)[0].dataSourceUrl
-}
 
 /**
- * Lookup providers matching the optional filtering criteria in a given registry
+ * Lookup providers matching the optional filtering criteria in a given Substrate registry
  * 
- * @param opts.network network name for lookup
- * @param opts.version matches the major version for numbered versions (e.g. 5 matches 5.0.1-alpha) 
- *                     or an exact match for named versions
+ * @param network network name for lookup
  * @param opts.genesis network genesis hex string (must start with "0x...")
- * @param opts.semver semver range to match archive image version 
  * @param opts.image archive image name
+ * @param opts.ingest archive image name
  * @param opts.gateway archive gateway image 
  * 
  * @returns A list of matching providers
  * @throws If none matching archive is found or if there's ambiguity in choosing the network
  */
-export function lookupInRegistry(
-    network: string, registry: ArchiveRegistry | ArchiveRegistryV5, opts?: LookupOptions): (ArchiveProvider | ArchiveProviderV5)[] {
+export function lookupInSubstrateRegistry(
+    network: string, registry: ArchiveRegistrySubstrate, opts?: LookupOptionsSubstrate): (ArchiveProviderSubstrate)[] {
     
     let archives = registry.archives.filter(a => a.network.toLowerCase() === network.toLowerCase())
     if (opts?.genesis) {
@@ -87,6 +147,10 @@ Provide the genesis hash to disambiguate.`)
         matched = matched.filter(p => p.image === opts.image)
     }
 
+    if (opts?.ingest) {
+        matched = matched.filter(p => p.ingest === opts.ingest)
+    }
+
     if (opts?.gateway) {
         matched = matched.filter(p => p.gateway === opts.gateway)
     }
@@ -100,9 +164,47 @@ Provide the genesis hash to disambiguate.`)
         throw new Error(`Failed to lookup a matching archive. \
 Please consider submitting a PR to subsquid/archive-registry github repo to extend the registry`)
     }
-    
+
     return matched
 }
+
+
+/**
+ * Lookup Subsquid Substrate Archive endpoint by network name
+ * 
+ * @param network network name for lookup
+ * @param opts.ingester archive ingester name
+ * @param opts.worker archive worker image 
+ * @param opts.release archive release (for example Stage version)
+ * 
+ * @returns Archive endpoint url matching the filter
+ * @throws If none matching archive is found or if there's ambiguity in choosing the network
+ */
+ export function lookupInEVMRegistry(
+    network: string, registry: ArchiveRegistryEVM, opts?: LookupOptionsEVM): (ArchiveProviderEVM)[] {
+
+    let archives = archivesRegistryEVM.archives.filter(a => a.network.toLowerCase() === network.toLowerCase())
+
+    let matched = archives[0].providers
+    
+    if (opts?.ingester) {
+        matched = matched.filter(p => p.ingester === opts.ingester)
+    }
+    if (opts?.worker) {
+        matched = matched.filter(p => p.worker === opts.worker)
+    }
+    if (opts?.release) {
+        matched = matched.filter(p => p.release === opts.release)
+    }
+
+    if (matched.length === 0) {
+        throw new Error(`Failed to lookup a matching EVM archive. \
+Please consider submitting a PR to subsquid/archive-registry github repo to extend the registry`)
+    }
+
+    return matched
+}
+
 
 /**
  * Get parachain information by its name
@@ -110,8 +212,8 @@ Please consider submitting a PR to subsquid/archive-registry github repo to exte
  * @param network Network name
  * @returns Chain info incluing genesis hash, token symbols, parachainId if relevent, etc
  */
-export function getChainInfo(network: string, genesis?: string): Network {
-    let matched =  networkRegistry.networks.filter(n => n.name.toLowerCase() === network.toLowerCase()) 
+export function getChainInfo(network: string, genesis?: string): NetworkSubstrate {
+    let matched =  networkRegistrySubstrate.networks.filter(n => n.name.toLowerCase() === network.toLowerCase()) 
     
     if (genesis) {
         matched = matched.filter(a => a.genesisHash?.toLowerCase() === genesis.toLowerCase())
@@ -133,7 +235,7 @@ Provide genesis hash option to prevent ambiguity.`)
 export async function getGenesisHash(endpoint: string): Promise<string> {
     const query = `
     query {
-        blocks(where: {height_eq: 0}) {
+        blocks(where: {height_eq: 0}, limit: 1) {
             hash
         }
     }

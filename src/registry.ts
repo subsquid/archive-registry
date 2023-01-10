@@ -1,6 +1,6 @@
 import fs from "fs"
-import { ArchiveRegistry, ArchiveRegistryV5, NetworkRegistry } from "./intefaces"
+import { ArchiveRegistrySubstrate, ArchiveRegistryEVM, NetworkRegistrySubstrate } from "./intefaces"
 
-export const networkRegistry = JSON.parse(fs.readFileSync(`${__dirname}/../networks.json`).toString()) as NetworkRegistry
-export const archivesRegistry = JSON.parse(fs.readFileSync(`${__dirname}/../archives.json`).toString()) as ArchiveRegistry
-export const archivesRegistryV5 = JSON.parse(fs.readFileSync(`${__dirname}/../archives-v5.json`).toString()) as ArchiveRegistryV5
+export const networkRegistrySubstrate = JSON.parse(fs.readFileSync(`${__dirname}/../networks.json`).toString()) as NetworkRegistrySubstrate
+export const archivesRegistrySubstrate = JSON.parse(fs.readFileSync(`${__dirname}/../archives.json`).toString()) as ArchiveRegistrySubstrate
+export const archivesRegistryEVM = JSON.parse(fs.readFileSync(`${__dirname}/../archives-evm.json`).toString()) as ArchiveRegistryEVM
