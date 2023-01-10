@@ -9,23 +9,6 @@ import { archivesRegistrySubstrate, archivesRegistryEVM, networkRegistrySubstrat
 export type RegistryType = "Substrate" | "EVM"
 
 export interface LookupOptionsSubstrate {
-    type?: "Substrate",
-    genesis?: string,
-    image?: string,
-    ingest?: string,
-    gateway?: string
-    release?: "FireSquid"
-}
-
-export interface LookupOptionsEVM {
-    type?: "EVM",
-    ingester?: string,
-    worker?: string,
-    release?: "Stage 1" | "Stage 2"
-}
-
-
-export interface LookupOptionsSubstrate {
     type?: 'Substrate'
     /**
      * Network genesis hex string (must start with "0x...")
@@ -66,7 +49,7 @@ export interface LookupOptionsEVM {
     /**
      * Archive release
      */
-    release?: 'Stage 1' | 'Stage 2'
+    release?: 'Stage 1'
 }
 
 /**
@@ -102,7 +85,7 @@ export function lookupArchive(network: string, opts?: LookupOptionsSubstrate | L
 
     if (!opts.type) {
         let isSubstrateNetwork = knownArchivesSubstrate.includes(<KnownArchivesSubstrate>network)
-        let isEvmNetwork = knownArchivesSubstrate.includes(<KnownArchivesSubstrate>network)
+        let isEvmNetwork = knownArchivesEVM.includes(<KnownArchivesEVM>network)
         assert(
             isSubstrateNetwork == false || isEvmNetwork == false,
             `There are multiple networks with name ${network}. Provide network type to disambiguate.`
