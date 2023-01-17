@@ -1,3 +1,9 @@
+#### 2.0.1 (2023-01-17)
+
+##### Bug Fixes
+
+*  change t0rn image ([0c9f30e1](https://github.com/subsquid/archive-registry/commit/0c9f30e18017b8555644283ccd80f68e6b50cd65))
+
 #### 1.0.19 (2023-01-10)
 
 #### 1.0.18 (2022-12-20)
