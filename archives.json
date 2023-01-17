@@ -586,6 +586,21 @@
       ]
     },
     {
+      "network": "t0rn",
+      "genesisHash": "0x569de72a10e8426ea1d3515dd473a57af15a38b6dda3b714bdd6968cf928e011",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://t0rn.archive.subsquid.io/graphql",
+          "explorerUrl": "https://t0rn.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "subsquid/substrate-ingest:1",
+          "ingest": "subsquid/substrate-ingest:1",
+          "gateway": "subsquid/substrate-gateway:2"
+        }
+      ]
+    },
+    {
       "network": "unique",
       "genesisHash": "0x84322d9cddbf35088f1e54e9a85c967a41a56a4f43445768125e61af166c7d31",
       "providers": [

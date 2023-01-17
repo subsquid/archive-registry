@@ -624,6 +624,18 @@
       "genesisHash": "0x4a12be580bb959937a1c7a61d5cf24428ed67fa571974b4007645d1886e7c89f"
     },
     {
+      "name": "t0rn",
+      "displayName": "t0rn",
+      "tokens": [
+        "T0RN"
+      ],
+      "website": "https://t3rn.io/",
+      "description": "t3rn creates frictionless multichain smartcontract execution, that's accountable, scalable, and completely trust-free for investors, users, and developers.",
+      "relayChain": "rococo",
+      "parachainId": "3333",
+      "genesisHash": "0x569de72a10e8426ea1d3515dd473a57af15a38b6dda3b714bdd6968cf928e011"
+    },
+    {
       "name": "unique",
       "displayName": "Unique",
       "tokens": [
