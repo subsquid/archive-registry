@@ -121,6 +121,21 @@
       "genesisHash": "0x335369975fced3fc22e23498da306a712f4fd964c957364d53c49cea9db8bc2f"
     },
     {
+      "network": "elysium",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://elysium.archive.subsquid.io/graphql",
+          "explorerUrl": "https://elysium.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "subsquid/substrate-ingest:1",
+          "ingest": "subsquid/substrate-ingest:1",
+          "gateway": "subsquid/substrate-gateway:2"
+        }
+      ],
+      "genesisHash": "0xa01fd8b004e04a4ce2c689a339b48b0585004de5844b9939071d44be07806a94"
+    },
+    {
       "network": "equilibrium",
       "providers": [
         {
@@ -137,7 +152,7 @@
     },
     {
       "network": "gear-testnet",
-      "genesisHash": "0xd144f24baf0b991be22ea8dc7dd4540d9d1e971e6bf17b1770b9fc9c88272484",
+      "genesisHash": "0x209bc5d3262cad676cd1fcd87a958a3d00c0176f8720231cbbb54a10f735d9bb",
       "providers": [
         {
           "provider": "subsquid",

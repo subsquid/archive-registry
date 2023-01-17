@@ -171,6 +171,18 @@
       "genesisHash": "0x335369975fced3fc22e23498da306a712f4fd964c957364d53c49cea9db8bc2f"
     },
     {
+      "name": "elysium",
+      "displayName": "Elysium",
+      "tokens": [
+        "LAVA"
+      ],
+      "website": "https://web-elysium.vulcanforged.com/",
+      "description": "Elysium is a new chain, retaining the characteristics of EVM compatible chains built on the substrate core framework. Elysium is much more than just an EVM implementation: it’s a highly specialized Layer 1 chain that mirrors Ethereum’s Web3 RPC, accounts, keys, subscriptions, logs, and more.",
+      "relayChain": null,
+      "parachainId": null,
+      "genesisHash": "0xa01fd8b004e04a4ce2c689a339b48b0585004de5844b9939071d44be07806a94"
+    },
+    {
       "name": "equilibrium",
       "displayName": "Equilibrium",
       "tokens": [
@@ -190,7 +202,7 @@
       "description": "Gear is an advanced WASM based smart contract platform, aiming to be a Polkadot and Kusama parachain, that enables developers to deploy their dApps in under 5 minutes in the easiest and most efficient way possible.",
       "relayChain": null,
       "parachainId": null,
-      "genesisHash": "0xd144f24baf0b991be22ea8dc7dd4540d9d1e971e6bf17b1770b9fc9c88272484"
+      "genesisHash": "0x209bc5d3262cad676cd1fcd87a958a3d00c0176f8720231cbbb54a10f735d9bb"
     },
     {
       "name": "gemini-2a-testnet",
