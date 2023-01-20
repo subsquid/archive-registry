@@ -1,3 +1,9 @@
+#### 2.0.2 (2023-01-20)
+
+##### New Features
+
+*  add joystream and elysium-testnet ([add6a16c](https://github.com/subsquid/archive-registry/commit/add6a16cc66bf6bd3213d807a038cf5aa64e4fa8))
+
 #### 2.0.1 (2023-01-17)
 
 ##### Bug Fixes
