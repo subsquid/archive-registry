@@ -4,7 +4,7 @@
 // Run npm run gen-types to generate this file from archives.
 //
 
-export const knownArchivesSubstrate = ["acala", "aleph-zero-testnet", "astar", "bajun", "bifrost", "calamari", "crust", "efinity", "elysium", "equilibrium", "gear-testnet", "gemini-2a-testnet", "gmordie", "hydradx", "interlay", "invarch-tinkernet", "karura", "khala", "kintsugi", "kusama", "litentry", "litmus", "moonbase", "moonbeam", "moonriver", "opal", "peaq", "phala", "polkadot", "quartz", "reef", "reef-testnet", "rococo", "shibuya", "shiden", "snow", "statemine", "statemint", "subsocial-parachain", "unique", "t0rn"] as const;
+export const knownArchivesSubstrate = ["acala", "aleph-zero-testnet", "astar", "bajun", "bifrost", "calamari", "crust", "efinity", "elysium", "elysium-testnet", "equilibrium", "gear-testnet", "gemini-2a-testnet", "gmordie", "hydradx", "interlay", "invarch-tinkernet", "joystream", "karura", "khala", "kintsugi", "kusama", "litentry", "litmus", "moonbase", "moonbeam", "moonriver", "opal", "peaq", "phala", "polkadot", "quartz", "reef", "reef-testnet", "rococo", "shibuya", "shiden", "snow", "statemine", "statemint", "subsocial-parachain", "t0rn", "unique"] as const;
 export const knownArchivesEVM = ["avalanche", "binance", "binance-testnet", "eth-l2", "eth-mainnet", "exosama", "fantom", "goerli", "polygon", "polygon-mumbai"] as const;
 export type KnownArchivesSubstrate = typeof knownArchivesSubstrate[number];
 export type KnownArchivesEVM = typeof knownArchivesEVM[number];

@@ -183,6 +183,18 @@
       "genesisHash": "0xa01fd8b004e04a4ce2c689a339b48b0585004de5844b9939071d44be07806a94"
     },
     {
+      "name": "elysium-testnet",
+      "displayName": "Elysium Testnet",
+      "tokens": [
+        "LAVA"
+      ],
+      "website": "https://web-elysium.vulcanforged.com/",
+      "description": "Elysium is a new chain, retaining the characteristics of EVM compatible chains built on the substrate core framework. Elysium is much more than just an EVM implementation: it’s a highly specialized Layer 1 chain that mirrors Ethereum’s Web3 RPC, accounts, keys, subscriptions, logs, and more.",
+      "relayChain": null,
+      "parachainId": null,
+      "genesisHash": "0x3fdb98a4965bdb74a6c647c924ceb2b9b1af58fa6dc1300418ab59e02ecdb4db"
+    },
+    {
       "name": "equilibrium",
       "displayName": "Equilibrium",
       "tokens": [
@@ -297,6 +309,18 @@
       "relayChain": "kusama",
       "parachainId": "2125",
       "genesisHash": "0xd42e9606a995dfe433dc7955dc2a70f495f350f373daa200098ae84437816ad2"
+    },
+    {
+      "name": "joystream",
+      "displayName": "Joystream",
+      "tokens": [
+        "JOY"
+      ],
+      "website": "https://joystream.org/",
+      "description": "Joystream is Web3 video platform DAO.",
+      "relayChain": null,
+      "parachainId": null,
+      "genesisHash": "0x6b5e488e0fa8f9821110d5c13f4c468abcd43ce5e297e62b34c53c3346465956"
     },
     {
       "name": "karura",

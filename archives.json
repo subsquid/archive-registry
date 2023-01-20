@@ -136,6 +136,21 @@
       "genesisHash": "0xa01fd8b004e04a4ce2c689a339b48b0585004de5844b9939071d44be07806a94"
     },
     {
+      "network": "elysium-testnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://elysium-testnet.archive.subsquid.io/graphql",
+          "explorerUrl": "https://elysium-testnet.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "subsquid/substrate-ingest:1",
+          "ingest": "subsquid/substrate-ingest:1",
+          "gateway": "subsquid/substrate-gateway:2"
+        }
+      ],
+      "genesisHash": "0x3fdb98a4965bdb74a6c647c924ceb2b9b1af58fa6dc1300418ab59e02ecdb4db"
+    },
+    {
       "network": "equilibrium",
       "providers": [
         {
@@ -159,9 +174,9 @@
           "dataSourceUrl": "https://gear-testnet.archive.subsquid.io/graphql",
           "explorerUrl": "https://gear-testnet.explorer.subsquid.io/graphql",
           "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1.1.1",
-          "ingest": "subsquid/substrate-ingest:1.1.1",
-          "gateway": "subsquid/substrate-gateway:2.1.1"
+          "image": "subsquid/substrate-ingest:1",
+          "ingest": "subsquid/substrate-ingest:1",
+          "gateway": "subsquid/substrate-gateway:2"
         }
       ]
     },
@@ -233,6 +248,21 @@
           "provider": "subsquid",
           "dataSourceUrl": "https://invarch-tinkernet.archive.subsquid.io/graphql",
           "explorerUrl": "https://invarch-tinkernet.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "subsquid/substrate-ingest:1",
+          "ingest": "subsquid/substrate-ingest:1",
+          "gateway": "subsquid/substrate-gateway:2"
+        }
+      ]
+    },
+    {
+      "network": "joystream",
+      "genesisHash": "0x6b5e488e0fa8f9821110d5c13f4c468abcd43ce5e297e62b34c53c3346465956",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://joystream.archive.subsquid.io/graphql",
+          "explorerUrl": "https://joystream.explorer.subsquid.io/graphql",
           "release": "FireSquid",
           "image": "subsquid/substrate-ingest:1",
           "ingest": "subsquid/substrate-ingest:1",
