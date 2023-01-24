@@ -3,6 +3,9 @@
   "version": "2.0.2",
   "description": "A community-owned registry of Squid archives and networks",
   "main": "lib/index.js",
+  "bin": {
+    "squid-archive-registry": "./bin/run"
+  },
   "files": [
     "lib",
     "README.md",
@@ -40,15 +43,16 @@
     "@types/node": "^16.11.26",
     "@types/node-fetch": "^2.6.1",
     "@types/semver": "^7.3.9",
-    "generate-changelog": "^1.8.0",
-    "typescript": "~4.5.4",
     "expect": "^27.5.1",
     "fast-check": "^2.21.0",
-    "mocha": "^9.2.2"
+    "generate-changelog": "^1.8.0",
+    "mocha": "^9.2.2",
+    "typescript": "~4.5.4"
   },
   "dependencies": {
+    "@subsquid/util-internal": "^1.0.0",
+    "commander": "^10.0.0",
     "node-abort-controller": "^3.0.1",
-    "node-fetch": "^2",
-    "semver": "^7.3.5"
+    "node-fetch": "^2"
   }
 }

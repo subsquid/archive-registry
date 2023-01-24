@@ -6,6 +6,21 @@ A community-owned registry of Squid archives in a json format.
 
 The registry is available as an npm package `@subsquid/archive-registry`. It can be used to conveniently access registry files and e.g. lookup a Squid Archive or EVM Squid Archive by network name.
 
+### Listing the available networks
+
+Use the included `squid-archive-registry` executable to list supported networks:
+
+```bash
+$ squid-archive-registry --help
+Usage: run [options]
+
+Display list of available archives
+
+Options:
+  -t --type <type>  Network type (choices: "evm", "substrate")
+  -h, --help        display help for command
+```
+
 ### Substrate archives
 
 The first argument is the name of the network. The second argument is set of lookup filters of type `LookupOptionsSubstrate`.
