@@ -1,3 +1,9 @@
+#### 2.0.3 (2023-01-24)
+
+##### New Features
+
+*  introduce archives list command ([#25](https://github.com/subsquid/archive-registry/pull/25)) ([56cc4b6a](https://github.com/subsquid/archive-registry/commit/56cc4b6ac9c6d28a2484eaf9847ab9f0a64a8ef5))
+
 #### 2.0.2 (2023-01-20)
 
 ##### New Features
