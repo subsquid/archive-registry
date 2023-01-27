@@ -1,7 +1,7 @@
 import fetch from "node-fetch"
 import assert from "assert"
 
-import { AbortController } from "node-abort-controller";
+import AbortController from "node-abort-controller";
 import { NetworkSubstrate, ArchiveProviderSubstrate, ArchiveRegistrySubstrate, ArchiveRegistryEVM, ArchiveProviderEVM } from "."
 import { KnownArchives, KnownArchivesEVM, KnownArchivesSubstrate, knownArchivesEVM, knownArchivesSubstrate } from "./chains";
 import { archivesRegistrySubstrate, archivesRegistryEVM, networkRegistrySubstrate } from "./registry";
