@@ -1,3 +1,9 @@
+#### 2.1.1 (2023-01-27)
+
+##### Bug Fixes
+
+*  include "bin" folder ([14dab552](https://github.com/subsquid/archive-registry/commit/14dab5521becf9c893dd6e0cf6d083f15953378f))
+
 #### 2.0.3 (2023-01-24)
 
 ##### New Features
