@@ -37,11 +37,23 @@
       ]
     },
     {
-      "network": "eth-l2",
+      "network": "boba-eth",
       "providers": [
         {
           "provider": "subsquid",
-          "dataSourceUrl": "https://eth-l2.archive.subsquid.io",
+          "dataSourceUrl": "https://boba-eth.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.0.51",
+          "worker": "eth-stage1-worker:0.0.51"
+        }
+      ]
+    },
+    {
+      "network": "boba-moonbeam",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://boba-moonbeam.archive.subsquid.io",
           "release": "Stage 1",
           "ingester": "eth-stage1-ingester:0.0.43",
           "worker": "eth-stage1-worker:0.0.43"
@@ -117,6 +129,30 @@
           "release": "Stage 1",
           "ingester": "eth-stage1-ingester:0.0.39",
           "worker": "eth-stage1-worker:0.0.39"
+        }
+      ]
+    },
+    {
+      "network": "skale-calypso",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://skale-calypso.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.0.51",
+          "worker": "eth-stage1-worker:0.0.51"
+        }
+      ]
+    },
+    {
+      "network": "skale-calypso-staging",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://skale-calypso-staging.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.0.51",
+          "worker": "eth-stage1-worker:0.0.51"
         }
       ]
     }

@@ -31,6 +31,21 @@
       ]
     },
     {
+      "network": "amplitude",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://amplitude.archive.subsquid.io/graphql",
+          "explorerUrl": "https://amplitude.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "subsquid/substrate-ingest:1",
+          "ingest": "subsquid/substrate-ingest:1",
+          "gateway": "subsquid/substrate-gateway:2"
+        }
+      ],
+      "genesisHash": "0xcceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf"
+    },
+    {
       "network": "astar",
       "providers": [
         {
@@ -642,6 +657,21 @@
           "image": "subsquid/substrate-ingest:1.2.2",
           "ingest": "subsquid/substrate-ingest:1.2.2",
           "gateway": "subsquid/substrate-gateway:2.3.1"
+        }
+      ]
+    },
+    {
+      "network": "vara",
+      "genesisHash": "0xe95743738788fb980fc5cfdaded9160d1e9eed707f7f6e19a591fd282cb29a69",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://vara.archive.subsquid.io/graphql",
+          "explorerUrl": "https://vara.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "subsquid/substrate-ingest:1",
+          "ingest": "subsquid/substrate-ingest:1",
+          "gateway": "subsquid/substrate-gateway:2"
         }
       ]
     }
