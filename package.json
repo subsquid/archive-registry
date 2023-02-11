@@ -4,7 +4,7 @@
   "description": "A community-owned registry of Squid archives and networks",
   "main": "lib/index.js",
   "bin": {
-    "squid-archive-registry": "./bin/run"
+    "squid-archive-registry": "./bin/run.js"
   },
   "files": [
     "bin",
