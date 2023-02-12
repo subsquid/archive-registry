@@ -1,4 +1,4 @@
-import assert from "assert"
+import assert, { AssertionError } from "assert"
 import { ArchiveRegistrySubstrate, ArchiveRegistryEVM, lookupArchive, lookupInSubstrateRegistry, lookupInEVMRegistry } from '.'
 
 const mockRegistrySubstrate: ArchiveRegistrySubstrate = {
@@ -18,6 +18,21 @@ const mockRegistrySubstrate: ArchiveRegistrySubstrate = {
             ],
             "genesisHash": "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d"
         },
+        {
+          "network": "moonbase",
+          "genesisHash": "0x91bc6e169807aaa54802737e1c504b2577d4fafedd5a02c10293b1cd60e39527",
+          "providers": [
+            {
+              "provider": "subsquid",
+              "dataSourceUrl": "https://moonbase.archive.subsquid.io/graphql",
+              "explorerUrl": "https://moonbase.explorer.subsquid.io/graphql",
+              "release": "FireSquid",
+              "image": "subsquid/substrate-ingest:1",
+              "ingest": "subsquid/substrate-ingest:1",
+              "gateway": "subsquid/substrate-gateway:2"
+            }
+          ]
+        },
     ]
 }
 
@@ -34,6 +49,18 @@ const mockRegistryEVM: ArchiveRegistryEVM = {
                     "worker": "eth-stage1-worker:0.0.43"
                 }
             ]
+        },
+        {
+          "network": "moonbase",
+          "providers": [
+            {
+              "provider": "subsquid",
+              "dataSourceUrl": "https://moonbase-evm.archive.subsquid.io",
+              "release": "Stage 1",
+              "ingester": "eth-stage1-ingester:0.1",
+              "worker": "eth-stage1-worker:0.1"
+            }
+          ]
         },
     ]
 }
@@ -78,5 +105,25 @@ describe("archive lookup", function() {
         assert(polkaArchive === "https://polkadot.archive.subsquid.io/graphql")
         const binanceArchive = lookupArchive("binance")
         assert(binanceArchive === "https://binance.archive.subsquid.io")
+    })
+
+    it("looks up by same archive name without type specification", () => {
+        let caught = false;
+        try {
+            const moonbaseArchive = lookupArchive("moonbase")
+        } catch(e) {
+            if (e instanceof AssertionError){
+                assert(e.message === "There are multiple networks with name moonbase. Provide network type to disambiguate.")
+            }
+            caught = true
+        }
+        assert(caught === true)
+    })
+
+    it("looks up by same archive name with type specification", () => {
+        const moonbaseSubArchive = lookupArchive("moonbase", { type: "Substrate" })
+        assert(moonbaseSubArchive === "https://moonbase.archive.subsquid.io/graphql")
+        const moonbaseEvmArchive = lookupArchive("moonbase", { type: "EVM" })
+        assert(moonbaseEvmArchive === "https://moonbase-evm.archive.subsquid.io")
     })
 })

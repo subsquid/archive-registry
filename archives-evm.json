@@ -109,6 +109,42 @@
       ]
     },
     {
+      "network": "moonbase",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://moonbase-evm.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.1",
+          "worker": "eth-stage1-worker:0.1"
+        }
+      ]
+    },
+    {
+      "network": "moonbeam",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://moonbeam-evm.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.1",
+          "worker": "eth-stage1-worker:0.1"
+        }
+      ]
+    },
+    {
+      "network": "moonriver",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://moonriver-evm.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.1",
+          "worker": "eth-stage1-worker:0.1"
+        }
+      ]
+    },
+    {
       "network": "polygon",
       "providers": [
         {
