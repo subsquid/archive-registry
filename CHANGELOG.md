@@ -1,3 +1,15 @@
+#### 2.1.3 (2023-02-11)
+
+##### Bug Fixes
+
+*  fix broken bin ([b770f677](https://github.com/subsquid/archive-registry/commit/b770f6773ab059af6f3a6555f6f0133884459cae))
+
+#### 2.1.2 (2023-01-29)
+
+##### New Features
+
+*  add Amplitude, Vara, Boba Eth, Boba Moonbeam, Skale Calypso archives ([5d030190](https://github.com/subsquid/archive-registry/commit/5d030190629a5939677ba8e0494642240bf938d2))
+
 #### 2.1.1 (2023-01-27)
 
 ##### Bug Fixes
