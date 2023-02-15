@@ -674,6 +674,21 @@
           "gateway": "subsquid/substrate-gateway:2"
         }
       ]
+    },
+    {
+      "network": "xx-network",
+      "genesisHash": "0x50dd5d206917bf10502c68fb4d18a59fc8aa31586f4e8856b493e43544aa82aa",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://xx-network.archive.subsquid.io/graphql",
+          "explorerUrl": "https://xx-network.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "subsquid/substrate-ingest:1",
+          "ingest": "subsquid/substrate-ingest:1",
+          "gateway": "subsquid/substrate-gateway:2"
+        }
+      ]
     }
   ]
 }

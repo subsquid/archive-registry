@@ -694,6 +694,18 @@
       "relayChain": null,
       "parachainId": null,
       "genesisHash": "0xe95743738788fb980fc5cfdaded9160d1e9eed707f7f6e19a591fd282cb29a69"
+    },
+    {
+      "name": "xx-network",
+      "displayName": "xx network",
+      "tokens": [
+        "XX"
+      ],
+      "website": "https://xx.network/",
+      "description": "xx network is a fast, low-fee quantum-ready layer 1 blockchain built in tandem with the most private communications network in the world (cMix). Founded by the godfather of digital currency and privacy technology David Chaum, the xx network mainnet launched in November 2021. Nominated Proof-of-Stake (NPoS) incentivizes coin holders to run and elect nodes as well as to participate in the governance of the platform via on-chain DAO.",
+      "relayChain": null,
+      "parachainId": null,
+      "genesisHash": "0x50dd5d206917bf10502c68fb4d18a59fc8aa31586f4e8856b493e43544aa82aa"
     }
   ]
 }
