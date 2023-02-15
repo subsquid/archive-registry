@@ -1,12 +1,18 @@
-import fetch from "node-fetch"
-import assert from "assert"
+import fetch from 'node-fetch'
+import assert from 'assert'
 
-import AbortController from "node-abort-controller";
-import { NetworkSubstrate, ArchiveProviderSubstrate, ArchiveRegistrySubstrate, ArchiveRegistryEVM, ArchiveProviderEVM } from "."
-import { KnownArchives, KnownArchivesEVM, KnownArchivesSubstrate, knownArchivesEVM, knownArchivesSubstrate } from "./chains";
-import { archivesRegistrySubstrate, archivesRegistryEVM, networkRegistrySubstrate } from "./registry";
+import AbortController from 'node-abort-controller'
+import {
+    NetworkSubstrate,
+    ArchiveProviderSubstrate,
+    ArchiveRegistrySubstrate,
+    ArchiveRegistryEVM,
+    ArchiveProviderEVM,
+} from '.'
+import {KnownArchives, KnownArchivesEVM, KnownArchivesSubstrate} from './chains'
+import {archivesRegistrySubstrate, archivesRegistryEVM, networkRegistrySubstrate} from './registry'
 
-export type RegistryType = "Substrate" | "EVM"
+export type RegistryType = 'Substrate' | 'EVM'
 
 export interface LookupOptionsSubstrate {
     type?: 'Substrate'
@@ -84,13 +90,11 @@ export function lookupArchive(network: string, opts?: LookupOptionsSubstrate | L
     }
 
     if (!opts.type) {
-        let isSubstrateNetwork = knownArchivesSubstrate.includes(<KnownArchivesSubstrate>network)
-        let isEvmNetwork = knownArchivesEVM.includes(<KnownArchivesEVM>network)
-        assert(
-            isSubstrateNetwork == false || isEvmNetwork == false,
-            `There are multiple networks with name ${network}. Provide network type to disambiguate.`
-        )
-        if (isEvmNetwork) {
+        let isSubstrateNetwork = archivesRegistrySubstrate.archives.some((a) => a.network === network)
+        let isEvmNetwork = archivesRegistryEVM.archives.some((a) => a.network === network)
+        if (isEvmNetwork && isSubstrateNetwork) {
+            throw new Error(`There are multiple networks with name ${network}. Provide network type to disambiguate.`)
+        } else if (isEvmNetwork) {
             opts.type = 'EVM'
         } else if (isSubstrateNetwork) {
             opts.type = 'Substrate'
@@ -101,41 +105,42 @@ Please consider submitting a PR to subsquid/archive-registry github repo to exte
     }
 
     switch (opts?.type) {
-        case "Substrate":
+        case 'Substrate':
             return lookupInSubstrateRegistry(network, archivesRegistrySubstrate, opts)[0].dataSourceUrl
-        case "EVM":
+        case 'EVM':
             return lookupInEVMRegistry(network, archivesRegistryEVM, opts)[0].dataSourceUrl
         default:
             throw new Error(`Archive registry type must be value from RegistryTypes ("Substrate", "EVM", ...)`)
     }
 }
 
-
 /**
  * Lookup providers matching the optional filtering criteria in a given Substrate registry
- * 
+ *
  * @param network network name for lookup
  * @param opts.genesis network genesis hex string (must start with "0x...")
  * @param opts.image archive image name
  * @param opts.ingest archive image name
- * @param opts.gateway archive gateway image 
- * 
+ * @param opts.gateway archive gateway image
+ *
  * @returns A list of matching providers
  * @throws If none matching archive is found or if there's ambiguity in choosing the network
  */
 export function lookupInSubstrateRegistry(
-    network: string, registry: ArchiveRegistrySubstrate, opts?: LookupOptionsSubstrate): (ArchiveProviderSubstrate)[] {
-    
-    let archives = registry.archives.filter(a => a.network.toLowerCase() === network.toLowerCase())
+    network: string,
+    registry: ArchiveRegistrySubstrate,
+    opts?: LookupOptionsSubstrate
+): ArchiveProviderSubstrate[] {
+    let archives = registry.archives.filter((a) => a.network.toLowerCase() === network.toLowerCase())
     if (opts?.genesis) {
-        archives = archives.filter(a => a.genesisHash?.toLowerCase() === opts.genesis?.toLowerCase())
+        archives = archives.filter((a) => a.genesisHash?.toLowerCase() === opts.genesis?.toLowerCase())
     }
 
     if (archives.length === 0) {
         throw new Error(`Failed to lookup a matching archive. \
 Please consider submitting a PR to subsquid/archive-registry github repo to extend the registry`)
     }
-    
+
     if (archives.length > 1) {
         throw new Error(`There are multiple networks with name ${network}. \
 Provide the genesis hash to disambiguate.`)
@@ -144,21 +149,20 @@ Provide the genesis hash to disambiguate.`)
     let matched = archives[0].providers
 
     if (opts?.image) {
-        matched = matched.filter(p => p.image === opts.image)
+        matched = matched.filter((p) => p.image === opts.image)
     }
 
     if (opts?.ingest) {
-        matched = matched.filter(p => p.ingest === opts.ingest)
+        matched = matched.filter((p) => p.ingest === opts.ingest)
     }
 
     if (opts?.gateway) {
-        matched = matched.filter(p => p.gateway === opts.gateway)
+        matched = matched.filter((p) => p.gateway === opts.gateway)
     }
 
     if (opts?.release) {
-        matched = matched.filter(p => p.release === opts.release)
+        matched = matched.filter((p) => p.release === opts.release)
     }
-
 
     if (matched.length === 0) {
         throw new Error(`Failed to lookup a matching archive. \
@@ -168,60 +172,65 @@ Please consider submitting a PR to subsquid/archive-registry github repo to exte
     return matched
 }
 
-
 /**
  * Lookup Subsquid Substrate Archive endpoint by network name
- * 
+ *
  * @param network network name for lookup
  * @param opts.ingester archive ingester name
- * @param opts.worker archive worker image 
+ * @param opts.worker archive worker image
  * @param opts.release archive release (for example Stage version)
- * 
+ *
  * @returns Archive endpoint url matching the filter
  * @throws If none matching archive is found or if there's ambiguity in choosing the network
  */
- export function lookupInEVMRegistry(
-    network: string, registry: ArchiveRegistryEVM, opts?: LookupOptionsEVM): (ArchiveProviderEVM)[] {
+export function lookupInEVMRegistry(
+    network: string,
+    registry: ArchiveRegistryEVM,
+    opts?: LookupOptionsEVM
+): ArchiveProviderEVM[] {
+    let archives = archivesRegistryEVM.archives.filter((a) => a.network.toLowerCase() === network.toLowerCase())
 
-    let archives = archivesRegistryEVM.archives.filter(a => a.network.toLowerCase() === network.toLowerCase())
+    if (archives.length > 1) {
+        throw new Error(`There are multiple networks with name ${network}. \
+Provide the genesis hash to disambiguate.`)
+    }
 
     let matched = archives[0].providers
-    
+
     if (opts?.ingester) {
-        matched = matched.filter(p => p.ingester === opts.ingester)
+        matched = matched.filter((p) => p.ingester === opts.ingester)
     }
     if (opts?.worker) {
-        matched = matched.filter(p => p.worker === opts.worker)
+        matched = matched.filter((p) => p.worker === opts.worker)
     }
     if (opts?.release) {
-        matched = matched.filter(p => p.release === opts.release)
+        matched = matched.filter((p) => p.release === opts.release)
     }
 
     if (matched.length === 0) {
-        throw new Error(`Failed to lookup a matching EVM archive. \
+        throw new Error(`Failed to lookup a matching archive. \
 Please consider submitting a PR to subsquid/archive-registry github repo to extend the registry`)
     }
 
     return matched
 }
 
-
 /**
  * Get parachain information by its name
- * 
+ *
  * @param network Network name
  * @returns Chain info incluing genesis hash, token symbols, parachainId if relevent, etc
  */
 export function getChainInfo(network: string, genesis?: string): NetworkSubstrate {
-    let matched =  networkRegistrySubstrate.networks.filter(n => n.name.toLowerCase() === network.toLowerCase()) 
-    
+    let matched = networkRegistrySubstrate.networks.filter((n) => n.name.toLowerCase() === network.toLowerCase())
+
     if (genesis) {
-        matched = matched.filter(a => a.genesisHash?.toLowerCase() === genesis.toLowerCase())
+        matched = matched.filter((a) => a.genesisHash?.toLowerCase() === genesis.toLowerCase())
     }
 
     if (matched.length === 0) {
         throw new Error(`Failed to get info on ${network}. \
-Please consider submitting a PR to subsquid/archive-registry github repo to extend the registry`) 
+Please consider submitting a PR to subsquid/archive-registry github repo to extend the registry`)
     }
 
     if (matched.length > 1) {
@@ -240,10 +249,9 @@ export async function getGenesisHash(endpoint: string): Promise<string> {
         }
     }
     `
-    const result = await archiveRequest<{ blocks: {hash: string}[] }>(endpoint, query)
+    const result = await archiveRequest<{blocks: {hash: string}[]}>(endpoint, query)
     return result.blocks[0].hash
-}  
-
+}
 
 async function archiveRequest<T>(endpoint: string, query: string): Promise<T> {
     const controller = new AbortController()
@@ -255,10 +263,10 @@ async function archiveRequest<T>(endpoint: string, query: string): Promise<T> {
         body: JSON.stringify({query}),
         headers: {
             'content-type': 'application/json',
-            'accept': 'application/json',
-            'accept-encoding': 'gzip, br'
+            accept: 'application/json',
+            'accept-encoding': 'gzip, br',
         },
-        signal: controller.signal
+        signal: controller.signal,
     })
     clearTimeout(timeoutId)
 
@@ -266,7 +274,7 @@ async function archiveRequest<T>(endpoint: string, query: string): Promise<T> {
         let body = await response.text()
         throw new Error(`Got http ${response.status}${body ? `, body: ${body}` : ''}`)
     }
-    let result = await response.json() as any
+    let result = (await response.json()) as any
     if (result.errors?.length) {
         throw new Error(`GraphQL error: ${result.errors[0].message}`)
     }

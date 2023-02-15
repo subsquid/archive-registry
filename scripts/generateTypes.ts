@@ -8,7 +8,7 @@ function genTypes(registry: ArchiveRegistrySubstrate | ArchiveRegistryEVM): stri
         names.push(`"${archive.network}"`)
     }
 
-    return names.join(", ")
+    return names.join(" | ")
 }
 
 fs.writeFileSync(`${__dirname}/../src/chains.ts`, 
@@ -18,10 +18,8 @@ fs.writeFileSync(`${__dirname}/../src/chains.ts`,
 // Run npm run gen-types to generate this file from archives.
 //
 
-export const knownArchivesSubstrate = [${genTypes(archivesRegistrySubstrate)}] as const;
-export const knownArchivesEVM = [${genTypes(archivesRegistryEVM)}] as const;
-export type KnownArchivesSubstrate = typeof knownArchivesSubstrate[number];
-export type KnownArchivesEVM = typeof knownArchivesEVM[number];
+export type KnownArchivesSubstrate = ${genTypes(archivesRegistrySubstrate)};
+export type KnownArchivesEVM = ${genTypes(archivesRegistryEVM)};
 export type KnownArchives = KnownArchivesSubstrate | KnownArchivesEVM;
 
 `
