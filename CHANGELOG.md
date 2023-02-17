@@ -1,3 +1,9 @@
+#### 2.1.5 (2023-02-17)
+
+##### Other Changes
+
+* //github.com/subsquid/archive-registry into main ([9107920d](https://github.com/subsquid/archive-registry/commit/9107920d55dbdb5a09f9a00d1230ad72ca160812))
+
 #### 2.1.4 (2023-02-13)
 
 ##### Other Changes
