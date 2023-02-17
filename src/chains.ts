@@ -4,8 +4,8 @@
 // Run npm run gen-types to generate this file from archives.
 //
 
-export const knownArchivesSubstrate = ["acala", "aleph-zero-testnet", "amplitude", "astar", "bajun", "bifrost", "calamari", "crust", "efinity", "elysium", "elysium-testnet", "equilibrium", "gear-testnet", "gemini-2a-testnet", "gmordie", "hydradx", "interlay", "invarch-tinkernet", "joystream", "karura", "khala", "kintsugi", "kusama", "litentry", "litmus", "moonbase", "moonbeam", "moonriver", "opal", "peaq", "phala", "polkadot", "quartz", "reef", "reef-testnet", "rococo", "shibuya", "shiden", "snow", "statemine", "statemint", "subsocial-parachain", "t0rn", "unique", "vara", "xx-network"] as const;
-export const knownArchivesEVM = ["avalanche", "binance", "binance-testnet", "boba-eth", "boba-moonbeam", "eth-mainnet", "exosama", "fantom", "goerli", "mantle-testnet", "moonbase", "moonbeam", "moonriver", "polygon", "polygon-mumbai", "skale-calypso", "skale-calypso-staging"] as const;
+export const knownArchivesSubstrate = ["acala", "aleph-zero-testnet", "amplitude", "astar", "bajun", "bifrost", "calamari", "crust", "efinity", "elysium", "elysium-testnet", "equilibrium", "gear-testnet", "gemini-2a-testnet", "gmordie", "hydradx", "interlay", "invarch-tinkernet", "joystream", "karura", "khala", "kintsugi", "kusama", "litentry", "litmus", "moonbase", "moonbeam", "moonriver", "opal", "peaq", "pendulum", "phala", "polkadot", "quartz", "reef", "reef-testnet", "robonomics", "rococo", "shibuya", "shiden", "snow", "statemine", "statemint", "subsocial-parachain", "t0rn", "unique", "vara", "xx-network"] as const;
+export const knownArchivesEVM = ["avalanche", "binance", "binance-testnet", "boba-eth", "boba-moonbeam", "eth-mainnet", "exosama", "fantom", "goerli", "moonbase", "moonbeam", "moonriver", "polygon", "polygon-mumbai", "skale-calypso", "skale-calypso-staging"] as const;
 export type KnownArchivesSubstrate = typeof knownArchivesSubstrate[number];
 export type KnownArchivesEVM = typeof knownArchivesEVM[number];
 export type KnownArchives = KnownArchivesSubstrate | KnownArchivesEVM;

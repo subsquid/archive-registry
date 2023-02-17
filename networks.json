@@ -516,6 +516,18 @@
       "genesisHash": "0xf496028047ba9e394a575e5d2d93828360d35a4c2dade61efff0de309021909f"
     },
     {
+      "name": "pendulum",
+      "displayName": "Pendulum",
+      "tokens": [
+        "PEN"
+      ],
+      "website": "https://pendulumchain.org/",
+      "description": "Pendulum is an open-source blockchain that aims to establish the missing link between the fiat and the DeFi ecosystems through a fiat-optimized smart contract blockchain.",
+      "relayChain": "polkadot",
+      "parachainId": "2094",
+      "genesisHash": "0x5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86"
+    },
+    {
       "name": "pioneer",
       "displayName": "Pioneer Network",
       "tokens": [

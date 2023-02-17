@@ -109,18 +109,6 @@
       ]
     },
     {
-      "network": "mantle-testnet",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://mantle-testnet.archive.subsquid.io",
-          "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.1",
-          "worker": "eth-stage1-worker:0.1"
-        }
-      ]
-    },
-    {
       "network": "moonbase",
       "providers": [
         {

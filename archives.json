@@ -451,6 +451,21 @@
       ]
     },
     {
+      "network": "pendulum",
+      "genesisHash": "0x5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://pendulum.archive.subsquid.io/graphql",
+          "explorerUrl": "https://pendulum.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "subsquid/substrate-ingest:1",
+          "ingest": "subsquid/substrate-ingest:1",
+          "gateway": "subsquid/substrate-gateway:2"
+        }
+      ]
+    },
+    {
       "network": "phala",
       "genesisHash": "0x1bb969d85965e4bb5a651abbedf21a54b6b31a21f66b5401cc3f1e286268d736",
       "providers": [
@@ -518,6 +533,21 @@
           "provider": "subsquid",
           "dataSourceUrl": "https://reef-testnet.archive.subsquid.io/graphql",
           "explorerUrl": "https://reef-testnet.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "subsquid/substrate-ingest:1",
+          "ingest": "subsquid/substrate-ingest:1",
+          "gateway": "subsquid/substrate-gateway:2"
+        }
+      ]
+    },
+    {
+      "network": "robonomics",
+      "genesisHash": "0x631ccc82a078481584041656af292834e1ae6daab61d2875b4dd0c14bb9b17bc",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://robonomics.archive.subsquid.io/graphql",
+          "explorerUrl": "https://robonomics.explorer.subsquid.io/graphql",
           "release": "FireSquid",
           "image": "subsquid/substrate-ingest:1",
           "ingest": "subsquid/substrate-ingest:1",
