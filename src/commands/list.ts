@@ -1,6 +1,7 @@
-import {runProgram} from '@subsquid/util-internal'
 import {Command, Option} from 'commander'
-import {knownArchivesEVM, knownArchivesSubstrate} from '../chains'
+import Table from 'easy-table'
+import {runProgram} from '@subsquid/util-internal'
+import {archivesRegistryEVM, archivesRegistrySubstrate} from '../registry'
 
 runProgram(async () => {
     let program = new Command()
@@ -11,36 +12,45 @@ runProgram(async () => {
     program.parse()
     let opts: {type: 'substrate' | 'evm'} = program.opts()
 
-    let text
-
-    if (opts.type == null) {
-        console.log(getSubstrateArchives() + `\n\n` + getEvmArchives())
-    } else {
-        switch (opts.type) {
-            case 'evm':
-                console.log(getEvmArchives())
-                break
-            case 'substrate':
-                console.log(getSubstrateArchives())
-                break
-        }
+    switch (opts.type) {
+        case 'evm':
+            printEvmArchives()
+            break
+        case 'substrate':
+            printSubstrateArchives()
+            break
+        case null:
+        case undefined:
+            printEvmArchives()
+            printSubstrateArchives()
+            break
     }
 })
 
-function getEvmArchives() {
-    let res: string[] = []
-    res.push(`EVM archives:`)
-    for (let archive of knownArchivesEVM) {
-        res.push(` - ` + archive)
+function printEvmArchives() {
+    console.log(`EVM archives:`)
+    let table = new Table()
+    table.pushDelimeter(['network', 'endpoint'])
+    for (let archive of archivesRegistryEVM.archives) {
+        table.cell('network', archive.network)
+        for (let provider of archive.providers) {
+            table.cell('endpoint', provider.dataSourceUrl)
+            table.newRow()
+        }
     }
-    return res.join('\n')
+    console.log(table.print())
 }
 
-function getSubstrateArchives() {
-    let res: string[] = []
-    res.push(`Substrate archives:`)
-    for (let archive of knownArchivesSubstrate) {
-        res.push(` - ` + archive)
+function printSubstrateArchives() {
+    console.log(`Substrate archives:`)
+    let table = new Table()
+    table.pushDelimeter(['network', 'endpoint'])
+    for (let archive of archivesRegistrySubstrate.archives) {
+        table.cell('network', archive.network)
+        for (let provider of archive.providers) {
+            table.cell('endpoint', provider.dataSourceUrl)
+            table.newRow()
+        }
     }
-    return res.join('\n')
+    console.log(table.print())
 }
