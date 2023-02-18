@@ -316,6 +316,21 @@
       ]
     },
     {
+      "network": "kilt",
+      "genesisHash": "0x411f057b9107718c9624d6aa4a3f23c1653898297f3d4d529d9bb6511a39dd21",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://kilt.archive.subsquid.io/graphql",
+          "explorerUrl": "https://kilt.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "subsquid/substrate-ingest:1",
+          "ingest": "subsquid/substrate-ingest:1",
+          "gateway": "subsquid/substrate-gateway:2"
+        }
+      ]
+    },
+    {
       "network": "kintsugi",
       "genesisHash": "0x9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
       "providers": [

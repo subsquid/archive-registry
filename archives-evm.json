@@ -19,8 +19,8 @@
           "provider": "subsquid",
           "dataSourceUrl": "https://binance.archive.subsquid.io",
           "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.0.39",
-          "worker": "eth-stage1-worker:0.0.39"
+          "ingester": "eth-stage1-ingester:0.1",
+          "worker": "eth-stage1-worker:0.1"
         }
       ]
     },
@@ -105,6 +105,18 @@
           "release": "Stage 1",
           "ingester": "eth-stage1-ingester:0.0.39",
           "worker": "eth-stage1-worker:0.0.39"
+        }
+      ]
+    },
+    {
+      "network": "mantle-testnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://mantle-testnet.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.2",
+          "worker": "eth-stage1-worker:0.2"
         }
       ]
     },
