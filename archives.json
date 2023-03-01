@@ -182,7 +182,7 @@
     },
     {
       "network": "gear-testnet",
-      "genesisHash": "0x209bc5d3262cad676cd1fcd87a958a3d00c0176f8720231cbbb54a10f735d9bb",
+      "genesisHash": "0xca57341aa3262edc34d8f4fc0c557309ff0941a24c271ffe9c1370ce627d723a",
       "providers": [
         {
           "provider": "subsquid",
@@ -676,6 +676,21 @@
       ]
     },
     {
+      "network": "subsocial",
+      "genesisHash": "0x4a12be580bb959937a1c7a61d5cf24428ed67fa571974b4007645d1886e7c89f",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://subsocial.archive.subsquid.io/graphql",
+          "explorerUrl": "https://subsocial.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "subsquid/substrate-ingest:1",
+          "ingest": "subsquid/substrate-ingest:1",
+          "gateway": "subsquid/substrate-gateway:2"
+        }
+      ]
+    },
+    {
       "network": "t0rn",
       "genesisHash": "0x569de72a10e8426ea1d3515dd473a57af15a38b6dda3b714bdd6968cf928e011",
       "providers": [
@@ -707,7 +722,7 @@
     },
     {
       "network": "vara",
-      "genesisHash": "0xe95743738788fb980fc5cfdaded9160d1e9eed707f7f6e19a591fd282cb29a69",
+      "genesisHash": "0x8cf33640b92b0dbd0467dd839340a19a6f46d85d5f10f851eb3a3f712fdc1a8a",
       "providers": [
         {
           "provider": "subsquid",

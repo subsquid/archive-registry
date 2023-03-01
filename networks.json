@@ -528,6 +528,18 @@
       "genesisHash": "0x5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86"
     },
     {
+      "name": "phala",
+      "displayName": "Phala Network",
+      "tokens": [
+        "PHA"
+      ],
+      "website": "https://www.phala.network/",
+      "description": "Phala Network is a decentralized cloud that offers secure and scalable computing. This blockchain is a trustless computation platform that enables massive cloud processing without sacrificing data confidentiality.",
+      "relayChain": "polkadot",
+      "parachainId": "2035",
+      "genesisHash": "0x1bb969d85965e4bb5a651abbedf21a54b6b31a21f66b5401cc3f1e286268d736"
+    },
+    {
       "name": "pioneer",
       "displayName": "Pioneer Network",
       "tokens": [
@@ -610,6 +622,18 @@
       "relayChain": null,
       "parachainId": null,
       "genesisHash": "0x6408de7737c59c238890533af25896a2c20608d8b380bb01029acb392781063e"
+    },
+    {
+      "name": "shibuya",
+      "displayName": "Shibuya Network",
+      "tokens": [
+        "SBY"
+      ],
+      "website": "https://www.shibuya.xyz/",
+      "description": "Shibuya is a web3 content studio and creator platform. Unlike traditional streaming platforms, Shibuya is built with decentralization as a priority and uses blockchain technology to securely distribute and monetize content.",
+      "relayChain": null,
+      "parachainId": null,
+      "genesisHash": "0xddb89973361a170839f80f152d2e9e38a376a5a7eccefcade763f46a8e567019"
     },
     {
       "name": "shiden",
