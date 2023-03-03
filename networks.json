@@ -121,6 +121,16 @@
       "genesisHash": "0x5c7bd13edf349b33eb175ffae85210299e324d852916336027391536e686f267"
     },
     {
+      "name": "collectives",
+      "displayName": "Collectives",
+      "tokens": [],
+      "website": "https://polkadot.polkassembly.io/post/1318?ref=parachains-info",
+      "description": "The team at Parity develops a new parachain for collectives and plans to make a governance proposal to connect it to Polkadot. The Collectives chain hosts on-chain collectives that serve the Polkadot network.",
+      "relayChain": "polkadot",
+      "parachainId": "1001",
+      "genesisHash": "0x46ee89aa2eedd13e988962630ec9fb7565964cf5023bb351f2b6b25c1b68b0b2"
+    },
+    {
       "name": "crab",
       "displayName": "Crab",
       "tokens": [
