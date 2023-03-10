@@ -1,3 +1,9 @@
+#### 2.1.8 (2023-03-10)
+
+##### New Features
+
+*  add arbitrum and arbitrum-nova archives ([6208d726](https://github.com/subsquid/archive-registry/commit/6208d7269086c5bdffe81a3bd01985fdbfb7f92f))
+
 #### 2.1.7 (2023-03-03)
 
 #### 2.1.6 (2023-02-18)
