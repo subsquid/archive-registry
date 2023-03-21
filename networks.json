@@ -236,7 +236,7 @@
       "description": "Gear is an advanced WASM based smart contract platform, aiming to be a Polkadot and Kusama parachain, that enables developers to deploy their dApps in under 5 minutes in the easiest and most efficient way possible.",
       "relayChain": null,
       "parachainId": null,
-      "genesisHash": "0x209bc5d3262cad676cd1fcd87a958a3d00c0176f8720231cbbb54a10f735d9bb"
+      "genesisHash": "0xca57341aa3262edc34d8f4fc0c557309ff0941a24c271ffe9c1370ce627d723a"
     },
     {
       "name": "gemini-2a-testnet",
@@ -478,6 +478,30 @@
       "genesisHash": "0x401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b"
     },
     {
+      "name": "myriad",
+      "displayName": "Myriad",
+      "tokens": [
+        "MYRIA", "DBIO", "OCT", "ATO"
+      ],
+      "website": "https://myriad.social/",
+      "description": "A social metaverse & metasocial network on web3, pulling content from mainstream social media and turning every post into a tipping wallet.",
+      "relayChain": null,
+      "parachainId": null,
+      "genesisHash": "0x74ed91fbc18497f011290f9119a2217908649170337b6414a2d44923ade07063"
+    },
+    {
+      "name": "myriad-testnet",
+      "displayName": "Myriad Testnet",
+      "tokens": [
+        "MYRIA", "DBIO", "OCT", "ATO"
+      ],
+      "website": "https://myriad.social/",
+      "description": "Testnet for a social metaverse & metasocial network Myriad.",
+      "relayChain": null,
+      "parachainId": null,
+      "genesisHash": "0x7d45920ff7956e45ef6107720e41b1cfdbd0a50371d6e9072f67070fb285fe16"
+    },
+    {
       "name": "nodle",
       "displayName": "Nodle Chain",
       "tokens": [
@@ -562,6 +586,18 @@
       "genesisHash": "0xf22b7850cdd5a7657bbfd90ac86441275bbc57ace3d2698a740c7b0ec4de5ec3"
     },
     {
+      "name": "polkadex",
+      "displayName": "Polkadex",
+      "tokens": [
+        "PDEX"
+      ],
+      "website": "https://polkadex.trade/",
+      "description": "Polkadex Orderbook is a non-custodial, peer-to-peer trading platform that merges the benefits of both centralized and decentralized exchanges into a next-generation decentralized product suite.",
+      "relayChain": null,
+      "parachainId": null,
+      "genesisHash": "0x3920bcb4960a1eef5580cd5367ff3f430eef052774f78468852f7b9cb39f8a3c"
+    },
+    {
       "name": "polkadot",
       "displayName": "Polkadot Relay Chain",
       "tokens": [
@@ -607,7 +643,7 @@
       "description": "Testnet for L1 Substrate based EVM compatible chain with multi VM support.",
       "relayChain": null,
       "parachainId": null,
-      "genesisHash": "0x0f89efd7bf650f2d521afef7456ed98dff138f54b5b7915cc9bce437ab728660"
+      "genesisHash": "0xb414a8602b2251fa538d38a9322391500bd0324bc7ac6048845d57c37dd83fe6"
     },
     {
       "name": "robonomics",
