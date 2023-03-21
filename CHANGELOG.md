@@ -1,3 +1,9 @@
+#### 2.1.9 (2023-03-21)
+
+##### New Features
+
+*  update networks.json ([8a4bf244](https://github.com/subsquid/archive-registry/commit/8a4bf244f8e4150b80a8a5bd25d2da36d7f02df9))
+
 #### 2.1.8 (2023-03-10)
 
 ##### New Features
