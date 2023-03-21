@@ -43,8 +43,8 @@
           "provider": "subsquid",
           "dataSourceUrl": "https://binance.archive.subsquid.io",
           "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.1",
-          "worker": "eth-stage1-worker:0.1"
+          "ingester": "eth-stage1-ingester:0.15",
+          "worker": "eth-stage1-worker:0.15"
         }
       ]
     },
@@ -177,6 +177,18 @@
           "release": "Stage 1",
           "ingester": "eth-stage1-ingester:0.1",
           "worker": "eth-stage1-worker:0.1"
+        }
+      ]
+    },
+    {
+      "network": "optimism-mainnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://optimism-mainnet.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.15",
+          "worker": "eth-stage1-worker:0.15"
         }
       ]
     },

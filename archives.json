@@ -451,6 +451,36 @@
       "genesisHash": "0x401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b"
     },
     {
+      "network": "myriad",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://myriad.archive.subsquid.io/graphql",
+          "explorerUrl": "https://myriad.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "subsquid/substrate-ingest:1",
+          "ingest": "subsquid/substrate-ingest:1",
+          "gateway": "subsquid/substrate-gateway:2"
+        }
+      ],
+      "genesisHash": "0x74ed91fbc18497f011290f9119a2217908649170337b6414a2d44923ade07063"
+    },
+    {
+      "network": "myriad-testnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://myriad-testnet.archive.subsquid.io/graphql",
+          "explorerUrl": "https://myriad-testnet.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "subsquid/substrate-ingest:1",
+          "ingest": "subsquid/substrate-ingest:1",
+          "gateway": "subsquid/substrate-gateway:2"
+        }
+      ],
+      "genesisHash": "0x7d45920ff7956e45ef6107720e41b1cfdbd0a50371d6e9072f67070fb285fe16"
+    },
+    {
       "network": "opal",
       "genesisHash": "0xc87870ef90a438d574b8e320f17db372c50f62beb52e479c8ff6ee5b460670b9",
       "providers": [
@@ -511,6 +541,21 @@
       ]
     },
     {
+      "network": "polkadex",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://polkadex.archive.subsquid.io/graphql",
+          "explorerUrl": "https://polkadex.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "subsquid/substrate-ingest:1",
+          "ingest": "subsquid/substrate-ingest:1",
+          "gateway": "subsquid/substrate-gateway:2"
+        }
+      ],
+      "genesisHash": "0x3920bcb4960a1eef5580cd5367ff3f430eef052774f78468852f7b9cb39f8a3c"
+    },
+    {
       "network": "polkadot",
       "providers": [
         {
@@ -557,7 +602,7 @@
     },
     {
       "network": "reef-testnet",
-      "genesisHash": "0x0f89efd7bf650f2d521afef7456ed98dff138f54b5b7915cc9bce437ab728660",
+      "genesisHash": "0xb414a8602b2251fa538d38a9322391500bd0324bc7ac6048845d57c37dd83fe6",
       "providers": [
         {
           "provider": "subsquid",
