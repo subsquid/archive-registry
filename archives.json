@@ -766,6 +766,21 @@
       ]
     },
     {
+      "network": "tidechain",
+      "genesisHash": "0xe02d5f0a06c10faa29d19ac1fe3aae40c41f819de074a8047a7814a5cbed7f6b",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://tidechain.archive.subsquid.io/graphql",
+          "explorerUrl": "https://tidechain.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "subsquid/substrate-ingest:1",
+          "ingest": "subsquid/substrate-ingest:1",
+          "gateway": "subsquid/substrate-gateway:2"
+        }
+      ]
+    },
+    {
       "network": "unique",
       "genesisHash": "0x84322d9cddbf35088f1e54e9a85c967a41a56a4f43445768125e61af166c7d31",
       "providers": [

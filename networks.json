@@ -754,6 +754,19 @@
       "genesisHash": "0x569de72a10e8426ea1d3515dd473a57af15a38b6dda3b714bdd6968cf928e011"
     },
     {
+      "name": "tidechain",
+      "displayName": "Tidechain",
+      "tokens": [
+        "BTC", "ETH",
+        "USDC", "ATH", "TDFY"
+      ],
+      "website": "https://tidefi.com/",
+      "description": "The Tidechain is our custom-built, layer-1 blockchain created atop the Substrate framework. Designed with the intention of massive scalability and interoperability, the Tidechain is truly future-proof allowing for the highest level of reliability, security, and potential for growth.",
+      "relayChain": null,
+      "parachainId": null,
+      "genesisHash": "0xe02d5f0a06c10faa29d19ac1fe3aae40c41f819de074a8047a7814a5cbed7f6b"
+    },
+    {
       "name": "unique",
       "displayName": "Unique",
       "tokens": [
