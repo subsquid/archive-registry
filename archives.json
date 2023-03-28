@@ -197,7 +197,7 @@
     },
     {
       "network": "gear-testnet",
-      "genesisHash": "0xca57341aa3262edc34d8f4fc0c557309ff0941a24c271ffe9c1370ce627d723a",
+      "genesisHash": "0x92ed36f0a4a26169cba7c6990d51055c76b6b89de268568615a041eebb619a0e",
       "providers": [
         {
           "provider": "subsquid",
@@ -797,7 +797,7 @@
     },
     {
       "network": "vara",
-      "genesisHash": "0x8cf33640b92b0dbd0467dd839340a19a6f46d85d5f10f851eb3a3f712fdc1a8a",
+      "genesisHash": "0xfe1b4c55fd4d668101126434206571a7838a8b6b93a6d1b95d607e78e6c53763",
       "providers": [
         {
           "provider": "subsquid",

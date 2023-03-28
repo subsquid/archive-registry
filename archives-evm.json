@@ -265,6 +265,18 @@
       ]
     },
     {
+      "network": "sepolia",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://sepolia.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.15",
+          "worker": "eth-stage1-worker:0.15"
+        }
+      ]
+    },
+    {
       "network": "skale-calypso",
       "providers": [
         {
