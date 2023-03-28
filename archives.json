@@ -197,7 +197,7 @@
     },
     {
       "network": "gear-testnet",
-      "genesisHash": "0xca57341aa3262edc34d8f4fc0c557309ff0941a24c271ffe9c1370ce627d723a",
+      "genesisHash": "0x92ed36f0a4a26169cba7c6990d51055c76b6b89de268568615a041eebb619a0e",
       "providers": [
         {
           "provider": "subsquid",
@@ -496,6 +496,21 @@
       ]
     },
     {
+      "network": "origin-trail",
+      "genesisHash": "0xe7e0962324a3b86c83404dbea483f25fb5dab4c224791c81b756cfc948006174",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://origin-trail.archive.subsquid.io/graphql",
+          "explorerUrl": "https://origin-trail.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "subsquid/substrate-ingest:1",
+          "ingest": "subsquid/substrate-ingest:1",
+          "gateway": "subsquid/substrate-gateway:2"
+        }
+      ]
+    },
+    {
       "network": "peaq",
       "genesisHash": "0xf496028047ba9e394a575e5d2d93828360d35a4c2dade61efff0de309021909f",
       "providers": [
@@ -766,6 +781,21 @@
       ]
     },
     {
+      "network": "tidechain",
+      "genesisHash": "0xe02d5f0a06c10faa29d19ac1fe3aae40c41f819de074a8047a7814a5cbed7f6b",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://tidechain.archive.subsquid.io/graphql",
+          "explorerUrl": "https://tidechain.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "subsquid/substrate-ingest:1",
+          "ingest": "subsquid/substrate-ingest:1",
+          "gateway": "subsquid/substrate-gateway:2"
+        }
+      ]
+    },
+    {
       "network": "unique",
       "genesisHash": "0x84322d9cddbf35088f1e54e9a85c967a41a56a4f43445768125e61af166c7d31",
       "providers": [
@@ -782,7 +812,7 @@
     },
     {
       "network": "vara",
-      "genesisHash": "0x8cf33640b92b0dbd0467dd839340a19a6f46d85d5f10f851eb3a3f712fdc1a8a",
+      "genesisHash": "0xfe1b4c55fd4d668101126434206571a7838a8b6b93a6d1b95d607e78e6c53763",
       "providers": [
         {
           "provider": "subsquid",

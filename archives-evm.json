@@ -13,6 +13,18 @@
       ]
     },
     {
+      "network": "arbitrum-goerli",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://arbitrum-goerli.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.15",
+          "worker": "eth-stage1-worker:0.15"
+        }
+      ]
+    },
+    {
       "network": "arbitrum-nova",
       "providers": [
         {
@@ -25,11 +37,35 @@
       ]
     },
     {
+      "network": "astar",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://astar-evm.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.15",
+          "worker": "eth-stage1-worker:0.15"
+        }
+      ]
+    },
+    {
       "network": "avalanche",
       "providers": [
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://avalanche-c.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.15",
+          "worker": "eth-stage1-worker:0.15"
+        }
+      ]
+    },
+    {
+      "network": "base-goerli",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://base-goerli.archive.subsquid.io",
           "release": "Stage 1",
           "ingester": "eth-stage1-ingester:0.15",
           "worker": "eth-stage1-worker:0.15"
@@ -217,6 +253,30 @@
       ]
     },
     {
+      "network": "scroll-alpha-testnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://scroll-alpha-testnet.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.15",
+          "worker": "eth-stage1-worker:0.15"
+        }
+      ]
+    },
+    {
+      "network": "sepolia",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://sepolia.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.15",
+          "worker": "eth-stage1-worker:0.15"
+        }
+      ]
+    },
+    {
       "network": "skale-calypso",
       "providers": [
         {
@@ -258,6 +318,30 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://skale-nebula-staging.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.15",
+          "worker": "eth-stage1-worker:0.15"
+        }
+      ]
+    },
+    {
+      "network": "zksync",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://zksync.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.15",
+          "worker": "eth-stage1-worker:0.15"
+        }
+      ]
+    },
+    {
+      "network": "zksync-testnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://zksync-testnet.archive.subsquid.io",
           "release": "Stage 1",
           "ingester": "eth-stage1-ingester:0.15",
           "worker": "eth-stage1-worker:0.15"
