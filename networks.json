@@ -236,7 +236,7 @@
       "description": "Gear is an advanced WASM based smart contract platform, aiming to be a Polkadot and Kusama parachain, that enables developers to deploy their dApps in under 5 minutes in the easiest and most efficient way possible.",
       "relayChain": null,
       "parachainId": null,
-      "genesisHash": "0xca57341aa3262edc34d8f4fc0c557309ff0941a24c271ffe9c1370ce627d723a"
+      "genesisHash": "0x92ed36f0a4a26169cba7c6990d51055c76b6b89de268568615a041eebb619a0e"
     },
     {
       "name": "gemini-2a-testnet",
@@ -526,6 +526,19 @@
       "genesisHash": "0xc87870ef90a438d574b8e320f17db372c50f62beb52e479c8ff6ee5b460670b9"
     },
     {
+      "name": "origin-trail",
+      "displayName": "Origin Trail",
+      "tokens": [
+        "OTP",
+        "TRAC"
+      ],
+      "website": "https://parachain.origintrail.io/",
+      "description": "OriginTrail brought a scalable, trusted and secure way for information to be shared across a universe of data sources, bringing together users that were traditionally not able to perform data management in such a way.",
+      "relayChain": "polkadot",
+      "parachainId": "2043",
+      "genesisHash": "0xe7e0962324a3b86c83404dbea483f25fb5dab4c224791c81b756cfc948006174"
+    },
+    {
       "name": "parallel",
       "displayName": "Parallel",
       "tokens": [
@@ -788,7 +801,7 @@
       "description": "Vara is a fast and scalable Layer-1 decentralized network powered by Gear Protocol. The best playground for developing and running your dApps. Gear Protocol is an advanced WASM based smart contract platform capable of being deployed as a Kusama and Polkadot parachain, that enables developers to deploy their dApps in under 5 minutes in the easiest and most efficient way possible.",
       "relayChain": null,
       "parachainId": null,
-      "genesisHash": "0xe95743738788fb980fc5cfdaded9160d1e9eed707f7f6e19a591fd282cb29a69"
+      "genesisHash": "0xfe1b4c55fd4d668101126434206571a7838a8b6b93a6d1b95d607e78e6c53763"
     },
     {
       "name": "xx-network",
