@@ -1,3 +1,9 @@
+#### 2.1.10 (2023-03-28)
+
+##### New Features
+
+*  add origin-trail logo ([ddb38d5a](https://github.com/subsquid/archive-registry/commit/ddb38d5a9a8fff2c70fb0572f8ede798b33096d1))
+
 #### 2.1.9 (2023-03-21)
 
 ##### New Features
