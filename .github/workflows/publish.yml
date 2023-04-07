@@ -1,12 +1,12 @@
 name: publish
 on:
-  workflow_dispatch: # manually run 
+  workflow_dispatch: # manually run
     inputs:
       releaseTag:
         description: 'Tag the release (next, latest)'
         required: false
         default: 'latest'
-      
+
 env:
   CI: true
 
@@ -17,7 +17,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+
       - name: Authenticate with Registry
         run: |
           echo "always-auth=true" > .npmrc
@@ -27,13 +32,16 @@ jobs:
           npm whoami
         env:
           NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-      - name: npm install  
+
+      - name: npm install
         run: |
-          npm i
+          npm ci
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
-      - name: npm build  
-        run: npm run build      
+
+      - name: npm build
+        run: npm run build
+
       - name: npm publish
         run: |
           npm publish --tag $RELEASE_TAG --access public
