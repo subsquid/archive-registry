@@ -151,8 +151,8 @@
           "provider": "subsquid",
           "dataSourceUrl": "https://moonbase-evm.archive.subsquid.io",
           "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.1",
-          "worker": "eth-stage1-worker:0.1"
+          "ingester": "eth-stage1-ingester:0.15",
+          "worker": "eth-stage1-worker:0.15"
         }
       ]
     },
@@ -163,8 +163,8 @@
           "provider": "subsquid",
           "dataSourceUrl": "https://moonbeam-evm.archive.subsquid.io",
           "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.1",
-          "worker": "eth-stage1-worker:0.1"
+          "ingester": "eth-stage1-ingester:0.15",
+          "worker": "eth-stage1-worker:0.15"
         }
       ]
     },
@@ -175,8 +175,8 @@
           "provider": "subsquid",
           "dataSourceUrl": "https://moonriver-evm.archive.subsquid.io",
           "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.1",
-          "worker": "eth-stage1-worker:0.1"
+          "ingester": "eth-stage1-ingester:0.15",
+          "worker": "eth-stage1-worker:0.15"
         }
       ]
     },

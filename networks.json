@@ -109,6 +109,18 @@
       "genesisHash": "0x4ac80c99289841dd946ef92765bf659a307d39189b3ce374a92b5f0415ee17a1"
     },
     {
+      "name": "centrifuge",
+      "displayName": "Centrifuge",
+      "tokens": [
+        "CFG"
+      ],
+      "website": "https://centrifuge.io/",
+      "description": "Centrifuge unlocks economic opportunity for all by connecting people to borrow and lend money transparently and cost-effectively.",
+      "relayChain": null,
+      "parachainId": null,
+      "genesisHash": "0xb3db41421702df9a7fcac62b53ffeac85f7853cc4e689e0b93aeb3db18c09d82"
+    },
+    {
       "name": "clover",
       "displayName": "Clover Finance",
       "tokens": [
@@ -229,6 +241,30 @@
       "genesisHash": "0x89d3ec46d2fb43ef5a9713833373d5ea666b092fa8fd68fbc34596036571b907"
     },
     {
+      "name": "frequency",
+      "displayName": "Frequency",
+      "tokens": [
+        "MFRQCY"
+      ],
+      "website": "https://forums.projectliberty.io/c/concept-posts/8?ref=parachains-info",
+      "description": "Frequency enables Web3 social at scale and is the first production implementation of the Decentralized Social Networking Protocol (DSNP.org). Frequency is designed so that applications collaborate instead of competing when submitting transactions.",
+      "relayChain": null,
+      "parachainId": null,
+      "genesisHash": "0x4a587bf17a404e3572747add7aab7bbe56e805a5479c6c436f07f36fcc8d3ae1"
+    },
+    {
+      "name": "frequency-testnet",
+      "displayName": "Frequency Testnet",
+      "tokens": [
+        "MFRQCY"
+      ],
+      "website": "https://forums.projectliberty.io/c/concept-posts/8?ref=parachains-info",
+      "description": "Frequency enables Web3 social at scale and is the first production implementation of the Decentralized Social Networking Protocol (DSNP.org). Frequency is designed so that applications collaborate instead of competing when submitting transactions.",
+      "relayChain": null,
+      "parachainId": null,
+      "genesisHash": "0x0c33dfffa907de5683ae21cc6b4af899b5c4de83f3794ed75b2dc74e1b088e72"
+    },
+    {
       "name": "gear-testnet",
       "displayName": "Gear Testnet",
       "tokens": [],
@@ -307,6 +343,16 @@
       "website": "https://hydradx.io/",
       "description": "HydraDX is built as a parachain — specialized blockchain in the Polkadot network. It is benefiting from shared security, speed and flexibility of the Substrate framework while remaining optimized for a single purpose: enabling fluid programmable value exchange.",
       "genesisHash": "0xd2a620c27ec5cbc5621ff9a522689895074f7cca0d08e7134a7804e1a3ba86fc"
+    },
+    {
+      "name": "integritee-network",
+      "displayName": "Integritee Network",
+      "tokens": [],
+      "website": "https://integritee.network/",
+      "description": "Integritee is the most scalable public blockchain solution for securely processing sensitive business or personal data. Harness the speed and confidentiality of trusted execution environments, combined with the trust of a decentralized network, with Integritee.",
+      "relayChain": "kusama",
+      "parachainId": "2015",
+      "genesisHash": "0xcdedc8eadbfa209d3f207bba541e57c3c58a667b05a2e1d1e86353c9000758da"
     },
     {
       "name": "interlay",
@@ -716,6 +762,18 @@
       "relayChain": "rococo",
       "parachainId": "3333",
       "genesisHash": "0x569de72a10e8426ea1d3515dd473a57af15a38b6dda3b714bdd6968cf928e011"
+    },
+    {
+      "name": "tanganika",
+      "displayName": "Tanganika",
+      "tokens": [
+        "DHX"
+      ],
+      "website": "https://www.datahighway.com/",
+      "description": "DataHighway is a decentralized Web3 organization specializing in the gathering and trading of Internet of Things (IoT) Data NFTs and F-NFTs. DataHighway is currently building an Inter-Chain Data Marketplace on the Kusama Network (after winning a Parachain slot last year on the Polkadot Ecosystem) where users will be able to share IoT Data with each other while trading them with DHX Tokens. The reason behind us choosing data is because the data industry now constitutes a billion dollar industry and we want everyone to be able to access this exciting opportunity. ",
+      "relayChain": "kusama",
+      "parachainId": "2116",
+      "genesisHash": "0xeacdd2d5b42de9769ccbb6e8d9013ab0d90ab105bf601d4aac53e874c145ec21"
     },
     {
       "name": "unique",
