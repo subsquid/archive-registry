@@ -1,3 +1,21 @@
+#### 2.1.10 (2023-03-28)
+
+##### New Features
+
+*  add origin-trail logo ([ddb38d5a](https://github.com/subsquid/archive-registry/commit/ddb38d5a9a8fff2c70fb0572f8ede798b33096d1))
+
+#### 2.1.9 (2023-03-21)
+
+##### New Features
+
+*  update networks.json ([8a4bf244](https://github.com/subsquid/archive-registry/commit/8a4bf244f8e4150b80a8a5bd25d2da36d7f02df9))
+
+#### 2.1.8 (2023-03-10)
+
+##### New Features
+
+*  add arbitrum and arbitrum-nova archives ([6208d726](https://github.com/subsquid/archive-registry/commit/6208d7269086c5bdffe81a3bd01985fdbfb7f92f))
+
 #### 2.1.7 (2023-03-03)
 
 #### 2.1.6 (2023-02-18)

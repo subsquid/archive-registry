@@ -13,11 +13,35 @@
       ]
     },
     {
+      "network": "arbitrum-goerli",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://arbitrum-goerli.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.15",
+          "worker": "eth-stage1-worker:0.15"
+        }
+      ]
+    },
+    {
       "network": "arbitrum-nova",
       "providers": [
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://arbitrum-nova.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.15",
+          "worker": "eth-stage1-worker:0.15"
+        }
+      ]
+    },
+    {
+      "network": "astar",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://astar-evm.archive.subsquid.io",
           "release": "Stage 1",
           "ingester": "eth-stage1-ingester:0.15",
           "worker": "eth-stage1-worker:0.15"
@@ -37,14 +61,26 @@
       ]
     },
     {
+      "network": "base-goerli",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://base-goerli.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.15",
+          "worker": "eth-stage1-worker:0.15"
+        }
+      ]
+    },
+    {
       "network": "binance",
       "providers": [
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://binance.archive.subsquid.io",
           "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.1",
-          "worker": "eth-stage1-worker:0.1"
+          "ingester": "eth-stage1-ingester:0.15",
+          "worker": "eth-stage1-worker:0.15"
         }
       ]
     },
@@ -181,6 +217,18 @@
       ]
     },
     {
+      "network": "optimism-mainnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://optimism-mainnet.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.15",
+          "worker": "eth-stage1-worker:0.15"
+        }
+      ]
+    },
+    {
       "network": "polygon",
       "providers": [
         {
@@ -198,6 +246,30 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://polygon-mumbai.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.15",
+          "worker": "eth-stage1-worker:0.15"
+        }
+      ]
+    },
+    {
+      "network": "scroll-alpha-testnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://scroll-alpha-testnet.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.15",
+          "worker": "eth-stage1-worker:0.15"
+        }
+      ]
+    },
+    {
+      "network": "sepolia",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://sepolia.archive.subsquid.io",
           "release": "Stage 1",
           "ingester": "eth-stage1-ingester:0.15",
           "worker": "eth-stage1-worker:0.15"
@@ -246,6 +318,30 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://skale-nebula-staging.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.15",
+          "worker": "eth-stage1-worker:0.15"
+        }
+      ]
+    },
+    {
+      "network": "zksync",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://zksync.archive.subsquid.io",
+          "release": "Stage 1",
+          "ingester": "eth-stage1-ingester:0.15",
+          "worker": "eth-stage1-worker:0.15"
+        }
+      ]
+    },
+    {
+      "network": "zksync-testnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://zksync-testnet.archive.subsquid.io",
           "release": "Stage 1",
           "ingester": "eth-stage1-ingester:0.15",
           "worker": "eth-stage1-worker:0.15"

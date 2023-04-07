@@ -511,6 +511,36 @@
       "genesisHash": "0x401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b"
     },
     {
+      "network": "myriad",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://myriad.archive.subsquid.io/graphql",
+          "explorerUrl": "https://myriad.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "subsquid/substrate-ingest:1",
+          "ingest": "subsquid/substrate-ingest:1",
+          "gateway": "subsquid/substrate-gateway:2"
+        }
+      ],
+      "genesisHash": "0x74ed91fbc18497f011290f9119a2217908649170337b6414a2d44923ade07063"
+    },
+    {
+      "network": "myriad-testnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://myriad-testnet.archive.subsquid.io/graphql",
+          "explorerUrl": "https://myriad-testnet.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "subsquid/substrate-ingest:1",
+          "ingest": "subsquid/substrate-ingest:1",
+          "gateway": "subsquid/substrate-gateway:2"
+        }
+      ],
+      "genesisHash": "0x7d45920ff7956e45ef6107720e41b1cfdbd0a50371d6e9072f67070fb285fe16"
+    },
+    {
       "network": "opal",
       "genesisHash": "0xc87870ef90a438d574b8e320f17db372c50f62beb52e479c8ff6ee5b460670b9",
       "providers": [
@@ -522,6 +552,21 @@
           "image": "subsquid/substrate-ingest:1.2.2",
           "ingest": "subsquid/substrate-ingest:1.2.2",
           "gateway": "subsquid/substrate-gateway:2.3.1"
+        }
+      ]
+    },
+    {
+      "network": "origin-trail",
+      "genesisHash": "0xe7e0962324a3b86c83404dbea483f25fb5dab4c224791c81b756cfc948006174",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://origin-trail.archive.subsquid.io/graphql",
+          "explorerUrl": "https://origin-trail.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "subsquid/substrate-ingest:1",
+          "ingest": "subsquid/substrate-ingest:1",
+          "gateway": "subsquid/substrate-gateway:2"
         }
       ]
     },
@@ -569,6 +614,21 @@
           "gateway": "subsquid/substrate-gateway:2"
         }
       ]
+    },
+    {
+      "network": "polkadex",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://polkadex.archive.subsquid.io/graphql",
+          "explorerUrl": "https://polkadex.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "subsquid/substrate-ingest:1",
+          "ingest": "subsquid/substrate-ingest:1",
+          "gateway": "subsquid/substrate-gateway:2"
+        }
+      ],
+      "genesisHash": "0x3920bcb4960a1eef5580cd5367ff3f430eef052774f78468852f7b9cb39f8a3c"
     },
     {
       "network": "polkadot",
@@ -788,6 +848,21 @@
           "provider": "subsquid",
           "dataSourceUrl": "https://t0rn.archive.subsquid.io/graphql",
           "explorerUrl": "https://t0rn.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "subsquid/substrate-ingest:1",
+          "ingest": "subsquid/substrate-ingest:1",
+          "gateway": "subsquid/substrate-gateway:2"
+        }
+      ]
+    },
+    {
+      "network": "tidechain",
+      "genesisHash": "0xe02d5f0a06c10faa29d19ac1fe3aae40c41f819de074a8047a7814a5cbed7f6b",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://tidechain.archive.subsquid.io/graphql",
+          "explorerUrl": "https://tidechain.explorer.subsquid.io/graphql",
           "release": "FireSquid",
           "image": "subsquid/substrate-ingest:1",
           "ingest": "subsquid/substrate-ingest:1",

@@ -272,7 +272,7 @@
       "description": "Gear is an advanced WASM based smart contract platform, aiming to be a Polkadot and Kusama parachain, that enables developers to deploy their dApps in under 5 minutes in the easiest and most efficient way possible.",
       "relayChain": null,
       "parachainId": null,
-      "genesisHash": "0x209bc5d3262cad676cd1fcd87a958a3d00c0176f8720231cbbb54a10f735d9bb"
+      "genesisHash": "0x92ed36f0a4a26169cba7c6990d51055c76b6b89de268568615a041eebb619a0e"
     },
     {
       "name": "gemini-2a-testnet",
@@ -524,6 +524,30 @@
       "genesisHash": "0x401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b"
     },
     {
+      "name": "myriad",
+      "displayName": "Myriad",
+      "tokens": [
+        "MYRIA", "DBIO", "OCT", "ATO"
+      ],
+      "website": "https://myriad.social/",
+      "description": "A social metaverse & metasocial network on web3, pulling content from mainstream social media and turning every post into a tipping wallet.",
+      "relayChain": null,
+      "parachainId": null,
+      "genesisHash": "0x74ed91fbc18497f011290f9119a2217908649170337b6414a2d44923ade07063"
+    },
+    {
+      "name": "myriad-testnet",
+      "displayName": "Myriad Testnet",
+      "tokens": [
+        "MYRIA", "DBIO", "OCT", "ATO"
+      ],
+      "website": "https://myriad.social/",
+      "description": "Testnet for a social metaverse & metasocial network Myriad.",
+      "relayChain": null,
+      "parachainId": null,
+      "genesisHash": "0x7d45920ff7956e45ef6107720e41b1cfdbd0a50371d6e9072f67070fb285fe16"
+    },
+    {
       "name": "nodle",
       "displayName": "Nodle Chain",
       "tokens": [
@@ -546,6 +570,19 @@
       "relayChain": null,
       "parachainId": null,
       "genesisHash": "0xc87870ef90a438d574b8e320f17db372c50f62beb52e479c8ff6ee5b460670b9"
+    },
+    {
+      "name": "origin-trail",
+      "displayName": "Origin Trail",
+      "tokens": [
+        "OTP",
+        "TRAC"
+      ],
+      "website": "https://parachain.origintrail.io/",
+      "description": "OriginTrail brought a scalable, trusted and secure way for information to be shared across a universe of data sources, bringing together users that were traditionally not able to perform data management in such a way.",
+      "relayChain": "polkadot",
+      "parachainId": "2043",
+      "genesisHash": "0xe7e0962324a3b86c83404dbea483f25fb5dab4c224791c81b756cfc948006174"
     },
     {
       "name": "parallel",
@@ -608,6 +645,18 @@
       "genesisHash": "0xf22b7850cdd5a7657bbfd90ac86441275bbc57ace3d2698a740c7b0ec4de5ec3"
     },
     {
+      "name": "polkadex",
+      "displayName": "Polkadex",
+      "tokens": [
+        "PDEX"
+      ],
+      "website": "https://polkadex.trade/",
+      "description": "Polkadex Orderbook is a non-custodial, peer-to-peer trading platform that merges the benefits of both centralized and decentralized exchanges into a next-generation decentralized product suite.",
+      "relayChain": null,
+      "parachainId": null,
+      "genesisHash": "0x3920bcb4960a1eef5580cd5367ff3f430eef052774f78468852f7b9cb39f8a3c"
+    },
+    {
       "name": "polkadot",
       "displayName": "Polkadot Relay Chain",
       "tokens": [
@@ -653,7 +702,7 @@
       "description": "Testnet for L1 Substrate based EVM compatible chain with multi VM support.",
       "relayChain": null,
       "parachainId": null,
-      "genesisHash": "0x0f89efd7bf650f2d521afef7456ed98dff138f54b5b7915cc9bce437ab728660"
+      "genesisHash": "0xb414a8602b2251fa538d38a9322391500bd0324bc7ac6048845d57c37dd83fe6"
     },
     {
       "name": "robonomics",
@@ -776,6 +825,19 @@
       "genesisHash": "0xeacdd2d5b42de9769ccbb6e8d9013ab0d90ab105bf601d4aac53e874c145ec21"
     },
     {
+      "name": "tidechain",
+      "displayName": "Tidechain",
+      "tokens": [
+        "BTC", "ETH",
+        "USDC", "ATH", "TDFY"
+      ],
+      "website": "https://tidefi.com/",
+      "description": "The Tidechain is our custom-built, layer-1 blockchain created atop the Substrate framework. Designed with the intention of massive scalability and interoperability, the Tidechain is truly future-proof allowing for the highest level of reliability, security, and potential for growth.",
+      "relayChain": null,
+      "parachainId": null,
+      "genesisHash": "0xe02d5f0a06c10faa29d19ac1fe3aae40c41f819de074a8047a7814a5cbed7f6b"
+    },
+    {
       "name": "unique",
       "displayName": "Unique",
       "tokens": [
@@ -797,7 +859,7 @@
       "description": "Vara is a fast and scalable Layer-1 decentralized network powered by Gear Protocol. The best playground for developing and running your dApps. Gear Protocol is an advanced WASM based smart contract platform capable of being deployed as a Kusama and Polkadot parachain, that enables developers to deploy their dApps in under 5 minutes in the easiest and most efficient way possible.",
       "relayChain": null,
       "parachainId": null,
-      "genesisHash": "0xe95743738788fb980fc5cfdaded9160d1e9eed707f7f6e19a591fd282cb29a69"
+      "genesisHash": "0xfe1b4c55fd4d668101126434206571a7838a8b6b93a6d1b95d607e78e6c53763"
     },
     {
       "name": "xx-network",
