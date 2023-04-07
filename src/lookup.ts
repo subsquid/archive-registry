@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 import assert from 'assert'
 
-import AbortController from 'node-abort-controller'
+import { AbortSignal } from 'node-fetch/externals';
 import {
     NetworkSubstrate,
     ArchiveProviderSubstrate,
@@ -254,10 +254,9 @@ export async function getGenesisHash(endpoint: string): Promise<string> {
 }
 
 async function archiveRequest<T>(endpoint: string, query: string): Promise<T> {
-    const controller = new AbortController()
+    const controller = new AbortController();
     // 5 second timeout:
     const timeoutId = setTimeout(() => controller.abort(), 5000)
-
     let response = await fetch(endpoint, {
         method: 'POST',
         body: JSON.stringify({query}),
@@ -266,7 +265,7 @@ async function archiveRequest<T>(endpoint: string, query: string): Promise<T> {
             accept: 'application/json',
             'accept-encoding': 'gzip, br',
         },
-        signal: controller.signal,
+        signal: controller.signal as AbortSignal,
     })
     clearTimeout(timeoutId)
 

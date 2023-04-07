@@ -54,7 +54,6 @@
     "@subsquid/util-internal": "^1.0.0",
     "commander": "^10.0.0",
     "easy-table": "^1.2.0",
-    "node-abort-controller": "^2",
     "node-fetch": "^2"
   }
 }
