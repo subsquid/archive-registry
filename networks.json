@@ -797,14 +797,14 @@
     },
     {
       "name": "sora",
-      "displayName": "Sora Kusama",
+      "displayName": "SORA",
       "tokens": [
         "XOR", "VAL", "TBCD"
       ],
       "website": "https://sora.org/",
       "description": "SORA is both a new economic system that decentralizes the concept of a central bank as well as a network in the Polkadot ecosystem that will connect to the Polkadot relay chain and the parachains with built-in tools focused on DeFi.",
-      "relayChain": "kusama",
-      "parachainId": "2011"
+      "relayChain": null,
+      "parachainId": null
     },
     {
       "name": "statemine",
