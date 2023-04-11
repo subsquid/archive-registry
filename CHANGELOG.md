@@ -1,3 +1,9 @@
+#### 2.1.12 (2023-04-11)
+
+##### Bug Fixes
+
+*  add images for picasso and bitcountry-pioneer ([7689edca](https://github.com/subsquid/archive-registry/commit/7689edcae2376b883f8491f54dfecbb84cddbf0e))
+
 #### 2.1.11 (2023-04-07)
 
 ##### Other Changes
