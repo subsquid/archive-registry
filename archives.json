@@ -1006,21 +1006,6 @@
       ]
     },
     {
-      "network": "snow",
-      "genesisHash": "0xb34f6cd03a41f0fab38ba9fd5b11cce5f303633c46f39f0c6fdc7c3c602bafa9",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://snow.archive.subsquid.io/graphql",
-          "explorerUrl": "https://snow.explorer.subsquid.io/graphql",
-          "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1",
-          "ingest": "subsquid/substrate-ingest:1",
-          "gateway": "subsquid/substrate-gateway:2"
-        }
-      ]
-    },
-    {
       "network": "sora",
       "genesisHash": "0x7e4e32d0feafd4f9c9414b0be86373f9a1efa904809b683453a9af6856d38ad5",
       "providers": [
