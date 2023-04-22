@@ -1,3 +1,9 @@
+#### 2.1.13 (2023-04-22)
+
+##### New Features
+
+*  add aleph-zero archive ([26d2cd94](https://github.com/subsquid/archive-registry/commit/26d2cd941a2598944833600f5d11c536ec1068b3))
+
 #### 2.1.12 (2023-04-11)
 
 ##### Bug Fixes
