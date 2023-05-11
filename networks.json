@@ -144,6 +144,17 @@
       "parachainId": null
     },
     {
+      "name": "cere",
+      "displayName": "Cere",
+      "tokens": [
+        "CERE"
+      ],
+      "website": "https://cere.network/",
+      "description": "The World's First Decentralized Data Cloud",
+      "relayChain": null,
+      "parachainId": null
+    },
+    {
       "name": "clover",
       "displayName": "Clover Finance",
       "tokens": [
@@ -298,6 +309,15 @@
       "parachainId": null
     },
     {
+      "name": "foucoco",
+      "displayName": "Foucoco",
+      "tokens": [],
+      "website": "https://pendulumchain.org/",
+      "description": "Foucoco - Pendulum's Rococo testnet",
+      "relayChain": "rococo",
+      "parachainId": "2124"
+    },
+    {
       "name": "gear-testnet",
       "displayName": "Gear Testnet",
       "tokens": [],
@@ -338,6 +358,17 @@
       "description": "GMorDie is a blockchain to test the boundaries of what Dotsama can really do.",
       "relayChain": "kusama",
       "parachainId": "2123"
+    },
+    {
+      "name": "hashed",
+      "displayName": "Hashed",
+      "tokens": [
+        "HASH"
+      ],
+      "website": "https://hashed.io/",
+      "description": "Hashed Network enables the full lifecycle for digitally-native organizations and web3-curious businesses seeking benefits of decentralized digital economies.",
+      "relayChain": "polkadot",
+      "parachainId": "2093"
     },
     {
       "name": "heiko",
