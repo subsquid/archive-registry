@@ -1,3 +1,9 @@
+#### 2.1.14 (2023-05-11)
+
+##### New Features
+
+*  add cere, hashed and foucoco archives ([346d79c4](https://github.com/subsquid/archive-registry/commit/346d79c44cc6a814944766ea51d666a5c614a3d6))
+
 #### 2.1.13 (2023-04-22)
 
 ##### New Features
