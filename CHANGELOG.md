@@ -1,3 +1,9 @@
+#### 2.1.15 (2023-06-12)
+
+##### New Features
+
+*  add arrowsquid archives ([b5c041ae](https://github.com/subsquid/archive-registry/commit/b5c041ae1a914728619b0a92396241b24d8e3516))
+
 #### 2.1.14 (2023-05-11)
 
 ##### New Features
