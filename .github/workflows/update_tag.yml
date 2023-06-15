@@ -1,0 +1,40 @@
+name: update_tag
+on:
+  workflow_dispatch:
+    inputs:
+      tag_to_add:
+        description: 'Tag to add (next, latest)'
+        required: false
+        default: 'latest'
+
+env:
+  CI: true
+
+jobs:
+  publish:
+    name: Tag update
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+
+      - name: Authenticate with Registry
+        run: |
+          echo "always-auth=true" > .npmrc
+          echo "@subsquid:registry=https://registry.npmjs.org/" >> .npmrc
+          echo "registry=https://registry.npmjs.org/" >> .npmrc
+          echo "//registry.npmjs.org/:_authToken=$NPM_AUTH_TOKEN" >> .npmrc
+          npm whoami
+        env:
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+
+      - name: Add tag
+        run: |
+          npm dist-tag add $(npm pkg get name | tr -d \")@$(npm pkg get version | tr -d \") $TAG
+        env:
+          TAG: ${{ github.event.inputs.tag_to_add }}
