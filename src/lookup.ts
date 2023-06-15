@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 import assert from 'assert'
 
-import { AbortSignal } from 'node-fetch/externals';
+import {AbortSignal} from 'node-fetch/externals'
 import {
     NetworkSubstrate,
     ArchiveProviderSubstrate,
@@ -45,17 +45,9 @@ export interface LookupOptionsEVM {
      */
     genesis?: string
     /**
-     * Archive ingester name
-     */
-    ingester?: string
-    /**
-     * Archive worker image
-     */
-    worker?: string
-    /**
      * Archive release
      */
-    release?: 'Stage 1'
+    release?: 'FireSquid' | 'ArrowSquid'
 }
 
 /**
@@ -104,11 +96,17 @@ Please consider submitting a PR to subsquid/archive-registry github repo to exte
         }
     }
 
-    switch (opts?.type) {
+    switch (opts.type) {
         case 'Substrate':
-            return lookupInSubstrateRegistry(network, archivesRegistrySubstrate, opts)[0].dataSourceUrl
+            return lookupInSubstrateRegistry(network, archivesRegistrySubstrate, {
+                release: 'FireSquid',
+                ...opts,
+            })[0].dataSourceUrl
         case 'EVM':
-            return lookupInEVMRegistry(network, archivesRegistryEVM, opts)[0].dataSourceUrl
+            return lookupInEVMRegistry(network, archivesRegistryEVM, {
+                release: 'ArrowSquid',
+                ...opts,
+            })[0].dataSourceUrl
         default:
             throw new Error(`Archive registry type must be value from RegistryTypes ("Substrate", "EVM", ...)`)
     }
@@ -188,7 +186,7 @@ export function lookupInEVMRegistry(
     registry: ArchiveRegistryEVM,
     opts?: LookupOptionsEVM
 ): ArchiveProviderEVM[] {
-    let archives = archivesRegistryEVM.archives.filter((a) => a.network.toLowerCase() === network.toLowerCase())
+    let archives = registry.archives.filter((a) => a.network.toLowerCase() === network.toLowerCase())
 
     if (archives.length > 1) {
         throw new Error(`There are multiple networks with name ${network}. \
@@ -197,12 +195,6 @@ Provide the genesis hash to disambiguate.`)
 
     let matched = archives[0].providers
 
-    if (opts?.ingester) {
-        matched = matched.filter((p) => p.ingester === opts.ingester)
-    }
-    if (opts?.worker) {
-        matched = matched.filter((p) => p.worker === opts.worker)
-    }
     if (opts?.release) {
         matched = matched.filter((p) => p.release === opts.release)
     }
@@ -254,7 +246,7 @@ export async function getGenesisHash(endpoint: string): Promise<string> {
 }
 
 async function archiveRequest<T>(endpoint: string, query: string): Promise<T> {
-    const controller = new AbortController();
+    const controller = new AbortController()
     // 5 second timeout:
     const timeoutId = setTimeout(() => controller.abort(), 5000)
     let response = await fetch(endpoint, {

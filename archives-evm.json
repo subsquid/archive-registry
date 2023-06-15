@@ -6,9 +6,7 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://arbitrum.archive.subsquid.io",
-          "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.15",
-          "worker": "eth-stage1-worker:0.15"
+          "release": "FireSquid"
         }
       ]
     },
@@ -18,9 +16,7 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://arbitrum-goerli.archive.subsquid.io",
-          "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.15",
-          "worker": "eth-stage1-worker:0.15"
+          "release": "FireSquid"
         }
       ]
     },
@@ -30,9 +26,7 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://arbitrum-nova.archive.subsquid.io",
-          "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.15",
-          "worker": "eth-stage1-worker:0.15"
+          "release": "FireSquid"
         }
       ]
     },
@@ -42,9 +36,7 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://astar-evm.archive.subsquid.io",
-          "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.15",
-          "worker": "eth-stage1-worker:0.15"
+          "release": "FireSquid"
         }
       ]
     },
@@ -54,9 +46,7 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://avalanche-c.archive.subsquid.io",
-          "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.15",
-          "worker": "eth-stage1-worker:0.15"
+          "release": "FireSquid"
         }
       ]
     },
@@ -66,9 +56,7 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://base-goerli.archive.subsquid.io",
-          "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.15",
-          "worker": "eth-stage1-worker:0.15"
+          "release": "FireSquid"
         }
       ]
     },
@@ -78,9 +66,12 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://binance.archive.subsquid.io",
-          "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.15",
-          "worker": "eth-stage1-worker:0.15"
+          "release": "FireSquid"
+        },
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/binance-mainnet",
+          "release": "ArrowSquid"
         }
       ]
     },
@@ -90,9 +81,7 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://binance-testnet.archive.subsquid.io",
-          "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.15",
-          "worker": "eth-stage1-worker:0.15"
+          "release": "FireSquid"
         }
       ]
     },
@@ -102,9 +91,7 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://boba-eth.archive.subsquid.io",
-          "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.15",
-          "worker": "eth-stage1-worker:0.15"
+          "release": "FireSquid"
         }
       ]
     },
@@ -114,9 +101,7 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://boba-moonbeam.archive.subsquid.io",
-          "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.15",
-          "worker": "eth-stage1-worker:0.15"
+          "release": "FireSquid"
         }
       ]
     },
@@ -126,9 +111,12 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://eth.archive.subsquid.io",
-          "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.15",
-          "worker": "eth-stage1-worker:0.15"
+          "release": "FireSquid"
+        },
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/ethereum-mainnet",
+          "release": "ArrowSquid"
         }
       ]
     },
@@ -138,9 +126,7 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://exosama.archive.subsquid.io",
-          "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.15",
-          "worker": "eth-stage1-worker:0.15"
+          "release": "FireSquid"
         }
       ]
     },
@@ -150,9 +136,7 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://fantom.archive.subsquid.io",
-          "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.15",
-          "worker": "eth-stage1-worker:0.15"
+          "release": "FireSquid"
         }
       ]
     },
@@ -162,9 +146,7 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://goerli.archive.subsquid.io",
-          "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.15",
-          "worker": "eth-stage1-worker:0.15"
+          "release": "FireSquid"
         }
       ]
     },
@@ -174,9 +156,7 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://mantle-testnet.archive.subsquid.io",
-          "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.15",
-          "worker": "eth-stage1-worker:0.15"
+          "release": "FireSquid"
         }
       ]
     },
@@ -186,9 +166,7 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://moonbase-evm.archive.subsquid.io",
-          "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.15",
-          "worker": "eth-stage1-worker:0.15"
+          "release": "FireSquid"
         }
       ]
     },
@@ -198,9 +176,12 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://moonbeam-evm.archive.subsquid.io",
-          "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.15",
-          "worker": "eth-stage1-worker:0.15"
+          "release": "FireSquid"
+        },
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/moonbeam-mainnet",
+          "release": "ArrowSquid"
         }
       ]
     },
@@ -210,9 +191,7 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://moonriver-evm.archive.subsquid.io",
-          "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.15",
-          "worker": "eth-stage1-worker:0.15"
+          "release": "FireSquid"
         }
       ]
     },
@@ -222,9 +201,7 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://optimism-mainnet.archive.subsquid.io",
-          "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.15",
-          "worker": "eth-stage1-worker:0.15"
+          "release": "FireSquid"
         }
       ]
     },
@@ -234,9 +211,7 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://polygon.archive.subsquid.io",
-          "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.15",
-          "worker": "eth-stage1-worker:0.15"
+          "release": "FireSquid"
         }
       ]
     },
@@ -246,9 +221,7 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://polygon-mumbai.archive.subsquid.io",
-          "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.15",
-          "worker": "eth-stage1-worker:0.15"
+          "release": "FireSquid"
         }
       ]
     },
@@ -258,9 +231,7 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://scroll-alpha-testnet.archive.subsquid.io",
-          "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.15",
-          "worker": "eth-stage1-worker:0.15"
+          "release": "FireSquid"
         }
       ]
     },
@@ -270,9 +241,7 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://sepolia.archive.subsquid.io",
-          "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.15",
-          "worker": "eth-stage1-worker:0.15"
+          "release": "FireSquid"
         }
       ]
     },
@@ -282,9 +251,7 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://skale-calypso.archive.subsquid.io",
-          "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.15",
-          "worker": "eth-stage1-worker:0.15"
+          "release": "FireSquid"
         }
       ]
     },
@@ -294,9 +261,7 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://skale-calypso-staging.archive.subsquid.io",
-          "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.15",
-          "worker": "eth-stage1-worker:0.15"
+          "release": "FireSquid"
         }
       ]
     },
@@ -306,9 +271,7 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://skale-nebula.archive.subsquid.io",
-          "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.15",
-          "worker": "eth-stage1-worker:0.15"
+          "release": "FireSquid"
         }
       ]
     },
@@ -318,9 +281,7 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://skale-nebula-staging.archive.subsquid.io",
-          "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.15",
-          "worker": "eth-stage1-worker:0.15"
+          "release": "FireSquid"
         }
       ]
     },
@@ -330,9 +291,7 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://zksync.archive.subsquid.io",
-          "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.15",
-          "worker": "eth-stage1-worker:0.15"
+          "release": "FireSquid"
         }
       ]
     },
@@ -342,9 +301,7 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://zksync-testnet.archive.subsquid.io",
-          "release": "Stage 1",
-          "ingester": "eth-stage1-ingester:0.15",
-          "worker": "eth-stage1-worker:0.15"
+          "release": "FireSquid"
         }
       ]
     }

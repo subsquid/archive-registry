@@ -25,8 +25,6 @@ export interface ArchiveRegistrySubstrate {
 
 export interface ArchiveProviderEVM {
     provider: string,
-    ingester: string,
-    worker: string,
     release: string,
     dataSourceUrl: string    
 }

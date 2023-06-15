@@ -44,9 +44,7 @@ const mockRegistryEVM: ArchiveRegistryEVM = {
                 {
                     "provider": "subsquid",
                     "dataSourceUrl": "https://binance.archive.subsquid.io",
-                    "release": "Stage 1",
-                    "ingester": "eth-stage1-ingester:0.0.43",
-                    "worker": "eth-stage1-worker:0.0.43"
+                    "release": "FireSquid",
                 }
             ]
         },
@@ -56,9 +54,7 @@ const mockRegistryEVM: ArchiveRegistryEVM = {
             {
               "provider": "subsquid",
               "dataSourceUrl": "https://moonbase-evm.archive.subsquid.io",
-              "release": "Stage 1",
-              "ingester": "eth-stage1-ingester:0.1",
-              "worker": "eth-stage1-worker:0.1"
+              "release": "FireSquid",
             }
           ]
         },
