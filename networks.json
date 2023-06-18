@@ -566,6 +566,17 @@
       "parachainId": "2110"
     },
     {
+      "name": "manta",
+      "displayName": "Manta",
+      "tokens": [
+        "MANTA"
+      ],
+      "website": "https://manta.network/",
+      "description": "Manta Network.",
+      "relayChain": "polkadot",
+      "parachainId": "2104"
+    },
+    {
       "name": "moonbase",
       "displayName": "Moonbase Alpha",
       "tokens": [
@@ -840,6 +851,17 @@
     {
       "name": "sora",
       "displayName": "SORA",
+      "tokens": [
+        "XOR", "VAL", "TBCD"
+      ],
+      "website": "https://sora.org/",
+      "description": "SORA is both a new economic system that decentralizes the concept of a central bank as well as a network in the Polkadot ecosystem that will connect to the Polkadot relay chain and the parachains with built-in tools focused on DeFi.",
+      "relayChain": null,
+      "parachainId": null
+    },
+    {
+      "name": "sora-testnet",
+      "displayName": "SORA Testnet",
       "tokens": [
         "XOR", "VAL", "TBCD"
       ],
