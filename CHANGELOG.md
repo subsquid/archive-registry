@@ -1,3 +1,9 @@
+#### 3.0.1 (2023-06-18)
+
+##### New Features
+
+*  add manta and sora-testnet ([08f6c3a5](https://github.com/subsquid/archive-registry/commit/08f6c3a56882326252f9bda5aca486be35f4fe1a))
+
 #### 2.1.15 (2023-06-12)
 
 ##### New Features
