@@ -81,8 +81,8 @@ export function lookupArchive(network: string, opts?: LookupOptionsSubstrate | L
     }
 
     if (!opts.type) {
-        let isSubstrateNetwork = archivesRegistrySubstrate.archives.some((a) => a.network === network)
-        let isEvmNetwork = archivesRegistryEVM.archives.some((a) => a.network === network)
+        let isSubstrateNetwork = archivesRegistrySubstrate().archives.some((a) => a.network === network)
+        let isEvmNetwork = archivesRegistryEVM().archives.some((a) => a.network === network)
         if (isEvmNetwork && isSubstrateNetwork) {
             throw new Error(`There are multiple networks with name ${network}. Provide network type to disambiguate.`)
         } else if (isEvmNetwork) {
@@ -97,12 +97,12 @@ Please consider submitting a PR to subsquid/archive-registry github repo to exte
 
     switch (opts.type) {
         case 'Substrate':
-            return lookupInSubstrateRegistry(network, archivesRegistrySubstrate, {
+            return lookupInSubstrateRegistry(network, archivesRegistrySubstrate(), {
                 release: 'FireSquid',
                 ...opts,
             })[0].dataSourceUrl
         case 'EVM':
-            return lookupInEVMRegistry(network, archivesRegistryEVM, {
+            return lookupInEVMRegistry(network, archivesRegistryEVM(), {
                 release: 'ArrowSquid',
                 ...opts,
             })[0].dataSourceUrl
@@ -213,7 +213,7 @@ Please consider submitting a PR to subsquid/archive-registry github repo to exte
  * @returns Chain info incluing genesis hash, token symbols, parachainId if relevent, etc
  */
 export function getChainInfo(network: string, genesis?: string): NetworkSubstrate {
-    let matched = networkRegistrySubstrate.networks.filter((n) => n.name.toLowerCase() === network.toLowerCase())
+    let matched = networkRegistrySubstrate().networks.filter((n) => n.name.toLowerCase() === network.toLowerCase())
 
     if (genesis) {
         matched = matched.filter((a) => a.genesisHash?.toLowerCase() === genesis.toLowerCase())
