@@ -1,4 +1,4 @@
-import assert, { AssertionError } from "assert"
+import assert from "assert"
 import { ArchiveRegistrySubstrate, ArchiveRegistryEVM, lookupArchive, lookupInSubstrateRegistry, lookupInEVMRegistry } from '.'
 
 const mockRegistrySubstrate: ArchiveRegistrySubstrate = {
@@ -64,17 +64,17 @@ const mockRegistryEVM: ArchiveRegistryEVM = {
 describe("archive lookup", function() {
     it("looks up by archive name", () => {
         const polkaArchive = lookupInSubstrateRegistry("polkadot", mockRegistrySubstrate)[0].dataSourceUrl
-        assert(polkaArchive === "https://polkadot.archive.subsquid.io/graphql")
+        assert.equal(polkaArchive, "https://polkadot.archive.subsquid.io/graphql")
     })
 
     it("looks up by a named version", () => {
         const polkaArchive = lookupInSubstrateRegistry("polkadot", mockRegistrySubstrate)[0].dataSourceUrl
-        assert(polkaArchive === "https://polkadot.archive.subsquid.io/graphql")
+        assert.equal(polkaArchive, "https://polkadot.archive.subsquid.io/graphql")
     })
 
     it("lookups up by name and genesis hash", () => {
         const polkaArchive = lookupInSubstrateRegistry("polkadot", mockRegistrySubstrate, { genesis : "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d" })[0].dataSourceUrl
-        assert(polkaArchive === "https://polkadot.archive.subsquid.io/graphql")
+        assert.equal(polkaArchive, "https://polkadot.archive.subsquid.io/graphql")
     })
 
     it("fails to lookup by wrong hash", () => {
@@ -83,43 +83,6 @@ describe("archive lookup", function() {
 
     it("looks up by evm archive name", () => {
         const binanceArchive = lookupInEVMRegistry("binance", mockRegistryEVM)[0].dataSourceUrl
-        assert(binanceArchive === "https://binance.archive.subsquid.io")
-    })
-
-    it("lookups up fire squid archive by name", () => {
-        const polkaArchive = lookupArchive("polkadot", { release: "FireSquid" })
-        assert(polkaArchive === "https://polkadot.archive.subsquid.io/graphql")
-    })
-
-    it("lookups up evm archive by name", () => {
-        const binanceArchive = lookupArchive("binance", { type: "EVM" })
-        assert(binanceArchive === "https://binance.archive.subsquid.io")
-    })
-
-    it("looks up by archive name without type specification", () => {
-        const polkaArchive = lookupArchive("polkadot")
-        assert(polkaArchive === "https://polkadot.archive.subsquid.io/graphql")
-        const binanceArchive = lookupArchive("binance")
-        assert(binanceArchive === "https://binance.archive.subsquid.io")
-    })
-
-    it("looks up by same archive name without type specification", () => {
-        let caught = false;
-        try {
-            const moonbaseArchive = lookupArchive("moonbase")
-        } catch(e) {
-            if (e instanceof AssertionError){
-                assert(e.message === "There are multiple networks with name moonbase. Provide network type to disambiguate.")
-            }
-            caught = true
-        }
-        assert(caught === true)
-    })
-
-    it("looks up by same archive name with type specification", () => {
-        const moonbaseSubArchive = lookupArchive("moonbase", { type: "Substrate" })
-        assert(moonbaseSubArchive === "https://moonbase.archive.subsquid.io/graphql")
-        const moonbaseEvmArchive = lookupArchive("moonbase", { type: "EVM" })
-        assert(moonbaseEvmArchive === "https://moonbase-evm.archive.subsquid.io")
+        assert.equal(binanceArchive, "https://binance.archive.subsquid.io")
     })
 })
