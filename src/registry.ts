@@ -1,5 +1,5 @@
 import fetch from 'sync-fetch'
-import {ArchiveRegistrySubstrate, ArchiveRegistryEVM, NetworkRegistrySubstrate} from './intefaces'
+import {ArchiveRegistrySubstrate, ArchiveRegistryEVM, NetworkRegistrySubstrate} from './interfaces'
 
 export function networkRegistrySubstrate(): NetworkRegistrySubstrate {
     return fetch('https://cdn.subsquid.io/archives/networks.json').json()
