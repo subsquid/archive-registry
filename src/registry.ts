@@ -1,12 +1,12 @@
-import fs from 'fs'
+import fetch from 'sync-fetch'
 import {ArchiveRegistrySubstrate, ArchiveRegistryEVM, NetworkRegistrySubstrate} from './intefaces'
 
-export const networkRegistrySubstrate = JSON.parse(
-    fs.readFileSync(`${__dirname}/../networks.json`, 'utf8')
-) as NetworkRegistrySubstrate
-export const archivesRegistrySubstrate = JSON.parse(
-    fs.readFileSync(`${__dirname}/../archives.json`, 'utf8')
-) as ArchiveRegistrySubstrate
-export const archivesRegistryEVM = JSON.parse(
-    fs.readFileSync(`${__dirname}/../archives-evm.json`, 'utf8')
-) as ArchiveRegistryEVM
+export const networkRegistrySubstrate = fetch(
+    'https://raw.githubusercontent.com/subsquid/archive-registry/main/networks.json'
+).json() as NetworkRegistrySubstrate
+export const archivesRegistrySubstrate = fetch(
+    'https://raw.githubusercontent.com/subsquid/archive-registry/main/archives.json'
+).json() as ArchiveRegistrySubstrate
+export const archivesRegistryEVM = fetch(
+    'https://raw.githubusercontent.com/subsquid/archive-registry/main/archives-evm.json'
+).json() as ArchiveRegistryEVM
