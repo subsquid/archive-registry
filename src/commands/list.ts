@@ -30,10 +30,11 @@ runProgram(async () => {
 function printEvmArchives() {
     console.log(`EVM archives:`)
     let table = new Table()
-    table.pushDelimeter(['network', 'endpoint'])
-    for (let archive of archivesRegistryEVM.archives) {
+    table.pushDelimeter(['network', 'release', 'endpoint'])
+    for (let archive of archivesRegistryEVM().archives) {
         table.cell('network', archive.network)
         for (let provider of archive.providers) {
+            table.cell('release', provider.release)
             table.cell('endpoint', provider.dataSourceUrl)
             table.newRow()
         }
@@ -44,10 +45,11 @@ function printEvmArchives() {
 function printSubstrateArchives() {
     console.log(`Substrate archives:`)
     let table = new Table()
-    table.pushDelimeter(['network', 'endpoint'])
-    for (let archive of archivesRegistrySubstrate.archives) {
+    table.pushDelimeter(['network', 'release', 'endpoint'])
+    for (let archive of archivesRegistrySubstrate().archives) {
         table.cell('network', archive.network)
         for (let provider of archive.providers) {
+            table.cell('release', provider.release)
             table.cell('endpoint', provider.dataSourceUrl)
             table.newRow()
         }
