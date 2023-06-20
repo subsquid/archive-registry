@@ -247,9 +247,6 @@ export function getGenesisHash(endpoint: string): string {
 }
 
 function archiveRequest<T>(endpoint: string, query: string): T {
-    const controller = new AbortController()
-    // 5 second timeout:
-    const timeoutId = setTimeout(() => controller.abort(), 5000)
     let response = fetch(endpoint, {
         method: 'POST',
         body: JSON.stringify({query}),
@@ -258,8 +255,8 @@ function archiveRequest<T>(endpoint: string, query: string): T {
             accept: 'application/json',
             'accept-encoding': 'gzip, br',
         },
+        timeout: 5000, // 5 second timeout
     })
-    clearTimeout(timeoutId)
 
     if (!response.ok) {
         let body = response.text()
