@@ -1,7 +1,6 @@
-import fetch from 'node-fetch'
+import fetch from 'sync-fetch'
 import assert from 'assert'
 
-import {AbortSignal} from 'node-fetch/externals'
 import {
     NetworkSubstrate,
     ArchiveProviderSubstrate,
@@ -233,7 +232,7 @@ Provide genesis hash option to prevent ambiguity.`)
     return matched[0]
 }
 
-export async function getGenesisHash(endpoint: string): Promise<string> {
+export function getGenesisHash(endpoint: string): string {
     const query = `
     query {
         blocks(where: {height_eq: 0}, limit: 1) {
@@ -241,15 +240,15 @@ export async function getGenesisHash(endpoint: string): Promise<string> {
         }
     }
     `
-    const result = await archiveRequest<{blocks: {hash: string}[]}>(endpoint, query)
+    const result = archiveRequest<{blocks: {hash: string}[]}>(endpoint, query)
     return result.blocks[0].hash
 }
 
-async function archiveRequest<T>(endpoint: string, query: string): Promise<T> {
+function archiveRequest<T>(endpoint: string, query: string): T {
     const controller = new AbortController()
     // 5 second timeout:
     const timeoutId = setTimeout(() => controller.abort(), 5000)
-    let response = await fetch(endpoint, {
+    let response = fetch(endpoint, {
         method: 'POST',
         body: JSON.stringify({query}),
         headers: {
@@ -257,15 +256,14 @@ async function archiveRequest<T>(endpoint: string, query: string): Promise<T> {
             accept: 'application/json',
             'accept-encoding': 'gzip, br',
         },
-        signal: controller.signal as AbortSignal,
     })
     clearTimeout(timeoutId)
 
     if (!response.ok) {
-        let body = await response.text()
+        let body = response.text()
         throw new Error(`Got http ${response.status}${body ? `, body: ${body}` : ''}`)
     }
-    let result = (await response.json()) as any
+    let result = response.json()
     if (result.errors?.length) {
         throw new Error(`GraphQL error: ${result.errors[0].message}`)
     }

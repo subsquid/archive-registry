@@ -44,6 +44,7 @@
     "@types/node": "^18.11.18",
     "@types/node-fetch": "^2",
     "@types/semver": "^7.3.9",
+    "@types/sync-fetch": "^0.4.0",
     "expect": "^29.4.1",
     "fast-check": "^3.6.2",
     "generate-changelog": "^1.8.0",
@@ -54,6 +55,6 @@
     "@subsquid/util-internal": "^1.0.0",
     "commander": "^10.0.0",
     "easy-table": "^1.2.0",
-    "node-fetch": "^2"
+    "sync-fetch": "^0.5.2"
   }
 }
