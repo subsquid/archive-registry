@@ -1,16 +1,14 @@
-import fetch from 'node-fetch'
 import assert from 'assert'
-
-import {AbortSignal} from 'node-fetch/externals'
-import {
-    NetworkSubstrate,
-    ArchiveProviderSubstrate,
-    ArchiveRegistrySubstrate,
-    ArchiveRegistryEVM,
-    ArchiveProviderEVM,
-} from '.'
+import fetch from 'sync-fetch'
 import {KnownArchives, KnownArchivesEVM, KnownArchivesSubstrate} from './chains'
-import {archivesRegistrySubstrate, archivesRegistryEVM, networkRegistrySubstrate} from './registry'
+import {archivesRegistryEVM, archivesRegistrySubstrate, networkRegistrySubstrate} from './registry'
+import {
+    ArchiveProviderEVM,
+    ArchiveProviderSubstrate,
+    ArchiveRegistryEVM,
+    ArchiveRegistrySubstrate,
+    NetworkSubstrate,
+} from '.'
 
 export type RegistryType = 'Substrate' | 'EVM'
 
@@ -81,9 +79,12 @@ export function lookupArchive(network: string, opts?: LookupOptionsSubstrate | L
         opts = {}
     }
 
+    let registrySubstrate = archivesRegistrySubstrate()
+    let registryEvm = archivesRegistryEVM()
+
     if (!opts.type) {
-        let isSubstrateNetwork = archivesRegistrySubstrate.archives.some((a) => a.network === network)
-        let isEvmNetwork = archivesRegistryEVM.archives.some((a) => a.network === network)
+        let isSubstrateNetwork = registrySubstrate.archives.some((a) => a.network === network)
+        let isEvmNetwork = registryEvm.archives.some((a) => a.network === network)
         if (isEvmNetwork && isSubstrateNetwork) {
             throw new Error(`There are multiple networks with name ${network}. Provide network type to disambiguate.`)
         } else if (isEvmNetwork) {
@@ -98,12 +99,12 @@ Please consider submitting a PR to subsquid/archive-registry github repo to exte
 
     switch (opts.type) {
         case 'Substrate':
-            return lookupInSubstrateRegistry(network, archivesRegistrySubstrate, {
+            return lookupInSubstrateRegistry(network, registrySubstrate, {
                 release: 'FireSquid',
                 ...opts,
             })[0].dataSourceUrl
         case 'EVM':
-            return lookupInEVMRegistry(network, archivesRegistryEVM, {
+            return lookupInEVMRegistry(network, registryEvm, {
                 release: 'ArrowSquid',
                 ...opts,
             })[0].dataSourceUrl
@@ -214,7 +215,7 @@ Please consider submitting a PR to subsquid/archive-registry github repo to exte
  * @returns Chain info incluing genesis hash, token symbols, parachainId if relevent, etc
  */
 export function getChainInfo(network: string, genesis?: string): NetworkSubstrate {
-    let matched = networkRegistrySubstrate.networks.filter((n) => n.name.toLowerCase() === network.toLowerCase())
+    let matched = networkRegistrySubstrate().networks.filter((n) => n.name.toLowerCase() === network.toLowerCase())
 
     if (genesis) {
         matched = matched.filter((a) => a.genesisHash?.toLowerCase() === genesis.toLowerCase())
@@ -233,7 +234,7 @@ Provide genesis hash option to prevent ambiguity.`)
     return matched[0]
 }
 
-export async function getGenesisHash(endpoint: string): Promise<string> {
+export function getGenesisHash(endpoint: string): string {
     const query = `
     query {
         blocks(where: {height_eq: 0}, limit: 1) {
@@ -241,15 +242,12 @@ export async function getGenesisHash(endpoint: string): Promise<string> {
         }
     }
     `
-    const result = await archiveRequest<{blocks: {hash: string}[]}>(endpoint, query)
+    const result = archiveRequest<{blocks: {hash: string}[]}>(endpoint, query)
     return result.blocks[0].hash
 }
 
-async function archiveRequest<T>(endpoint: string, query: string): Promise<T> {
-    const controller = new AbortController()
-    // 5 second timeout:
-    const timeoutId = setTimeout(() => controller.abort(), 5000)
-    let response = await fetch(endpoint, {
+function archiveRequest<T>(endpoint: string, query: string): T {
+    let response = fetch(endpoint, {
         method: 'POST',
         body: JSON.stringify({query}),
         headers: {
@@ -257,15 +255,14 @@ async function archiveRequest<T>(endpoint: string, query: string): Promise<T> {
             accept: 'application/json',
             'accept-encoding': 'gzip, br',
         },
-        signal: controller.signal as AbortSignal,
+        timeout: 5000, // 5 second timeout
     })
-    clearTimeout(timeoutId)
 
     if (!response.ok) {
-        let body = await response.text()
+        let body = response.text()
         throw new Error(`Got http ${response.status}${body ? `, body: ${body}` : ''}`)
     }
-    let result = (await response.json()) as any
+    let result = response.json()
     if (result.errors?.length) {
         throw new Error(`GraphQL error: ${result.errors[0].message}`)
     }
