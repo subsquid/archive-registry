@@ -1,15 +1,14 @@
-import fetch from 'sync-fetch'
 import assert from 'assert'
-
-import {
-    NetworkSubstrate,
-    ArchiveProviderSubstrate,
-    ArchiveRegistrySubstrate,
-    ArchiveRegistryEVM,
-    ArchiveProviderEVM,
-} from '.'
+import fetch from 'sync-fetch'
 import {KnownArchives, KnownArchivesEVM, KnownArchivesSubstrate} from './chains'
-import {archivesRegistrySubstrate, archivesRegistryEVM, networkRegistrySubstrate} from './registry'
+import {archivesRegistryEVM, archivesRegistrySubstrate, networkRegistrySubstrate} from './registry'
+import {
+    ArchiveProviderEVM,
+    ArchiveProviderSubstrate,
+    ArchiveRegistryEVM,
+    ArchiveRegistrySubstrate,
+    NetworkSubstrate,
+} from '.'
 
 export type RegistryType = 'Substrate' | 'EVM'
 
@@ -80,9 +79,12 @@ export function lookupArchive(network: string, opts?: LookupOptionsSubstrate | L
         opts = {}
     }
 
+    let registrySubstrate = archivesRegistrySubstrate()
+    let registryEvm = archivesRegistryEVM()
+
     if (!opts.type) {
-        let isSubstrateNetwork = archivesRegistrySubstrate().archives.some((a) => a.network === network)
-        let isEvmNetwork = archivesRegistryEVM().archives.some((a) => a.network === network)
+        let isSubstrateNetwork = registrySubstrate.archives.some((a) => a.network === network)
+        let isEvmNetwork = registryEvm.archives.some((a) => a.network === network)
         if (isEvmNetwork && isSubstrateNetwork) {
             throw new Error(`There are multiple networks with name ${network}. Provide network type to disambiguate.`)
         } else if (isEvmNetwork) {
@@ -97,12 +99,12 @@ Please consider submitting a PR to subsquid/archive-registry github repo to exte
 
     switch (opts.type) {
         case 'Substrate':
-            return lookupInSubstrateRegistry(network, archivesRegistrySubstrate(), {
+            return lookupInSubstrateRegistry(network, registrySubstrate, {
                 release: 'FireSquid',
                 ...opts,
             })[0].dataSourceUrl
         case 'EVM':
-            return lookupInEVMRegistry(network, archivesRegistryEVM(), {
+            return lookupInEVMRegistry(network, registryEvm, {
                 release: 'ArrowSquid',
                 ...opts,
             })[0].dataSourceUrl
