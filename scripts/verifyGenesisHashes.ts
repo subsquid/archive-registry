@@ -1,12 +1,11 @@
-import { archivesRegistrySubstrate, getGenesisHash } from '../src/'
-
+import {archivesRegistrySubstrate, getGenesisHash} from '../src/'
 
 async function verifyGenesisHashes() {
-    for (const archive of archivesRegistrySubstrate.archives) {
+    for (const archive of archivesRegistrySubstrate().archives) {
         for (const provider of archive.providers) {
             console.log(`Archive: ${provider.dataSourceUrl}`)
             try {
-                const hash = await getGenesisHash(provider.explorerUrl)
+                const hash = getGenesisHash(provider.explorerUrl)
                 if (hash !== archive.genesisHash) {
                     console.error(`\tError: expected ${archive.genesisHash} but got ${hash}`)
                 } else {

@@ -55,6 +55,7 @@ export interface LookupOptionsEVM {
  * @throws If none matching archive is found or if there's ambiguity in choosing the network
  */
 export function lookupArchive(network: KnownArchives): string
+export function lookupArchive(network: string): string
 
 /**
  * Lookup providers matching the optional filtering criteria in a given Substrate registry
@@ -64,6 +65,7 @@ export function lookupArchive(network: KnownArchives): string
  * @throws If none matching archive is found or if there's ambiguity in choosing the network
  */
 export function lookupArchive(network: KnownArchivesSubstrate, opts: LookupOptionsSubstrate): string
+export function lookupArchive(network: string, opts: LookupOptionsSubstrate): string
 
 /**
  * Lookup providers matching the optional filtering criteria in a given Substrate or EVM registry
@@ -73,6 +75,7 @@ export function lookupArchive(network: KnownArchivesSubstrate, opts: LookupOptio
  * @throws If none matching archive is found or if there's ambiguity in choosing the network
  */
 export function lookupArchive(network: KnownArchivesEVM, opts: LookupOptionsEVM): string
+export function lookupArchive(network: string, opts: LookupOptionsEVM): string
 
 export function lookupArchive(network: string, opts?: LookupOptionsSubstrate | LookupOptionsEVM) {
     if (!opts) {
