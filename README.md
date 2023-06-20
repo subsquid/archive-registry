@@ -66,13 +66,13 @@ const processor = new EvmBatchProcessor()
   });
 ```
 
-`LookupOptionsEVM` supports additional filtering by release type and docker image names (of archive `ingester` and archive `worker`):
+`LookupOptionsEVM` supports additional filtering by release type:
 
 There is also a convenience method to get network information by its name:
 ```typescript
   // ...
   .setDataSource({
-    archive: lookupArchive("avalanche", { type: "EVM", release: "Stage 1" }), 
+    archive: lookupArchive("avalanche", { type: "EVM", release: "FireSquid" }), 
   });
 ```
 
