@@ -1,3 +1,9 @@
+#### 3.1.1 (2023-07-12)
+
+##### New Features
+
+*  allow to filter archive list by release ([c4bcd1fc](https://github.com/subsquid/archive-registry/commit/c4bcd1fc8d588975d80f44cd9617ddfa15670e77))
+
 #### 3.0.2 (2023-06-20)
 
 #### 3.0.1 (2023-06-18)
