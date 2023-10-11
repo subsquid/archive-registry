@@ -33,7 +33,7 @@ export interface LookupOptionsSubstrate {
     /**
      * Archive release
      */
-    release?: 'FireSquid'
+    release?: 'FireSquid' | 'ArrowSquid'
 }
 
 export interface LookupOptionsEVM {
