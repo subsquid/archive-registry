@@ -1,3 +1,9 @@
+#### 3.2.1 (2023-10-11)
+
+##### New Features
+
+*  update type for LookupOptionsSubstrate to allow ArrowSquid ([#119](https://github.com/subsquid/archive-registry/pull/119)) ([a5d305e7](https://github.com/subsquid/archive-registry/commit/a5d305e7e233aa128e4d63d856380d4d352f854c))
+
 #### 3.1.1 (2023-07-12)
 
 ##### New Features
