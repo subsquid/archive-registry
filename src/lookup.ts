@@ -33,7 +33,7 @@ export interface LookupOptionsSubstrate {
     /**
      * Archive release
      */
-    release?: 'FireSquid' | 'ArrowSquid'
+    release?: 'ArrowSquid' | 'FireSquid'
 }
 
 export interface LookupOptionsEVM {
@@ -45,7 +45,7 @@ export interface LookupOptionsEVM {
     /**
      * Archive release
      */
-    release?: 'FireSquid' | 'ArrowSquid'
+    release?: 'ArrowSquid' | 'FireSquid'
 }
 
 /**
@@ -96,14 +96,15 @@ export function lookupArchive(network: string, opts?: LookupOptionsSubstrate | L
             opts.type = 'Substrate'
         } else {
             throw new Error(`Failed to lookup a matching archive. \
-Please consider submitting a PR to subsquid/archive-registry github repo to extend the registry`)
+Please consider submitting an issue to subsquid/archive-registry \
+github repo to extend the registry. More information in repo README.md`)
         }
     }
 
     switch (opts.type) {
         case 'Substrate':
             return lookupInSubstrateRegistry(network, registrySubstrate, {
-                release: 'FireSquid',
+                release: 'ArrowSquid',
                 ...opts,
             })[0].dataSourceUrl
         case 'EVM':
@@ -140,7 +141,8 @@ export function lookupInSubstrateRegistry(
 
     if (archives.length === 0) {
         throw new Error(`Failed to lookup a matching archive. \
-Please consider submitting a PR to subsquid/archive-registry github repo to extend the registry`)
+Please consider submitting an issue to subsquid/archive-registry \
+github repo to extend the registry. More information in repo README.md`)
     }
 
     if (archives.length > 1) {
@@ -168,7 +170,8 @@ Provide the genesis hash to disambiguate.`)
 
     if (matched.length === 0) {
         throw new Error(`Failed to lookup a matching archive. \
-Please consider submitting a PR to subsquid/archive-registry github repo to extend the registry`)
+Please consider submitting an issue to subsquid/archive-registry \
+github repo to extend the registry. More information in repo README.md`)
     }
 
     return matched
@@ -205,7 +208,8 @@ Provide the genesis hash to disambiguate.`)
 
     if (matched.length === 0) {
         throw new Error(`Failed to lookup a matching archive. \
-Please consider submitting a PR to subsquid/archive-registry github repo to extend the registry`)
+Please consider submitting an issue to subsquid/archive-registry \
+github repo to extend the registry. More information in repo README.md`)
     }
 
     return matched
@@ -226,7 +230,8 @@ export function getChainInfo(network: string, genesis?: string): NetworkSubstrat
 
     if (matched.length === 0) {
         throw new Error(`Failed to get info on ${network}. \
-Please consider submitting a PR to subsquid/archive-registry github repo to extend the registry`)
+Please consider submitting an issue to subsquid/archive-registry \
+github repo to extend the registry. More information in repo README.md`)
     }
 
     if (matched.length > 1) {

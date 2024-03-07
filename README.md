@@ -1,10 +1,10 @@
 # Squid Archive Registry
 
-A community-owned registry of Squid archives in a json format. 
+A community-owned registry of Squid archives in a json format.
 
 ## Usage of `@subsquid/archive-registry`
 
-The registry is available as an npm package `@subsquid/archive-registry`. It can be used to conveniently access registry files and e.g. lookup a Squid Archive or EVM Squid Archive by network name.
+The registry is available as an npm package `@subsquid/archive-registry`. It can be used to conveniently access registry files and e.g. lookup a Substrate Squid Archive or EVM Squid Archive by network name.
 
 ### Listing the available networks
 
@@ -30,7 +30,7 @@ import { lookupArchive } from '@subsquid/archive-registry'
 
 const processor = new SubstrateProcessor()
   .setDataSource({
-    archive: lookupArchive("kusama"), 
+    archive: lookupArchive("kusama"),
   });
 ```
 
@@ -39,17 +39,17 @@ More accurate way to choose from Substrate networks is to specify `type` paramet
 ```typescript
 const processor = new SubstrateProcessor()
   .setDataSource({
-    archive: lookupArchive("kusama", { type: "Substrate" }), 
+    archive: lookupArchive("kusama", { type: "Substrate" }),
   });
 ```
 
-`LookupOptionsSubstrate` supports additional filtering by genesis hash, archive version (semver range) and docker image names (of archive and archive gateway). 
+`LookupOptionsSubstrate` supports additional filtering by genesis hash, archive version (semver range) and docker image names (of archive and archive gateway).
 
 There is also a convenience method to get network information by its name:
 ```typescript
   // ...
   .setDataSource({
-    archive: lookupArchive("kusama", { genesis: "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe" }), 
+    archive: lookupArchive("kusama", { genesis: "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe" }),
   });
 ```
 
@@ -62,7 +62,7 @@ import { lookupArchive } from '@subsquid/archive-registry'
 
 const processor = new EvmBatchProcessor()
   .setDataSource({
-    archive: lookupArchive("avalanche"), 
+    archive: lookupArchive("avalanche"),
   });
 ```
 
@@ -72,7 +72,7 @@ There is also a convenience method to get network information by its name:
 ```typescript
   // ...
   .setDataSource({
-    archive: lookupArchive("avalanche", { type: "EVM", release: "FireSquid" }), 
+    archive: lookupArchive("avalanche", { type: "EVM", release: "ArrowSquid" }),
   });
 ```
 
@@ -82,32 +82,8 @@ Squid Archive provides easy access to the historical on-chain data with little m
 
 ## How to use an Archive?
 
-The primary use case of a Squid Archive is to serve data to a [Substrate Squid Processor](https://github.com/subsquid/squid-sdk/tree/master/substrate/substrate-processor) or [EVM Squid Processor](https://github.com/subsquid/evm-processor).
+The primary use case of a Squid Archive is to serve data to a [Substrate Squid Processor](https://github.com/subsquid/squid-sdk/tree/master/substrate/substrate-processor) or [EVM Squid Processor](https://github.com/subsquid/squid-sdk/tree/master/evm/evm-processor). The urls are not supposed to be accessed with a browser.
 
-The urls are not supposed to be accessed with a browser. To explore the endpoint with an interactive and human-friendly console, use `explorerUrl` field in `archives.json` (only for substrate archives). 
+## How to suggest a network
 
-For example, for exploring Kusama historical data, one can inspect `archives.json` and local Kusama explorer at  `https://kusama.explorer.subsquid.io/graphql`. One can open the GraphQL playground by navigating to this url and use the pane on right hand side to filter (`where:`) and pick the fields of interest.
-
-For example, the following query will return details on the last 10 transfers:
-
-```gql
-query RecentBalancesTransfers {
-  events(orderBy: block_height_DESC, where: {name_eq: "Balances.Transfer"}, limit: 10) {
-    args
-    name
-    call {
-      name
-      args
-    }
-    block {
-      timestamp
-      height
-    }
-  }
-}
-
-```
-
-## How to contribute
-
-To contribute a new archive, make a PR updating `archives.json` or `archives-evm.json` specifying the network name and the url. Further, one has to regenerate types in `src/chains.ts` by running `npm run gen-types`. This will update the list of supported chain names and makes it easier to developers to discover which lookups will succeed at compile time.
+To suggest a new network, make an issue with all information about the network: name, cebab-case name, RPC endpoint and link to an block explorer. Please do not forget about the sensitivity of the information you post (for example, private endpoints). We will review your request and contact you if necessary.

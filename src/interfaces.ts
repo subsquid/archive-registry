@@ -6,11 +6,11 @@ export interface DataSource {
 export interface ArchiveProviderSubstrate {
     provider: string,
     release: string,
-    image: string,
-    ingest: string,
-    gateway: string,
+    image?: string,
+    ingest?: string,
+    gateway?: string,
     dataSourceUrl: string,
-    explorerUrl: string
+    explorerUrl?: string
 }
 
 export interface ArchiveEntrySubstrate {
@@ -26,7 +26,7 @@ export interface ArchiveRegistrySubstrate {
 export interface ArchiveProviderEVM {
     provider: string,
     release: string,
-    dataSourceUrl: string    
+    dataSourceUrl: string
 }
 
 export interface ArchiveEntryEVM {
@@ -36,10 +36,10 @@ export interface ArchiveEntryEVM {
 
 export interface ArchiveRegistryEVM {
     archives: ArchiveEntryEVM[]
-} 
+}
 
 export interface NetworkSubstrate {
-    name: string, 
+    name: string,
     displayName: string
     tokens: string[],
     website: string,
@@ -54,7 +54,7 @@ export interface NetworkRegistrySubstrate {
 }
 
 export interface NetworkEVM {
-    name: string, 
+    name: string,
     displayName: string
     tokens: string[],
     website: string,
