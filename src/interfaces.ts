@@ -1,66 +1,62 @@
 export interface DataSource {
-    archive: string,
-    chain: string
+    archive: string;
+    chain: string;
 }
 
 export interface ArchiveProviderSubstrate {
-    provider: string,
-    release: string,
-    image: string,
-    ingest: string,
-    gateway: string,
-    dataSourceUrl: string,
-    explorerUrl: string
+    provider: string;
+    release: string;
+    dataSourceUrl: string;
 }
 
 export interface ArchiveEntrySubstrate {
-    network: string,
-    genesisHash?: string
-    providers: ArchiveProviderSubstrate[]
+    network: string;
+    genesisHash?: string;
+    providers: ArchiveProviderSubstrate[];
 }
 
 export interface ArchiveRegistrySubstrate {
-    archives: ArchiveEntrySubstrate[]
+    archives: ArchiveEntrySubstrate[];
 }
 
 export interface ArchiveProviderEVM {
-    provider: string,
-    release: string,
-    dataSourceUrl: string    
+    provider: string;
+    release: string;
+    dataSourceUrl: string;
 }
 
 export interface ArchiveEntryEVM {
-    network: string,
-    providers: ArchiveProviderEVM[]
+    network: string;
+    providers: ArchiveProviderEVM[];
 }
 
 export interface ArchiveRegistryEVM {
-    archives: ArchiveEntryEVM[]
-} 
+    archives: ArchiveEntryEVM[];
+}
 
 export interface NetworkSubstrate {
-    name: string, 
-    displayName: string
-    tokens: string[],
-    website: string,
-    description: string,
-    relayChain: string,
-    parachainId: string,
-    genesisHash: string
+    name: string;
+    displayName: string;
+    tokens: string[];
+    website: string;
+    description: string;
+    relayChain: string;
+    parachainId: string;
+    genesisHash: string;
 }
 
 export interface NetworkRegistrySubstrate {
-    networks: NetworkSubstrate[]
+    networks: NetworkSubstrate[];
 }
 
 export interface NetworkEVM {
-    name: string, 
-    displayName: string
-    tokens: string[],
-    website: string,
-    description: string
+    name: string;
+    displayName: string;
+    tokens: string[];
+    website: string;
+    description: string;
 }
 
 export interface NetworkRegistryEVM {
-    networks: NetworkEVM[]
+    networks: NetworkEVM[];
 }

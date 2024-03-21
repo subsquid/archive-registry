@@ -11,16 +11,12 @@
     "lib",
     "README.md",
     "CHANGELOG.md",
-    "LICENSE",
-    "archives.json",
-    "archives-evm.json",
-    "networks.json"
+    "LICENSE"
   ],
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "verify-hashes": "npx ts-node scripts/verifyGenesisHashes.ts",
     "gen-types": "npx ts-node scripts/generateTypes.ts",
     "build": "rm -rf lib && tsc",
     "test": "mocha lib/**/*.spec.js"
