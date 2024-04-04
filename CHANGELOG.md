@@ -1,3 +1,9 @@
+#### 3.3.1 (2024-04-04)
+
+##### New Features
+
+*  use ArrowSquid by default in Substrate lookups ([1686917a](https://github.com/subsquid/archive-registry/commit/1686917a7b58904c10a3b691ef184f084577746f))
+
 #### 3.2.1 (2023-10-11)
 
 ##### New Features
