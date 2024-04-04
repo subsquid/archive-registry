@@ -103,7 +103,7 @@ Please consider submitting a PR to subsquid/archive-registry github repo to exte
     switch (opts.type) {
         case 'Substrate':
             return lookupInSubstrateRegistry(network, registrySubstrate, {
-                release: 'FireSquid',
+                release: 'ArrowSquid',
                 ...opts,
             })[0].dataSourceUrl
         case 'EVM':
