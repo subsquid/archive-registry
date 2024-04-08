@@ -50,6 +50,7 @@ export interface LookupOptionsEVM {
 
 /**
  * Lookup providers matching the optional filtering criteria in a given Substrate or EVM registry
+ * @deprecated `archiveRegistry()` is deprecated, use raw URLs from `@subsquid/cli`
  * @param network network name for lookup
  * @returnsArchive endpoint url matching the filter
  * @throws If none matching archive is found or if there's ambiguity in choosing the network
@@ -59,6 +60,7 @@ export function lookupArchive(network: string): string
 
 /**
  * Lookup providers matching the optional filtering criteria in a given Substrate registry
+ * @deprecated `archiveRegistry()` is deprecated, use raw URLs from `@subsquid/cli`
  * @param network network name for lookup
  * @param opts susbtrate archive lookup options
  * @returnsArchive endpoint url matching the filter
@@ -69,6 +71,7 @@ export function lookupArchive(network: string, opts: LookupOptionsSubstrate): st
 
 /**
  * Lookup providers matching the optional filtering criteria in a given Substrate or EVM registry
+ * @deprecated `archiveRegistry()` is deprecated, use raw URLs from `@subsquid/cli`
  * @param network network name for lookup
  * @param opts evm archive lookup options
  * @returns Archive endpoint url matching the filter
