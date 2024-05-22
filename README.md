@@ -1,5 +1,10 @@
 # Squid Archive Registry
 
+> [!WARNING]
+> Archive Registry is now deprecated:
+>  - `squid-archive-registry` executable is replaced by [`sqd gateways ls`](https://docs.subsquid.io/squid-cli/gateways/) and [Subsquid Network documentation](https://docs.subsquid.io/subsquid-network/reference/) pages.
+>  - `lookupArchive()` calls should be replaced by direct gateway URLs
+
 A community-owned registry of Squid archives in a json format. 
 
 ## Usage of `@subsquid/archive-registry`
